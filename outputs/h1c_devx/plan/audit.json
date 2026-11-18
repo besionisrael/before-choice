@@ -1,0 +1,50 @@
+{
+  "slot_tokens_ok": 3000,
+  "worlds": 3000,
+  "late_pairs": 600,
+  "binary_before_first_diff_same_prefix": 600,
+  "positions_sha256": "c4c58f0b80ef6ded38002c745ef250f71ecd12e878bcadfe724d6f1d8c252ed7",
+  "slots": [
+    "ANS",
+    "ARR_c0",
+    "ARR_c1",
+    "ARR_c2",
+    "ARR_c3",
+    "ARR_c4",
+    "ARR_c5",
+    "ARR_c6",
+    "ARR_c7",
+    "ARR_c8",
+    "ARR_c9",
+    "ARR_c10",
+    "ARR_c11",
+    "RULE_END_0",
+    "RULE_END_1",
+    "RULE_END_2",
+    "RULE_END_3",
+    "RULE_END_4",
+    "RULE_END_5",
+    "RULE_END_6",
+    "RULE_END_7",
+    "RULE_END_8",
+    "RULE_END_9",
+    "RULE_END_10",
+    "RULE_END_11",
+    "RULE_END_12",
+    "RULE_END_13",
+    "REW_END_0",
+    "REW_END_1",
+    "Q_END"
+  ],
+  "dev_layers": [
+    24,
+    32,
+    40,
+    48,
+    56
+  ],
+  "n_tokens": {
+    "min": 290,
+    "max": 338
+  }
+}

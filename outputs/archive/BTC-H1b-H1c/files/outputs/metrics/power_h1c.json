@@ -1,0 +1,365 @@
+{
+  "doc": "BTC-H1c design: family-level power for the primary contrast on late dead-end-swap pairs.\n\n    python src/power_h1c.py   -> outputs/metrics/power_h1c.json\n\nPrimary statistic (proposed): paired u2 accuracy of the pointer P on admissible (base_L, dswap_L) pairs, against the\nthreshold max(0.25, strongest control). On these pairs every control that reads only the arrival keys, the 1-hop\nstructure, occurrence counts or the choice gives IDENTICAL outputs for both members (paired = 0 by construction), and\nP_perm is expected <= 0.25; the binding threshold is therefore 0.25 (independent guessing between u2 and ue1).\nModel: m primary pairs per family (m = 2 line orders), each admissible iff both worlds are admissible (per-world\nadmissibility a, i.i.d.); pair success ~ latent Gaussian with family effect (ICC 0.15), marginal p = 0.25 + delta;\ntest: family-cluster lower 97.5 % bound of mean(success - 0.25) > 0. 2,000 simulations per cell.",
+  "cells": [
+    {
+      "admissibility": 0.6,
+      "delta": 0.05,
+      "families": 300,
+      "power": 0.346,
+      "mean_pairs": 216.1105,
+      "mean_contributing_families": 177.155
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.05,
+      "families": 450,
+      "power": 0.4775,
+      "mean_pairs": 323.5665,
+      "mean_contributing_families": 265.4895
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.05,
+      "families": 600,
+      "power": 0.5855,
+      "mean_pairs": 431.6725,
+      "mean_contributing_families": 354.1785
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.05,
+      "families": 800,
+      "power": 0.7305,
+      "mean_pairs": 575.701,
+      "mean_contributing_families": 471.992
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.05,
+      "families": 1000,
+      "power": 0.821,
+      "mean_pairs": 720.076,
+      "mean_contributing_families": 590.5755
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.1,
+      "families": 300,
+      "power": 0.8685,
+      "mean_pairs": 215.907,
+      "mean_contributing_families": 177.088
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.1,
+      "families": 450,
+      "power": 0.9645,
+      "mean_pairs": 323.992,
+      "mean_contributing_families": 265.635
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.1,
+      "families": 600,
+      "power": 0.994,
+      "mean_pairs": 431.9575,
+      "mean_contributing_families": 354.367
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.1,
+      "families": 800,
+      "power": 0.9985,
+      "mean_pairs": 576.5015,
+      "mean_contributing_families": 472.839
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.1,
+      "families": 1000,
+      "power": 1.0,
+      "mean_pairs": 720.071,
+      "mean_contributing_families": 590.2545
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.15,
+      "families": 300,
+      "power": 0.995,
+      "mean_pairs": 216.091,
+      "mean_contributing_families": 177.1475
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.15,
+      "families": 450,
+      "power": 1.0,
+      "mean_pairs": 323.749,
+      "mean_contributing_families": 265.3985
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.15,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 431.802,
+      "mean_contributing_families": 354.1335
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.15,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 575.484,
+      "mean_contributing_families": 472.054
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.15,
+      "families": 1000,
+      "power": 1.0,
+      "mean_pairs": 718.8995,
+      "mean_contributing_families": 589.7245
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.05,
+      "families": 300,
+      "power": 0.4945,
+      "mean_pairs": 337.2455,
+      "mean_contributing_families": 242.4685
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.05,
+      "families": 450,
+      "power": 0.688,
+      "mean_pairs": 506.215,
+      "mean_contributing_families": 363.6735
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.05,
+      "families": 600,
+      "power": 0.789,
+      "mean_pairs": 675.0955,
+      "mean_contributing_families": 485.155
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.05,
+      "families": 800,
+      "power": 0.8945,
+      "mean_pairs": 900.42,
+      "mean_contributing_families": 647.0775
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.05,
+      "families": 1000,
+      "power": 0.9535,
+      "mean_pairs": 1125.359,
+      "mean_contributing_families": 808.555
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.1,
+      "families": 300,
+      "power": 0.973,
+      "mean_pairs": 337.4685,
+      "mean_contributing_families": 242.685
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.1,
+      "families": 450,
+      "power": 0.996,
+      "mean_pairs": 506.446,
+      "mean_contributing_families": 364.018
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.1,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 675.133,
+      "mean_contributing_families": 485.359
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.1,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 900.991,
+      "mean_contributing_families": 647.4035
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.1,
+      "families": 1000,
+      "power": 1.0,
+      "mean_pairs": 1124.981,
+      "mean_contributing_families": 808.539
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.15,
+      "families": 300,
+      "power": 1.0,
+      "mean_pairs": 337.519,
+      "mean_contributing_families": 242.59
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.15,
+      "families": 450,
+      "power": 1.0,
+      "mean_pairs": 506.586,
+      "mean_contributing_families": 364.156
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.15,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 675.1415,
+      "mean_contributing_families": 484.9535
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.15,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 899.659,
+      "mean_contributing_families": 646.6035
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.15,
+      "families": 1000,
+      "power": 1.0,
+      "mean_pairs": 1125.0635,
+      "mean_contributing_families": 808.382
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.05,
+      "families": 300,
+      "power": 0.629,
+      "mean_pairs": 486.038,
+      "mean_contributing_families": 289.125
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.05,
+      "families": 450,
+      "power": 0.832,
+      "mean_pairs": 729.3635,
+      "mean_contributing_families": 433.9195
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.05,
+      "families": 600,
+      "power": 0.916,
+      "mean_pairs": 971.911,
+      "mean_contributing_families": 578.308
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.05,
+      "families": 800,
+      "power": 0.9755,
+      "mean_pairs": 1295.5805,
+      "mean_contributing_families": 771.0265
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.05,
+      "families": 1000,
+      "power": 0.992,
+      "mean_pairs": 1619.8035,
+      "mean_contributing_families": 963.877
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.1,
+      "families": 300,
+      "power": 0.997,
+      "mean_pairs": 486.0455,
+      "mean_contributing_families": 289.1555
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.1,
+      "families": 450,
+      "power": 1.0,
+      "mean_pairs": 729.4325,
+      "mean_contributing_families": 433.89
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.1,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 972.0655,
+      "mean_contributing_families": 578.4315
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.1,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 1296.484,
+      "mean_contributing_families": 771.3245
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.1,
+      "families": 1000,
+      "power": 1.0,
+      "mean_pairs": 1619.8025,
+      "mean_contributing_families": 964.0135
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.15,
+      "families": 300,
+      "power": 1.0,
+      "mean_pairs": 485.8145,
+      "mean_contributing_families": 289.0145
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.15,
+      "families": 450,
+      "power": 1.0,
+      "mean_pairs": 728.9655,
+      "mean_contributing_families": 433.726
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.15,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 972.174,
+      "mean_contributing_families": 578.4695
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.15,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 1296.438,
+      "mean_contributing_families": 771.1505
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.15,
+      "families": 1000,
+      "power": 1.0,
+      "mean_pairs": 1619.5785,
+      "mean_contributing_families": 963.6165
+    }
+  ]
+}

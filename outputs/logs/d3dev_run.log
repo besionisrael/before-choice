@@ -1,0 +1,81 @@
+✓ Initialized. View run at 
+https://modal.com/apps/sionisrael2/main/ap-xkgw5RYfrUkLZ9iWXZNCh1
+✓ Created objects.
+├── ✓ Uploaded 
+│   D:\Workspace\AIProjects\before_choice_starter\src\d3_run_gemma.py
+├── ✓ Uploaded PythonPackage:v2_common, PythonPackage:d3_capture_core
+└── ✓ Created Function capture.
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+[1AFetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+[1AFetching 2 files:  50%|█████     | 1/2 [00:23<00:23, 23.02s/it]
+[1AFetching 2 files: 100%|██████████| 2/2 [01:32<00:00, 50.10s/it]Fetching 2 files: 100%|██████████| 2/2 [01:32<00:00, 46.04s/it]
+
+[1ALoading weights:   0%|          | 0/1188 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 2/1188 [00:00<03:39,  5.39it/s]
+[1ALoading weights:   1%|▏         | 15/1188 [00:00<00:29, 39.42it/s]
+[1ALoading weights:   2%|▏         | 27/1188 [00:00<00:19, 60.76it/s]
+[1ALoading weights:   3%|▎         | 40/1188 [00:00<00:14, 78.05it/s]
+[1ALoading weights:   5%|▍         | 54/1188 [00:00<00:12, 90.76it/s]
+[1ALoading weights:   6%|▌         | 69/1188 [00:00<00:10, 105.05it/s]
+[1ALoading weights:   7%|▋         | 81/1188 [00:01<00:10, 108.42it/s]
+[1ALoading weights:   8%|▊         | 93/1188 [00:01<00:10, 106.29it/s]
+[1ALoading weights:   9%|▉         | 105/1188 [00:01<00:09, 108.84it/s]
+[1ALoading weights:  10%|▉         | 118/1188 [00:01<00:09, 111.71it/s]
+[1ALoading weights:  11%|█         | 132/1188 [00:01<00:09, 114.83it/s]
+[1ALoading weights:  12%|█▏        | 144/1188 [00:01<00:09, 115.42it/s]
+[1ALoading weights:  13%|█▎        | 158/1188 [00:01<00:08, 116.44it/s]
+[1ALoading weights:  14%|█▍        | 170/1188 [00:01<00:10, 95.08it/s] 
+[1ALoading weights:  16%|█▌        | 185/1188 [00:01<00:09, 102.77it/s]
+[1ALoading weights:  17%|█▋        | 199/1188 [00:02<00:08, 111.30it/s]
+[1ALoading weights:  18%|█▊        | 213/1188 [00:02<00:08, 118.12it/s]
+[1ALoading weights:  19%|█▉        | 227/1188 [00:02<00:08, 111.09it/s]
+[1ALoading weights:  20%|██        | 241/1188 [00:02<00:08, 115.72it/s]
+[1ALoading weights:  21%|██▏       | 253/1188 [00:02<00:08, 109.13it/s]
+[1ALoading weights:  23%|██▎       | 268/1188 [00:02<00:07, 118.35it/s]
+[1ALoading weights:  24%|██▎       | 282/1188 [00:02<00:07, 123.13it/s]
+[1ALoading weights:  25%|██▍       | 296/1188 [00:02<00:07, 126.05it/s]
+[1ALoading weights:  26%|██▌       | 310/1188 [00:02<00:06, 128.76it/s]
+[1ALoading weights:  27%|██▋       | 324/1188 [00:03<00:06, 126.71it/s]
+[1ALoading weights:  28%|██▊       | 337/1188 [00:03<00:07, 117.18it/s]
+[1ALoading weights:  30%|██▉       | 351/1188 [00:03<00:07, 117.16it/s]
+[1ALoading weights:  31%|███       | 365/1188 [00:03<00:07, 117.13it/s]
+[1ALoading weights:  32%|███▏      | 379/1188 [00:03<00:06, 118.12it/s]
+[1ALoading weights:  33%|███▎      | 393/1188 [00:03<00:06, 119.33it/s]
+[1ALoading weights:  34%|███▍      | 407/1188 [00:03<00:06, 120.33it/s]
+[1ALoading weights:  35%|███▌      | 420/1188 [00:03<00:06, 111.88it/s]
+[1ALoading weights:  37%|███▋      | 435/1188 [00:04<00:06, 115.39it/s]
+[1ALoading weights:  38%|███▊      | 449/1188 [00:04<00:06, 109.56it/s]
+[1ALoading weights:  39%|███▉      | 464/1188 [00:04<00:06, 114.82it/s]
+[1ALoading weights:  40%|████      | 478/1188 [00:04<00:05, 119.88it/s]
+[1ALoading weights:  41%|████▏     | 491/1188 [00:04<00:05, 117.49it/s]
+[1ALoading weights:  43%|████▎     | 505/1188 [00:04<00:05, 118.50it/s]
+[1ALoading weights:  44%|████▎     | 519/1188 [00:04<00:05, 123.98it/s]
+[1ALoading weights:  45%|████▍     | 533/1188 [00:04<00:05, 126.85it/s]
+[1ALoading weights:  46%|████▌     | 546/1188 [00:04<00:05, 126.54it/s]
+[1ALoading weights:  47%|████▋     | 561/1188 [00:05<00:04, 131.06it/s]
+[1ALoading weights:  48%|████▊     | 575/1188 [00:05<00:04, 131.26it/s]
+[1ALoading weights:  50%|████▉     | 589/1188 [00:05<00:04, 125.57it/s]
+[1ALoading weights:  51%|█████     | 602/1188 [00:05<00:04, 119.68it/s]
+[1ALoading weights:  52%|█████▏    | 616/1188 [00:05<00:04, 123.87it/s]
+[1ALoading weights:  53%|█████▎    | 630/1188 [00:05<00:04, 126.94it/s]
+[1ALoading weights:  54%|█████▍    | 646/1188 [00:05<00:03, 135.77it/s]
+[1ALoading weights:  56%|█████▌    | 660/1188 [00:05<00:04, 117.98it/s]
+[1ALoading weights:  57%|█████▋    | 673/1188 [00:06<00:04, 116.34it/s]
+[1ALoading weights:  58%|█████▊    | 685/1188 [00:06<00:04, 113.54it/s]
+[1ALoading weights:  59%|█████▉    | 698/1188 [00:06<00:04, 116.37it/s]
+[1ALoading weights:  60%|██████    | 713/1188 [00:06<00:03, 125.31it/s]
+[1ALoading weights:  61%|██████    | 727/1188 [00:06<00:03, 129.14it/s]
+[1ALoading weights:  62%|██████▏   | 741/1188 [00:06<00:03, 129.00it/s]
+[1ALoading weights:  64%|██████▎   | 755/1188 [00:06<00:03, 125.59it/s]
+[1ALoading weights:  65%|██████▍   | 768/1188 [00:06<00:03, 124.43it/s]
+[1ALoading weights:  66%|██████▌   | 782/1188 [00:06<00:03, 127.04it/s]
+[1ALoading weights:  67%|██████▋   | 795/1188 [00:06<00:03, 126.76it/s]
+[1ALoading weights:  69%|██████▊   | 814/1188 [00:07<00:02, 143.22it/s]
+[1ALoading weights:  70%|██████▉   | 829/1188 [00:07<00:02, 138.25it/s]
+[1ALoading weights:  84%|████████▍ | 999/1188 [00:07<00:00, 576.26it/s]Loading weights: 100%|██████████| 1188/1188 [00:07<00:00, 160.40it/s]
+model ready at 105.8s
+Stopping app - uncaught exception raised locally: SystemExit("REMOTE FAILURE (no retry): builtins.AssertionError: capture fidelity failed (post_norm): {'max_abs_diff': 0.14090538024902344, 'top1_same': False, 'ab_decision_same': True}").
+REMOTE FAILURE (no retry): builtins.AssertionError: capture fidelity failed (post_norm): {'max_abs_diff': 0.14090538024902344, 'top1_same': False, 'ab_decision_same': True}
+exit=1

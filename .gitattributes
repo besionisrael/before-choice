@@ -1,0 +1,2 @@
+# Preserve exact bytes: frozen files are verified by sha256 in the manifests
+* -text

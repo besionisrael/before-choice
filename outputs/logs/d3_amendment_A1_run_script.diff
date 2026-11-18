@@ -1,0 +1,79 @@
+diff --git a/outputs/logs/d3_run_gemma_as_frozen.py b/src/d3_run_gemma.py
+index 56899c6..03b2624 100644
+--- a/outputs/logs/d3_run_gemma_as_frozen.py
++++ b/src/d3_run_gemma.py
+@@ -24,2 +24,3 @@ from v2_common import CPU, GPU, MEMORY_MIB, MODELS, render
+ TIMEOUT_S, GUARD_S, SHARD = 1500, 1420, 400
++COMMIT_WAIT_S = 300
+ N_REPLAY = 20
+@@ -35,3 +36,4 @@ app = modal.App("btc-d3-gemma4")
+ 
+-@app.function(image=image, gpu=GPU, cpu=CPU, memory=MEMORY_MIB, retries=0, max_containers=1, timeout=TIMEOUT_S)
++@app.function(image=image, gpu=GPU, cpu=CPU, memory=MEMORY_MIB, retries=0, max_containers=1, timeout=TIMEOUT_S,
++              scaledown_window=2)  # stop (and final-commit the Volume) right after returning
+ def capture(rows: list[dict], labels: list[str], digest: str) -> dict:
+@@ -48,3 +50,5 @@ def _capture(rows, labels, digest):
+     from transformers import AutoTokenizer, Gemma4ForConditionalGeneration
++    import transformers
+     m = MODELS["gemma4_31b"]
++    t0 = time.time()
+     tok = AutoTokenizer.from_pretrained(m["repo"], revision=m["revision"])
+@@ -52,3 +56,11 @@ def _capture(rows, labels, digest):
+                                                            dtype=torch.bfloat16, device_map="cuda")
+-    return run_capture(rows, labels, digest, Path("/vol") / "shards", "cuda", model, tok, GUARD_S, SHARD, N_REPLAY)
++    torch.cuda.synchronize()
++    t_load = time.time() - t0
++    print(f"model ready at {t_load:.1f}s", flush=True)
++    man = run_capture(rows, labels, digest, Path("/vol") / "shards", "cuda", model, tok, GUARD_S - t_load, SHARD, N_REPLAY)
++    man["env"] = {"torch": str(torch.__version__), "transformers": str(transformers.__version__),
++                  "cuda": str(torch.version.cuda), "gpu": str(torch.cuda.get_device_name()),
++                  "max_mem_gb": float(torch.cuda.max_memory_allocated() / 1e9)}
++    man["timing"] = {"load_s": t_load, "capture_s": man["wall_s"], "remote_total_s": time.time() - t0}
++    return man
+ 
+@@ -75,4 +87,6 @@ def main(pool: str = "PROBE-DEV") -> None:
+     out.mkdir(parents=True, exist_ok=True)
+-    with modal.Volume.ephemeral() as vol:  # deleted automatically when this block exits
++    t_call = time.time()
++    with modal.Volume.ephemeral() as vol:  # deleted automatically when this block exits (also on error)
+         wire = capture.with_options(volumes={"/vol": vol}).remote(rows, labels, digest)
++        t_ret = time.time()
+         if not wire["ok"]:
+@@ -80,4 +94,17 @@ def main(pool: str = "PROBE-DEV") -> None:
+             raise SystemExit(f"REMOTE FAILURE (no retry): {wire['error']}")
+-        for entry in vol.listdir("/shards"):
+-            name = entry.path.split("/")[-1]
++        rman = json.loads(wire["json"])
++        expected = sorted({fn for sh in rman["shards"] for fn in sh["files"]}
++                          | {"candidate_embeddings.npy", "candidate_labels.json", "MANIFEST.json"})
++        # wait until the container's background / shutdown commit makes every file visible
++        deadline = time.time() + COMMIT_WAIT_S
++        while True:
++            present = {e.path.split("/")[-1] for e in vol.listdir("/shards")}
++            if set(expected) <= present or time.time() > deadline:
++                break
++            time.sleep(5)
++        missing = sorted(set(expected) - present)
++        if missing:
++            raise SystemExit(f"TRANSFER FAILURE (no retry): files not visible after {COMMIT_WAIT_S}s: {missing[:5]}")
++        t_vis = time.time()
++        for name in expected:
+             with open(out / name, "wb") as f:
+@@ -85,2 +112,16 @@ def main(pool: str = "PROBE-DEV") -> None:
+                     f.write(chunk)
+-    print(json.dumps(verify_shards(out), indent=1))
++        t_dl = time.time()
++        check = verify_shards(out)  # hashes + shapes verified BEFORE the Volume is deleted
++        if not check["hashes_and_shapes_ok"] or check["n_worlds"] != cfg["n"]:
++            raise SystemExit(f"INTEGRITY FAILURE after download (no retry): {check}")
++        size = sum((out / n).stat().st_size for n in expected)
++        run = {"run_id": "BTC-D3-DEV-R1", "pool": pool, "inputs_sha256": man["sha256"]["model_inputs"], "digest": digest,
++               "n_labels": len(labels),
++               "remote_manifest_sha256": hashlib.sha256((out / "MANIFEST.json").read_bytes()).hexdigest(),
++               "verify": check, "bytes_downloaded": size, "env": rman["env"],
++               "timing": dict(rman["timing"], call_to_return_s=t_ret - t_call, return_to_visible_s=t_vis - t_ret,
++                              download_s=t_dl - t_vis, local_wall_s=time.time() - t_call),
++               "resources": {"gpu": GPU, "cpu": CPU, "memory_mib": MEMORY_MIB, "timeout_s": TIMEOUT_S, "guard_s": GUARD_S},
++               "cost_note": "record actual cost from `modal billing report --show-resources` immediately after the run"}
++        (out / "d3_run_manifest.json").write_text(json.dumps(run, indent=2) + "\n", encoding="utf-8")
++    print(json.dumps({k: run[k] for k in ("verify", "bytes_downloaded", "env", "timing")}, indent=1))

@@ -1,0 +1,52 @@
+{
+  "experiment_id": "BTC-D2-002",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "split_files": [
+    "train.jsonl",
+    "val.jsonl",
+    "pathcf_train.jsonl",
+    "pathcf_val.jsonl"
+  ],
+  "n_worlds": 352,
+  "n_replay": 20,
+  "gpu_request": "L4 x1",
+  "timeout_s": 900,
+  "timing": {
+    "remote_start_epoch": 1794577339.2512562,
+    "weights_download_and_cpu_load_s": 39.55902147293091,
+    "to_gpu_s": 3.5488526821136475,
+    "forwards_s": 24.893095016479492,
+    "n_forwards": 372,
+    "remote_end_epoch": 1794577408.9656892,
+    "local_call_to_remote_start_s": 1213.303451538086,
+    "remote_end_to_local_receive_s": 0.015070676803588867,
+    "local_wall_s": 1283.0366237163544
+  },
+  "env": {
+    "torch": "2.5.1+cu124",
+    "transformers": "4.57.1",
+    "cuda": "12.4",
+    "gpu": "NVIDIA L4",
+    "max_mem_gb": 8.315003392,
+    "dtype": "bfloat16"
+  },
+  "behavior_sha256": "fe6ce6f4c92de976cafc987d7b7ea30b97d172ff802ed54bc9a217a9ce4b90ca",
+  "modal_app_id": "ap-YkjX7dMpMtv3riNTTQBV1G",
+  "cost_observed": {
+    "source": "Modal Usage & billing, read ~13:45 UTC",
+    "total_usage_before": 17.11,
+    "total_usage_after": 17.12,
+    "estimated_run_cost_usd_credits": "0.01-0.02",
+    "charged_usd": 0.0,
+    "spend_limit_usd": 5.0
+  },
+  "checkpoint": {
+    "population": "depth-2 base+cf train+val",
+    "n": 16,
+    "acc_primary": 0.5625,
+    "threshold": 0.7,
+    "decision": "FAIL",
+    "tie_sensitive": false
+  }
+}

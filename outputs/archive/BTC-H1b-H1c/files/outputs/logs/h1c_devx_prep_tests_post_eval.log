@@ -1,0 +1,9 @@
+test_every_access_is_authorised (test_post_eval_seal.PostEvaluationSeals.test_every_access_is_authorised) ... ok
+test_logs_append_only_since_closure (test_post_eval_seal.PostEvaluationSeals.test_logs_append_only_since_closure) ... ok
+test_seals_intact_and_read_only (test_post_eval_seal.PostEvaluationSeals.test_seals_intact_and_read_only) ... ok
+test_single_evaluation_hashes (test_post_eval_seal.PostEvaluationSeals.test_single_evaluation_hashes) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 4.390s
+
+OK

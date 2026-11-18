@@ -1,0 +1,106 @@
+{
+  "archive": "BTC-H1-v0.3",
+  "created_utc": "2026-11-14T14:22:56+00:00",
+  "verdict": "H1 NOT MET (owner-validated)",
+  "decision": "DECISION SCIENTIFIQUE - CLOTURE BTC-H1 v0.3",
+  "copied": {
+    "reports/BTC-H1_CONFIRMATORY_FREEZE_PROPOSAL.md": "09523e0f230e6b74d6c1b28a934b366d66356b91b0a7a30d791eeb144cdb69c7",
+    "reports/BTC-H1_FREEZE_MANIFEST.json": "72d2b4fe85728d5b7a185e041e37f11bebaa0b280d0830f13c21f2aca1011a00",
+    "reports/BTC-H1-DEV-TRAIN_REQUEST.md": "75b3aa7512ba574f67d98941a784a57dc9dfa700aef47480814214c63f3416de",
+    "reports/BTC-H1-DEV-TRAIN_RESULTS.md": "ca6a8d360f708a2d3687fdd06b0a7bea67a78b1078690603bb3a71d95d7ba664",
+    "reports/BTC-D3-TEST_REQUEST.md": "2a65b3f62047af2ba0125f695b2c9214e6e7715186de16b599afcdee39de3fe8",
+    "reports/BTC-D3-TEST_CAPTURE_RESULTS.md": "18a77ae5f5f9ce0e4d140ab15f08406c6a3b7c3cdb41e108e85e19beb0e7c286",
+    "reports/BTC-D3-TEST-R1_CAPTURE_RESULTS.md": "3e78bc118006eae8f76e552ab6ab0756321ac09eeecd2a95c7e3636c323c1da5",
+    "reports/BTC-H1-TEST-EVAL_REQUEST.md": "ffb460d4604358b8ff2301fdc2ec4b7feaaffab6e58d60c2369607fa159cfdbf",
+    "reports/BTC-H1-TEST-EVAL_RESULTS.md": "d9326778c82ff2b85e754ae542c207dcb88e7b4f965684c1d6fd47f9dc0388e9",
+    "reports/BTC-H1_FINAL_REPORT.md": "0d93273c045299a8500a7580e18f94020adf55a512eb9e870349daa9f7a9a4d8",
+    "reports/BTC-D3-DEV-R1_RESULTS.md": "002d5bb154b9eb039fe697873a0abdb19545665ca23e7c1099483f7442a3c037",
+    "reports/BTC-D5_DATA_DESIGN.md": "1037731da9f47eeabc81f071ce821653d8985389437703056be993514058f8c4",
+    "outputs/h1_dev/FINAL.json": "2c290489cba56dc06a05c9e6f013941727b560bf9ef906e37990855bd136b425",
+    "outputs/h1_dev/SELECTIONS.json": "d633d1a47312c684935280236f696be05c4ff701fce9ca5d0c3c4d57c6933d1f",
+    "outputs/h1_dev/fits.jsonl": "088f7620136fc973d60089f029f9504c3d130d35ee25320bd8bba95d6d62537f",
+    "outputs/h1_dev/budget.tsv": "1467e9e7eb0faa0bd33d9ae0765dfa6308d335dcb96f343a11a7e865ed230bf3",
+    "outputs/h1_dev/precheck.json": "d0a1ce9c0d2ef9154c5eab6996972721cfd0cfab61994f9afde296ce644ed2aa",
+    "outputs/h1_dev/FINAL_VERIFICATION.json": "1a87724fce0ec4b5d25d719b86305cc91585655ea02e01a54a07c574afb6d4c6",
+    "outputs/h1_test/EVAL_RESULT.json": "e021937853ee2919c85b79cc1c804ae5967ffae3a848fdf28e7a94b49f3c58b2",
+    "outputs/h1_test/per_world.jsonl": "5f3aa6de2b872a66b6cd2fdbe06ccf022def789c368914fb531434a8176dab33",
+    "outputs/h1_test/EVAL_STARTED.json": "ed458d279950f07709a3afc733e41e33a20d2c2292cc7387946c0e12c8409d5d",
+    "outputs/h1_test_preconditions.json": "0ef885c3a35c3a0117a7813f777403db2c7999c90fae2ea480aec3bd8d8bf810",
+    "outputs/d3/d3_test_capture_summary.json": "7956f5217fe3c5489d621cdebe178df5d3fdefd99578613752bffa0bba825f74",
+    "outputs/d3/d3_test_prelaunch.json": "b85963da2756ef86cd417d01aa424477ebb5969c6e0fb54118d14f00c7abb7cc",
+    "outputs/d3/d3_test_r1_prelaunch.json": "def1dce8b39ecca3ddc4bf93fadd9801aead933b12bc20acaca6c996d5fccbfc",
+    "outputs/d3/probe_dev/MANIFEST.json": "306573de935f2092b49a60171b6831443a52f4f9132649949e0e5c1aef3d4d8d",
+    "outputs/d3/probe_dev/d3_run_manifest.json": "5a6878e5b4b501139c9670365e2007ecfdcd2d696756aed0119ee6d6e2a032e4",
+    "outputs/approvals/H1-R7_LOCKED-TEST_GENERATION.json": "7475b1913e39fe274254c10e01c71e6e31b9f7c68075d39f2dc50b9161e4d30f",
+    "outputs/approvals/unlock/D3-TEST-CAPTURE/UNLOCK_LOCKED-TEST-D5.json": "1710b9751763ad44ac36087a0dd925ae695e9af23acb4bd4a2e62399e025e461",
+    "outputs/approvals/unlock/D3-TEST-CAPTURE/history/UNLOCK_LOCKED-TEST-D5.attempt1.json": "6f66ce347494cc345b06a1456b513f858bda5fb53f170daf6b2ec1b77deb7358",
+    "outputs/approvals/unlock/H1-TEST-EVAL/UNLOCK_LOCKED-TEST-D5.json": "3af21bdbc8210fc5ef29e6ea464c0130f165dca006ddbe93e08d8e03fcb8291b",
+    "outputs/approvals/unlock/H1-TEST-EVAL/UNLOCK_LOCKED-TEST-D3-ACT.json": "9e018487116bb4f89d58b01df926f19ff7df25cb840ba104885adf2d76cc1658",
+    "outputs/logs/d3test_run.log": "85a95deae3a2c87719a62d4006791e29be671dcbc7eb0059309fbe3573af61a2",
+    "outputs/logs/d3test_r1_run.log": "713090aa2ed3a48422553cb4dc74c4cc7f3bda0e39aa42986687a20165f56919",
+    "outputs/logs/d3test_r1_watchdog.log": "1bc9481be65e7736b26e5d16328cedf7132fb57db525df1fdb33831a79192734",
+    "outputs/logs/h1_test_eval_run.log": "1cf08440616ef31e8d93644bbf44c769a7036fbc79a69ae4178f6c754529371a",
+    "src/h1_probe.py": "b97fd04fd959bfd843a8e9c4fc35b0277e8345acdb986e62ffd428415b03ec55",
+    "src/h1_features.py": "0620e73f309d2c2cb62d8041cc8e82997bf8c0ac235b0c2f884af0c482a93a73",
+    "src/h1_train_dev.py": "5c9b10f7ddce3f22b84d20d09f5f7accc3a5ccd252da06596a4750c11afa9b0d",
+    "src/h1_frozen.py": "0917870e086122f39a72d31c4aa3e843959c991cd3129f32b9e1c2dbb72ecaef",
+    "src/h1_verify_final.py": "423afda8f891a3eb9799bfac7762698772011f3a941a7a0347876410a751f9fd",
+    "src/sealed.py": "cff32bf1328385c26f305e33ef04ba42132fd19062676358efde8f579a286637",
+    "src/d3_capture_core.py": "00a3fa225ed36f668d7473cd3ddc89cdfedf4c821d36b42c8e24a2c21f13e65c",
+    "src/d3_run_gemma.py": "bb2145cf3a6f1d57902d0ef622589cfc81ae5a2a2151f2de7c0cad2af57e04a6",
+    "src/sealed_stage/sealed_access.py": "87b1e3a653ed0f9932151101a209e94dce7ab487e13012f6fb1a84743bd18043",
+    "src/sealed_stage/d3_run_gemma_test.py": "d793662422f32d2c6245b98882b1b93503c451e5c031873859c8188c5285e436",
+    "src/sealed_stage/h1_eval_test.py": "a967c42e20e3b4852b0e9e491c0b8436d405dfe0f7026abb5d1db6ef0d53c3c2",
+    "tests/test_d5_dev.py": "4d1e0dc8dd04b778afa14750e1a490694a80f0a793579027128da23c52e6971c",
+    "tests_proposed/test_post_eval_seal.py": "46c335e148d5fa524669197e68fc1cb1fd4d783ca11df56a0719f7eae7225910",
+    "outputs/h1_dev/final/anchor_c1.pt": "82710a6eb4ac50091cbecc207b455f3722dccbccc0757c7982d09c37bb50438d",
+    "outputs/h1_dev/final/anchor_c3.pt": "098b44f6ad49c2a04c1245f648d3ed0e745a9fcf566a426477df9b1a1051d753",
+    "outputs/h1_dev/final/anchor_u1.pt": "64c39f2595d80e1b378e75ebd2156c48f8f8a1951ca7a4e2cf2c81896f9c57ba",
+    "outputs/h1_dev/final/anchor_u3.pt": "339464972f6047a167d817cefaaffa9cafe5669b04dc1ac8a8657b9ee7c86f42",
+    "outputs/h1_dev/final/B1.pt": "6b6adf791ce1ea7aae08ef6f31c91f602e9bb7becacfc242eee4082747ee03d9",
+    "outputs/h1_dev/final/B2_perm0.pt": "8a8944c7398b71bbc57b5c10eb174e5ed74affe4cc4bd84fe2f8fe0bfdbe3e6d",
+    "outputs/h1_dev/final/B2_perm1.pt": "0e3c1ad46dea7c10396e10c6e0aa235ec0df9fc203e72fc0f0fdaee8c1d5e525",
+    "outputs/h1_dev/final/B2_perm2.pt": "0cd613164e1ee59b59a78207c383bb79ec41ab9ca92776672c82ebbc7bdf0590",
+    "outputs/h1_dev/final/B3.pt": "2216c55c0d69defdc6189326d4e0c1a32d83721c8346586dab0a137971d00ffe",
+    "outputs/h1_dev/final/B3o_u1.pt": "7dedd469374e36bd9900f58b49243e43bf22ad55de0424235374ce86ca259f15",
+    "outputs/h1_dev/final/B3o_u2.pt": "9fa7d3a0ef71cd8cef4c63a5a1d8fcd299620a04c6742030df0df8bb60223486",
+    "outputs/h1_dev/final/B3o_u3.pt": "441c0d116eac044afe51774fa58a778976dbce5347678bd17e1fd75853dd1a70",
+    "outputs/h1_dev/final/B5.pt": "01e84e689c1499752cfac9ff901678cb703247f9438d6c4b683165e1c6d321b7",
+    "outputs/h1_dev/final/order_u1.pt": "aa8c64a75b2a102271bc449043e0af1d8dfe00638a59e58eb3f88f8b9af7bb9a",
+    "outputs/h1_dev/final/order_u3.pt": "2771fdf19e6c5118640cc232922696d251643fbd2e3d8aa18684afe0c0505600",
+    "outputs/h1_dev/final/primary_u2.pt": "170c76569cb98a6b8b4b8d4a27e635ad4921fb5e26722d9531a99ac6847ff65a",
+    "outputs/h1_dev/final/STANDARDISATION.npz": "9cd6b2297a32fb90e6095a7d583094b8d7589615cda744634a519e1f42b7185a"
+  },
+  "referenced_not_copied": {
+    "LOCKED-TEST-D5": {
+      "dir": "data/d5/locked_test",
+      "SEAL_MANIFEST_sha256": "f1d541e297a261ab13573e6f36ea4082847d4fd968cef7a228559f86d0918392",
+      "status": "sealed; consumed"
+    },
+    "LOCKED-TEST-D3-ACT": {
+      "dir": "outputs/d3/locked_test",
+      "SEAL_MANIFEST_sha256": "fe7c57569a727eaf9b75bbbd0d01be1b917e3b50495f54a2fb2dcec972980597",
+      "status": "sealed; consumed"
+    },
+    "PROBE-DEV activations": {
+      "dir": "outputs/d3/probe_dev",
+      "MANIFEST_sha256": "306573de935f2092b49a60171b6831443a52f4f9132649949e0e5c1aef3d4d8d"
+    },
+    "PROBE-DEV data": {
+      "manifest_sha256": "60ff11bf90c780c8a796d2acdfcf2c68a6d4560376bde33098b0893411b6b5b6"
+    }
+  },
+  "access_log_snapshots": {
+    "LOCKED-TEST-D5": {
+      "copy": "access_logs/LOCKED-TEST-D5_SEAL_ACCESS_LOG.jsonl",
+      "sha256": "66922721e4a0dd4dbd4ac5aa3f0fb472c88c5f2b6f91ecc9bc0e09ca54d58deb",
+      "n_entries": 4
+    },
+    "LOCKED-TEST-D3-ACT": {
+      "copy": "access_logs/LOCKED-TEST-D3-ACT_SEAL_ACCESS_LOG.jsonl",
+      "sha256": "79f0d2617d8cc6a183e94600d3f0be43123bc699e2fffc4f1cfaf75cff26444e",
+      "n_entries": 39
+    }
+  },
+  "historical_test_note": "tests/test_d5_dev.py (D3-A4) kept in its historical state; test_locked_test_sealed_read_only fails by design after the authorised H1-TEST-EVAL reads. Proposed replacement: tests_proposed/test_post_eval_seal.py (not adopted)."
+}

@@ -1,0 +1,289 @@
+{
+  "run_id": "BTC-H1c-DEV",
+  "inputs_sha256": "ca2133cafb879ea9be7e2951e6ce9f5ed22503cd600adbf0b96f2c05be4ead98",
+  "positions_sha256": "0d29b278cb9dfb09c8e30ced5b323d59d6a3ddbd10d3ebad059aa6ba9292bde9",
+  "digest": "72ffcf1f697a76278ac1b13357b57883de41c64993ce6d38e251293cbc45b871",
+  "G1": {
+    "hashes_and_shapes_ok": true,
+    "n_worlds": 2000
+  },
+  "fidelity": {
+    "max_abs_diff": {
+      "post_norm": 0.19520950317382812,
+      "pre_norm": 0.19520950317382812
+    },
+    "tau": 0.125,
+    "limit": 0.25,
+    "n_divergences_logged": 24,
+    "divergences": [
+      {
+        "world_id": "F50070-cswap_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14220333099365234,
+        "tolerance": 0.4094066619873047,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50070-cswap_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14220333099365234,
+        "tolerance": 0.4094066619873047,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50091-dswap_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50091-dswap_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50103-base_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50103-base_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50126-dswap_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50126-dswap_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50128-dswap_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50128-dswap_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50137-cswap_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14220333099365234,
+        "tolerance": 0.4094066619873047,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50137-cswap_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14220333099365234,
+        "tolerance": 0.4094066619873047,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50139-base_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.16358566284179688,
+        "tolerance": 0.45217132568359375,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50139-base_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.16358566284179688,
+        "tolerance": 0.45217132568359375,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50192-base_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50192-base_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50224-dswap_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14584922790527344,
+        "tolerance": 0.4166984558105469,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50224-dswap_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14584922790527344,
+        "tolerance": 0.4166984558105469,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50225-base_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50225-base_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50303-dswap_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14220333099365234,
+        "tolerance": 0.4094066619873047,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50303-dswap_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14220333099365234,
+        "tolerance": 0.4094066619873047,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50342-dswap_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.182403564453125,
+        "tolerance": 0.48980712890625,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F50342-dswap_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.182403564453125,
+        "tolerance": 0.48980712890625,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      }
+    ]
+  },
+  "env": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.23.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 63.467329536
+  },
+  "timing": {
+    "load_s": 248.78687930107117,
+    "capture_s": 335.8428862094879,
+    "remote_total_s": 584.6330873966217,
+    "call_to_return_s": 596.9113485813141,
+    "return_to_visible_s": 10.806273460388184,
+    "download_s": 69.21418881416321
+  },
+  "resources": {
+    "gpu": "A100-80GB",
+    "cpu": [
+      4.0,
+      4.0
+    ],
+    "memory_mib": [
+      16384,
+      98304
+    ],
+    "timeout_s": 850,
+    "guard_s": 800
+  }
+}

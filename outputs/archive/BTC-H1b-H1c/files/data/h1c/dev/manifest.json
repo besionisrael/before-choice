@@ -1,0 +1,21 @@
+{
+  "pool": "H1C-DEV",
+  "seed": 2026111404,
+  "n_worlds": 2000,
+  "n_families": 400,
+  "variants": [
+    "base_L",
+    "dswap_L",
+    "base_E",
+    "dswap_E",
+    "cswap_L"
+  ],
+  "split_families": {
+    "train": 300,
+    "val": 100
+  },
+  "sha256": {
+    "worlds": "27421da156493ffed537cb13f6ce8ff0c41b6443fcd8fbf04aa84c942cefb943",
+    "model_inputs": "ca2133cafb879ea9be7e2951e6ce9f5ed22503cd600adbf0b96f2c05be4ead98"
+  }
+}

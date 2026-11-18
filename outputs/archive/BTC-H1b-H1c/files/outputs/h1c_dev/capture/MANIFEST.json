@@ -1,0 +1,307 @@
+{
+ "shards": [
+  {
+   "name": "xshard_000",
+   "n": 400,
+   "files": {
+    "xshard_000_acts.npy": "4509b30a4a99e31e4bd5279a4fad2e932d796742ba066ab8539fdc04492e2bee",
+    "xshard_000_index.jsonl": "f7cbdd3d004ba3c516bd82418df6302acbd9a349f80280c1590554a9ffd7a151"
+   }
+  },
+  {
+   "name": "xshard_001",
+   "n": 400,
+   "files": {
+    "xshard_001_acts.npy": "1186dd4e2a2ae07973540dffa92b5604422891af035379dc1a5c7831a9b34e27",
+    "xshard_001_index.jsonl": "bb02162d57a6a69050ae94986e27ae9e904837f1d856538c6c12984c2f1ef3f1"
+   }
+  },
+  {
+   "name": "xshard_002",
+   "n": 400,
+   "files": {
+    "xshard_002_acts.npy": "f23f4d77a07ec045cefaec0899d3520d9300ea727fad82fa3840d9968a270517",
+    "xshard_002_index.jsonl": "7fae78cdc8cc13fb7ec4260ec544823fa3ccb368024a773ca307ce12016ebb49"
+   }
+  },
+  {
+   "name": "xshard_003",
+   "n": 400,
+   "files": {
+    "xshard_003_acts.npy": "384c7a2b1f8e040a59f3b26b6bf59ec64d889a253d5ff8aa0ba7c1c06fdf3cf7",
+    "xshard_003_index.jsonl": "d0d07060c5a7dc1595ca3cc90906b947c79921273216570cf8f998c2c5048ed2"
+   }
+  },
+  {
+   "name": "xshard_004",
+   "n": 400,
+   "files": {
+    "xshard_004_acts.npy": "020df6c6eaf5f17b8019c66b5955ac7188d693c4a96c2e183e733475a3bc6538",
+    "xshard_004_index.jsonl": "361c6970a490f6a93ddb036a71360d56900685f5643fec6fe7658ced53af3cbc"
+   }
+  }
+ ],
+ "n_worlds": 2000,
+ "layers": [
+  24,
+  32,
+  40,
+  48,
+  56
+ ],
+ "P": 30,
+ "replay_bitwise_identical": 20,
+ "fidelity_summary": {
+  "max_abs_diff": {
+   "post_norm": 0.19520950317382812,
+   "pre_norm": 0.19520950317382812
+  },
+  "tau": 0.125,
+  "limit": 0.25,
+  "n_divergences_logged": 24,
+  "divergences": [
+   {
+    "world_id": "F50070-cswap_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14220333099365234,
+    "tolerance": 0.4094066619873047,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50070-cswap_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14220333099365234,
+    "tolerance": 0.4094066619873047,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50091-dswap_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.13035297393798828,
+    "tolerance": 0.38570594787597656,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50091-dswap_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.13035297393798828,
+    "tolerance": 0.38570594787597656,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50103-base_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50103-base_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50126-dswap_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.15535736083984375,
+    "tolerance": 0.4357147216796875,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50126-dswap_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.15535736083984375,
+    "tolerance": 0.4357147216796875,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50128-dswap_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50128-dswap_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50137-cswap_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14220333099365234,
+    "tolerance": 0.4094066619873047,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50137-cswap_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14220333099365234,
+    "tolerance": 0.4094066619873047,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50139-base_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.16358566284179688,
+    "tolerance": 0.45217132568359375,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50139-base_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.16358566284179688,
+    "tolerance": 0.45217132568359375,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50192-base_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50192-base_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50224-dswap_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14584922790527344,
+    "tolerance": 0.4166984558105469,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50224-dswap_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14584922790527344,
+    "tolerance": 0.4166984558105469,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50225-base_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50225-base_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50303-dswap_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14220333099365234,
+    "tolerance": 0.4094066619873047,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50303-dswap_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14220333099365234,
+    "tolerance": 0.4094066619873047,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50342-dswap_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.182403564453125,
+    "tolerance": 0.48980712890625,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F50342-dswap_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.182403564453125,
+    "tolerance": 0.48980712890625,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   }
+  ]
+ },
+ "layout": "acts[i] = P x L x d uint16(bf16); slots per d3x_positions.SLOT_NAMES; layers 0..60 HF hidden_states, 61 raw block-60 pre-norm; masked slots are zero",
+ "wall_s": 335.8428862094879
+}

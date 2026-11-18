@@ -1,0 +1,15 @@
+builtins.AssertionError: capture fidelity failed (post_norm): {'max_abs_diff': 0.14090538024902344, 'top1_same': False, 'ab_decision_same': True}
+
+Traceback (most recent call last):
+  File "/root/d3_run_gemma.py", line 42, in capture
+    return {"ok": True, "json": json.dumps(_capture(rows, labels, digest))}
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/d3_run_gemma.py", line 60, in _capture
+    man = run_capture(rows, labels, digest, Path("/vol") / "shards", "cuda", model, tok, GUARD_S - t_load, SHARD, N_REPLAY)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/d3_capture_core.py", line 166, in run_capture
+    rec = capture_world(model, tok, text, m["A_id"], m["B_id"], device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/d3_capture_core.py", line 65, in capture_world
+    raise AssertionError(f"capture fidelity failed ({name}): {fid[name]}")
+AssertionError: capture fidelity failed (post_norm): {'max_abs_diff': 0.14090538024902344, 'top1_same': False, 'ab_decision_same': True}

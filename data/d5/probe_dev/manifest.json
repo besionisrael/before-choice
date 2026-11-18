@@ -1,0 +1,12 @@
+{
+  "pool": "PROBE-DEV",
+  "seed": 2026111401,
+  "n_worlds": 4800,
+  "n_families": 300,
+  "sha256": {
+    "all": "d26b51270dd1970dc193db4e88e814c137a993715cdf67066a4a72f3e7f0f15a",
+    "model_inputs": "a3c814363726493477b785397c5118035bd35b449cecc046d4fd1cc62ba47fa1",
+    "train": "4058e539ac5ebd1a0654c4bc8918189dc7f32740b0a2173e097b13420112b043",
+    "val": "b764d3e8ac06ff241a23b4378e2e9ed3a2fdc123924bc785c5d4b21fecf6b736"
+  }
+}

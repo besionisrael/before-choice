@@ -1,0 +1,10 @@
+{
+  "pool": "H1C-DEVX",
+  "seed": 2026111406,
+  "n_worlds": 3000,
+  "n_families": 600,
+  "sha256": {
+    "worlds": "5737cbde6f4a85d9ac8cb67eebfc14f6e6f9b31681652d35119a6ac70727a8c0",
+    "model_inputs": "ab4ee61e5ffa37f60555de15d3193752ba690751d51b8085264875ac9ae5d832"
+  }
+}

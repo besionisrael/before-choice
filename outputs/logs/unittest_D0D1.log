@@ -1,0 +1,23 @@
+test_depth_and_optimal_balance (test_dataset.Balance.test_depth_and_optimal_balance) ... ok
+test_trivial_heuristics_at_chance_on_primary (test_dataset.Balance.test_trivial_heuristics_at_chance_on_primary) ... ok
+test_pilot_v0_passes_independent_audit (test_dataset.IndependentOracle.test_pilot_v0_passes_independent_audit) ... ok
+test_v1_all_worlds_pass_independent_audit (test_dataset.IndependentOracle.test_v1_all_worlds_pass_independent_audit) ... ok
+test_alias_isomorphic_disjoint_labels (test_dataset.Invariants.test_alias_isomorphic_disjoint_labels) ... ok
+test_cf_prompt_differs_in_exactly_two_lines (test_dataset.Invariants.test_cf_prompt_differs_in_exactly_two_lines) ... ok
+test_counterfactual_flips_optimal (test_dataset.Invariants.test_counterfactual_flips_optimal) ... ok
+test_decoy_unreachable_and_max_reward (test_dataset.Invariants.test_decoy_unreachable_and_max_reward) ... ok
+test_every_family_complete (test_dataset.Invariants.test_every_family_complete) ... ok
+test_shuffle_same_graph_different_order (test_dataset.Invariants.test_shuffle_same_graph_different_order) ... ok
+test_swap_differs_only_in_action_letters (test_dataset.Invariants.test_swap_differs_only_in_action_letters) ... ok
+test_committed_files_match_generator (test_dataset.Splits.test_committed_files_match_generator) ... ok
+test_deterministic (test_dataset.Splits.test_deterministic) ... ok
+test_model_inputs_have_no_oracle (test_dataset.Splits.test_model_inputs_have_no_oracle) ... ok
+test_no_family_or_label_crosses_split (test_dataset.Splits.test_no_family_or_label_crosses_split) ... ok
+test_split_sizes (test_dataset.Splits.test_split_sizes) ... ok
+test_command_line (test_oracle.GraphOracleTests.test_command_line) ... ok
+test_counterfactual_pairs (test_oracle.GraphOracleTests.test_counterfactual_pairs) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.328s
+
+OK

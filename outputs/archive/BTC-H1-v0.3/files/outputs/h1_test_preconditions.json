@@ -1,0 +1,28 @@
+{
+  "utc": "2026-11-14T14:06:34+00:00",
+  "predictors_16_ok": true,
+  "standardisation_ok": true,
+  "evaluator_sha256": "a967c42e20e3b4852b0e9e491c0b8436d405dfe0f7026abb5d1db6ef0d53c3c2",
+  "evaluator_ok": true,
+  "prepared_code_ok": {
+    "src/sealed_stage/h1_eval_test.py": true,
+    "src/sealed_stage/sealed_access.py": true,
+    "src/h1_frozen.py": true,
+    "src/h1_probe.py": true,
+    "src/h1_features.py": true,
+    "tests_cpucheck/test_d3_test_prep.py": true
+  },
+  "pool_seal_ok": true,
+  "act_seal_ok": true,
+  "capture_traces_ok": {
+    "pool_access_log": true,
+    "attempt1_log": true,
+    "r1_log": true,
+    "unlock_capture": true,
+    "unlock_attempt1_archive": true
+  },
+  "no_prior_eval": true,
+  "act_log_absent": true,
+  "no_oracle_read": true,
+  "all_pass": true
+}

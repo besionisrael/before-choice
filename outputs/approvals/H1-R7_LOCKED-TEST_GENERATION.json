@@ -1,0 +1,6 @@
+{
+  "owner_approval_id": "H1-R7 (conditional) — DÉCISION SCIENTIFIQUE H1 v0.3, 2026-11-13",
+  "approved_utc": "2026-11-13",
+  "scope": "Generate and seal LOCKED-TEST on CPU with seed 2026111402 and the approved D5 parameters; record seal hashes; no content inspection; no GPU; no unlock.",
+  "conditions_met": ["11.1 candidate-order non-leakage and oracle-free inputs: PASS", "11.2 L2 head epochs + B3 in global budget: documented"]
+}

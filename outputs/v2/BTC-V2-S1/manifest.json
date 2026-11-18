@@ -1,0 +1,78 @@
+{
+  "run_id": "BTC-V2-S1",
+  "stage": "S",
+  "pool": "SCREEN",
+  "model_key": "qwen3_32b",
+  "model": {
+    "repo": "Qwen/Qwen3-32B",
+    "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "stack": "std",
+    "template_kwargs": {
+      "enable_thinking": false
+    },
+    "tail": "<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "A_id": 32,
+    "B_id": 33,
+    "n_hidden_states": 65,
+    "est_cost_rank": 1
+  },
+  "pool_sha256": "cd3499d67f3be6fe03ee936f0c607134b5e14ae7b201ed26441b5c995eda34cd",
+  "inputs_sha256": "42cc0517246c101e676d517066001e359fe83d301149970b8e940f6602b5dc20",
+  "prompt_digest": "6e52d9dc17bf1fd7934ab7a686d6050d2819219e0829e1e66bb3e6257bb4de1b",
+  "gpu": "A100-80GB",
+  "cpu": [
+    4.0,
+    4.0
+  ],
+  "memory_mib": [
+    16384,
+    98304
+  ],
+  "timeout_s": 780,
+  "guard_s": 720,
+  "objective_usd": 1.0,
+  "worst_case_usd": 0.846,
+  "timing": {
+    "remote_start_epoch": 1794595813.9711382,
+    "tokenizer_s": 2.824617385864258,
+    "load_s": 178.6406123638153,
+    "forwards_s": 24.688151836395264,
+    "n_forwards": 260,
+    "remote_end_epoch": 1794596020.1246004,
+    "local_call_to_remote_start_s": 10.863940715789795,
+    "remote_end_to_local_receive_s": -0.2289743423461914,
+    "local_wall_s": 216.79957747459412
+  },
+  "env": {
+    "torch": "2.5.1+cu124",
+    "transformers": "4.57.1",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 65.708966912,
+    "dtype": "bfloat16",
+    "test_mode": false,
+    "model": "Qwen/Qwen3-32B",
+    "revision": "9216db5781bf21249d130ec9da846c4624c16137"
+  },
+  "behavior_sha256": "9cb2aa518cac26743eb0a975cb44b8e62d50e656e0742bb7e641af0c3a19ecc1",
+  "cost_note": "record actual cost from `modal billing report --show-resources` immediately after the run",
+  "modal_app_id": "ap-JfQvAzr6gTXsVrri1n7c98",
+  "cost_actual": {
+    "source": "modal billing report --show-resources (read 2026-11-13 ~18:55 UTC; may lag)",
+    "A100-80GB": 0.11944,
+    "CPU": 0.01229,
+    "Memory": 0.00618,
+    "Network Egress": 0.01997,
+    "total_usd": 0.15788,
+    "image_build_note": "billed separately (~$0.01-0.02)",
+    "worst_case_usd": 0.846,
+    "overrun": false
+  },
+  "screen_decision": {
+    "S1": false,
+    "S2": false,
+    "S3": true,
+    "S4": true,
+    "SCREEN_PASS": false
+  }
+}

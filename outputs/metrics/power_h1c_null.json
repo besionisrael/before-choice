@@ -1,0 +1,50 @@
+{
+  "doc": "BTC-H1c: calibration of the primary binary rule under the NULL (owner condition 1), >= 5,000 simulations per scenario.\n\n    python src/power_h1c_null.py   -> outputs/metrics/power_h1c_null.json\n\nExact rule: Delta = mean(P) - max(0.25, mean(C_max), mean(P_perm)) on admissible late pairs, family-cluster percentile\nbootstrap; reject iff the 2.5 % percentile > 0. B = 2,000 resamples per dataset (protocol: 10,000).\nNull model (P carries no continuation information). The correct label FLIPS between the two members of a pair, so\nunder the null it is P's PREFERENCE (X vs Y), not its correctness, that may be correlated: member a is correct iff it\nprefers X, member b iff it prefers Y. Preference latents g_a, g_b ~ N(0,1) with a family-level component (share icc)\nand a within-pair correlation r.\n  N1  r = 0, no family component: preferences independent -> pair success exactly 0.25   <- boundary (least favourable)\n  N2  family component icc 0.40 (preferences correlated within family and pair)  -> pair success < 0.25\n  N3  deterministic: identical preference in both members -> pair success 0\n  N4  as N1 with P_perm at 0.15 (the 0.25 floor binds)\nMonte-Carlo uncertainty: binomial SE of the rejection rate and a Clopper-Pearson-type 95 % interval (normal approx.).",
+  "n_sim": 5000,
+  "B": 2000,
+  "families": 600,
+  "admissibility": 0.75,
+  "nominal_alpha_one_sided": 0.025,
+  "results": {
+    "N1_boundary_independent": {
+      "mean_pair_success_P": 0.24991969354271681,
+      "rejection_rate": 0.02,
+      "mc_se": 0.001979898987322333,
+      "ci95": [
+        0.016119397984848228,
+        0.023880602015151773
+      ],
+      "calibrated_le_0.025": true
+    },
+    "N2_family_icc0.40": {
+      "mean_pair_success_P": 0.18470556545058592,
+      "rejection_rate": 0.0,
+      "mc_se": 1.414213562373095e-08,
+      "ci95": [
+        0.0,
+        2.7718585822512662e-08
+      ],
+      "calibrated_le_0.025": true
+    },
+    "N3_deterministic": {
+      "mean_pair_success_P": 0.0,
+      "rejection_rate": 0.0,
+      "mc_se": 1.414213562373095e-08,
+      "ci95": [
+        0.0,
+        2.7718585822512662e-08
+      ],
+      "calibrated_le_0.025": true
+    },
+    "N4_perm_below_floor": {
+      "mean_pair_success_P": 0.2502418151232238,
+      "rejection_rate": 0.0228,
+      "mc_se": 0.00211093154791907,
+      "ci95": [
+        0.018662574166078624,
+        0.026937425833921377
+      ],
+      "calibrated_le_0.025": true
+    }
+  }
+}

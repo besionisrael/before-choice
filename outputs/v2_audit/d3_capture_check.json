@@ -1,0 +1,41 @@
+{
+  "tiny_layers": 2,
+  "module_path_layers": "model.model.language_model.layers",
+  "module_path_norm": "model.model.language_model.norm",
+  "checks": [
+    {
+      "world_id": "F10003-base",
+      "n_hidden_states": 3,
+      "hooks_equal_layers_1..L-1": true,
+      "hook_last_equals_hs_last": false,
+      "hs_last_is_post_final_norm": true,
+      "logits_reconstructed_from_capture": true,
+      "hs0_equals_embed_tokens_output": true,
+      "bitwise_deterministic": true,
+      "bf16_raw_roundtrip_exact": true
+    },
+    {
+      "world_id": "F10003-cf",
+      "n_hidden_states": 3,
+      "hooks_equal_layers_1..L-1": true,
+      "hook_last_equals_hs_last": false,
+      "hs_last_is_post_final_norm": true,
+      "logits_reconstructed_from_capture": true,
+      "hs0_equals_embed_tokens_output": true,
+      "bitwise_deterministic": true,
+      "bf16_raw_roundtrip_exact": true
+    },
+    {
+      "world_id": "F10003-swap_base",
+      "n_hidden_states": 3,
+      "hooks_equal_layers_1..L-1": true,
+      "hook_last_equals_hs_last": false,
+      "hs_last_is_post_final_norm": true,
+      "logits_reconstructed_from_capture": true,
+      "hs0_equals_embed_tokens_output": true,
+      "bitwise_deterministic": true,
+      "bf16_raw_roundtrip_exact": true
+    }
+  ],
+  "all_pass": true
+}

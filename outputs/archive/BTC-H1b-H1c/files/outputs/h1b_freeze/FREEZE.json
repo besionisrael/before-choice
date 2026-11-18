@@ -1,0 +1,83 @@
+{
+  "protocol": "BTC-H1b v1.0 (proposal frozen on owner validation)",
+  "config": {
+    "layer": 40,
+    "query": "ANS",
+    "rep": "ctx_tgt",
+    "r": 8,
+    "lambda": 0.1,
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "dev_report": {
+    "u2_dev_report": {
+      "C_lin_adamw": {
+        "epochs": [
+          12,
+          6,
+          10
+        ],
+        "inner_val": 0.7251461988304093,
+        "val": 0.7169590643274854,
+        "val_paired": 0.5844155844155844
+      },
+      "C_lin_lbfgs_grid": [
+        {
+          "lambda": 0.01,
+          "inner_val": 0.7270955165692008,
+          "val": 0.7228070175438597,
+          "val_paired": 0.5714285714285714
+        },
+        {
+          "lambda": 1.0,
+          "inner_val": 0.7212475633528265,
+          "val": 0.7192982456140351,
+          "val_paired": 0.6493506493506493
+        },
+        {
+          "lambda": 100.0,
+          "inner_val": 0.3684210526315789,
+          "val": 0.4105263157894737,
+          "val_paired": 0.2597402597402597
+        }
+      ],
+      "C_lin_lbfgs": {
+        "lambda": 0.01,
+        "inner_val": 0.7270955165692008,
+        "val": 0.7228070175438597,
+        "val_paired": 0.5714285714285714
+      },
+      "C_lin_competitive": "lbfgs",
+      "elimination": {
+        "P_c2_val": 0.7883040935672515,
+        "u2_elim_val": 0.8830409356725146,
+        "u2_elim_val_paired": 0.8181818181818182
+      }
+    }
+  },
+  "decoders_sha256": {
+    "P_u2_L32": "7f14fbafd6ed3827023560713373e813f240149feb102886b00458fbbf347965",
+    "P_u2_L40": "6d93cd29ca478b2e318a07b3e24d62b5d00e53b1cd46021e12f933655a7a280e",
+    "C_bil_u2_L40": "b38bddbe8c51e93af4de7fcde3297ec32794cb18c383ea7e1538d440d42def58",
+    "C_lin_adamw_u2_L40": "57abb12bdf30bb5fbde4d702b06aee4fe4acac1cadd9abe0c82eb97466d6a809",
+    "P_c1_L40": "3798f76161b709b4faeb82afaa031e9e882001f84194532fa760d31c1113d3cc",
+    "P_c2_L40": "bdd7d8ff98331e6646406c1c2d7f890355786a4209dfae327c2802f9cc7dced8",
+    "P_u2_L48": "e398933ef50a40a39e60688cce5899e356d2fd7c821fa09bd31690516f8940bb",
+    "C_lin_lbfgs_u2_L40": "bba29c4551242e5e46a99b0b8a79e17d3544da4b5678d1ecbf21024cd44d0838",
+    "C_lin_u2_L40": "e7a175d59e98370bc33ec3620c03388cf3ca37604cbc6df33c5df4109a410d8a",
+    "K_u2_L40": "48b17809d26c1c3dd23a1c806ccc06756b44b17f6b08b5cd50b53b998c52935c",
+    "B3plus_u2": "9e4728e01e3d361777523ffda35181609fcf806ebdad26997a83d9006595054d"
+  },
+  "standardisation_sha256": "e558ea7a1218ae27894c86f5776e63e7ba59abbe5d38ce430bffd1f15ce9e0d1",
+  "script_sha256": "553d2b75bead9eb3b2867a2139d061e8df00e3eaed026e154b4eea0e09d13fc8",
+  "cpu_hours": 0.06355902777777778,
+  "lambdas": {
+    "C_lin_lbfgs": 0.01,
+    "K": 1.0,
+    "B3plus": 0.0001
+  },
+  "C_lin_frozen_variant": "lbfgs"
+}

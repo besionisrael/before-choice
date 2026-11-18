@@ -1,0 +1,27 @@
+{
+  "n_pairs": 200,
+  "checks": {
+    "binary_keys_before_first_diff": "200/200",
+    "binary_keys_same_index": "200/200",
+    "binary_prefix_ids_identical": "200/200",
+    "reward_free_symmetric": "200/200",
+    "ladder_identical_inputs": "200/200",
+    "full_structure_exact": "200/200",
+    "same_total_tokens": "200/200"
+  },
+  "all_candidates_arrival_vs_first_diff": {
+    "before": 1310,
+    "after": 1090
+  },
+  "capture_slots_proposed": [
+    "ANS",
+    "12 arrival keys (canonical)",
+    "14 rule-line ends",
+    "2 reward-line ends",
+    "Q_END"
+  ],
+  "notes": {
+    "same_total_tokens": "the two swapped labels may tokenise to different lengths; positions AFTER the first differing token can shift; all slots are located per world from offsets",
+    "modified_lines_only_control": "the two changed lines pair each binary candidate with one depth-3 label in each member; without the rest of the graph and the reward lines the continuing one is undetermined (chance 0.5 per world, 0.25 paired)"
+  }
+}

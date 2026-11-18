@@ -1,0 +1,19 @@
+test_candidate_embeddings_frozen_and_reproducible (test_d3_capture.Capture.test_candidate_embeddings_frozen_and_reproducible) ... ok
+test_payload_integrity_enforced (test_d3_capture.Capture.test_payload_integrity_enforced) ... ok
+test_run_capture_shards_hashes_replay (test_d3_capture.Capture.test_run_capture_shards_hashes_replay) ... ok
+test_shardwriter_roundtrip (test_d3_capture.Capture.test_shardwriter_roundtrip) ... ok
+test_world_layout_and_fidelity (test_d3_capture.Capture.test_world_layout_and_fidelity) ... ok
+test_ans_slot_equals_frozen_capture_and_layout (test_d3x_capture.XCapture.test_ans_slot_equals_frozen_capture_and_layout) ... ok
+test_run_capture_multi_shards_replay_and_verify (test_d3x_capture.XCapture.test_run_capture_multi_shards_replay_and_verify) ... ok
+test_tokenisation_mismatch_refused (test_d3x_capture.XCapture.test_tokenisation_mismatch_refused) ... ok
+test_tokenisers_agree_and_positions_valid (test_d3x_capture.XCapture.test_tokenisers_agree_and_positions_valid) ... ok
+test_binary_keys_bitwise_identical_in_late_pairs (test_h1c_capture.H1cCapture.test_binary_keys_bitwise_identical_in_late_pairs) ... ok
+test_run_capture_30_slots (test_h1c_capture.H1cCapture.test_run_capture_30_slots) ... ok
+test_binary_keys_bitwise_identical_in_late_pairs (test_h1c_devx_capture.H1cDevxCapture.test_binary_keys_bitwise_identical_in_late_pairs) ... ok
+test_run_capture_30_slots (test_h1c_devx_capture.H1cDevxCapture.test_run_capture_30_slots) ... ok
+test_binary_keys_before_first_difference_and_identical_prefix (test_h1c_tokens.H1cTokens.test_binary_keys_before_first_difference_and_identical_prefix) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 16.108s
+
+OK

@@ -1,0 +1,139 @@
+✓ Initialized. View run at 
+https://modal.com/apps/sionisrael2/main/ap-wPTKSUy2kXQTtegmMVWRma
+✓ Created objects.
+├── ✓ Uploaded 
+│   D:\Workspace\AIProjects\before_choice_starter\src\d3_run_gemma.py
+├── ✓ Uploaded PythonPackage:v2_common, PythonPackage:d3_capture_core
+└── ✓ Created Function capture.
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+[1AFetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+[1AFetching 2 files:  50%|█████     | 1/2 [00:42<00:42, 42.92s/it]
+[1AFetching 2 files: 100%|██████████| 2/2 [01:23<00:00, 41.51s/it]
+[1AFetching 2 files: 100%|██████████| 2/2 [01:23<00:00, 41.72s/it]
+
+[1ALoading weights:   0%|          | 0/1188 [00:00<?, ?it/s]
+[1ALoading weights:   0%|          | 2/1188 [00:00<06:31,  3.03it/s]
+[1ALoading weights:   1%|          | 7/1188 [00:00<01:47, 10.97it/s]
+[1ALoading weights:   2%|▏         | 20/1188 [00:00<00:35, 33.16it/s]
+[1ALoading weights:   3%|▎         | 33/1188 [00:01<00:22, 51.70it/s]
+[1ALoading weights:   4%|▎         | 43/1188 [00:01<00:18, 60.88it/s]
+[1ALoading weights:   4%|▍         | 52/1188 [00:01<00:18, 63.05it/s]
+[1ALoading weights:   5%|▌         | 62/1188 [00:01<00:16, 67.36it/s]
+[1ALoading weights:   6%|▋         | 75/1188 [00:01<00:14, 78.91it/s]
+[1ALoading weights:   7%|▋         | 84/1188 [00:01<00:14, 73.69it/s]
+[1ALoading weights:   8%|▊         | 93/1188 [00:01<00:14, 76.22it/s]
+[1ALoading weights:   9%|▊         | 103/1188 [00:01<00:13, 78.13it/s]
+[1ALoading weights:  10%|▉         | 116/1188 [00:01<00:11, 90.03it/s]
+[1ALoading weights:  11%|█         | 126/1188 [00:02<00:11, 88.89it/s]
+[1ALoading weights:  11%|█▏        | 136/1188 [00:02<00:11, 89.08it/s]
+[1ALoading weights:  12%|█▏        | 146/1188 [00:02<00:13, 76.73it/s]
+[1ALoading weights:  13%|█▎        | 158/1188 [00:02<00:12, 83.76it/s]
+[1ALoading weights:  14%|█▍        | 167/1188 [00:02<00:15, 65.20it/s]
+[1ALoading weights:  15%|█▍        | 175/1188 [00:02<00:15, 66.29it/s]
+[1ALoading weights:  16%|█▌        | 186/1188 [00:02<00:13, 74.47it/s]
+[1ALoading weights:  17%|█▋        | 199/1188 [00:03<00:11, 85.17it/s]
+[1ALoading weights:  18%|█▊        | 209/1188 [00:03<00:11, 83.46it/s]
+[1ALoading weights:  18%|█▊        | 218/1188 [00:03<00:11, 81.12it/s]
+[1ALoading weights:  19%|█▉        | 228/1188 [00:03<00:12, 79.77it/s]
+[1ALoading weights:  20%|██        | 241/1188 [00:03<00:10, 91.00it/s]
+[1ALoading weights:  21%|██        | 251/1188 [00:03<00:11, 83.39it/s]
+[1ALoading weights:  22%|██▏       | 260/1188 [00:03<00:11, 81.46it/s]
+[1ALoading weights:  23%|██▎       | 269/1188 [00:03<00:12, 72.58it/s]
+[1ALoading weights:  24%|██▍       | 283/1188 [00:04<00:10, 82.40it/s]
+[1ALoading weights:  25%|██▍       | 296/1188 [00:04<00:09, 91.06it/s]
+[1ALoading weights:  26%|██▌       | 306/1188 [00:04<00:09, 90.22it/s]
+[1ALoading weights:  27%|██▋       | 316/1188 [00:04<00:10, 85.49it/s]
+[1ALoading weights:  27%|██▋       | 325/1188 [00:04<00:10, 81.34it/s]
+[1ALoading weights:  28%|██▊       | 334/1188 [00:04<00:10, 83.25it/s]
+[1ALoading weights:  29%|██▉       | 343/1188 [00:04<00:10, 81.06it/s]
+[1ALoading weights:  30%|██▉       | 352/1188 [00:04<00:10, 78.09it/s]
+[1ALoading weights:  31%|███       | 365/1188 [00:05<00:09, 87.88it/s]
+[1ALoading weights:  32%|███▏      | 375/1188 [00:05<00:08, 90.71it/s]
+[1ALoading weights:  32%|███▏      | 385/1188 [00:05<00:09, 85.72it/s]
+[1ALoading weights:  33%|███▎      | 394/1188 [00:05<00:09, 80.99it/s]
+[1ALoading weights:  34%|███▍      | 407/1188 [00:05<00:08, 89.96it/s]
+[1ALoading weights:  35%|███▌      | 417/1188 [00:05<00:08, 85.91it/s]
+[1ALoading weights:  36%|███▌      | 426/1188 [00:05<00:09, 79.01it/s]
+[1ALoading weights:  37%|███▋      | 436/1188 [00:05<00:09, 78.37it/s]
+[1ALoading weights:  38%|███▊      | 449/1188 [00:06<00:08, 85.10it/s]
+[1ALoading weights:  39%|███▉      | 461/1188 [00:06<00:07, 91.13it/s]
+[1ALoading weights:  40%|███▉      | 471/1188 [00:06<00:07, 92.40it/s]
+[1ALoading weights:  40%|████      | 481/1188 [00:06<00:08, 86.36it/s]
+[1ALoading weights:  41%|████▏     | 491/1188 [00:06<00:08, 85.19it/s]
+[1ALoading weights:  42%|████▏     | 503/1188 [00:06<00:07, 86.98it/s]
+[1ALoading weights:  43%|████▎     | 513/1188 [00:06<00:07, 88.29it/s]
+[1ALoading weights:  44%|████▍     | 522/1188 [00:06<00:07, 85.51it/s]
+[1ALoading weights:  45%|████▍     | 532/1188 [00:06<00:07, 87.56it/s]
+[1ALoading weights:  46%|████▌     | 545/1188 [00:07<00:06, 91.87it/s]
+[1ALoading weights:  47%|████▋     | 555/1188 [00:07<00:07, 88.90it/s]
+[1ALoading weights:  47%|████▋     | 564/1188 [00:07<00:07, 83.88it/s]
+[1ALoading weights:  48%|████▊     | 574/1188 [00:07<00:07, 85.97it/s]
+[1ALoading weights:  49%|████▉     | 583/1188 [00:07<00:07, 84.65it/s]
+[1ALoading weights:  50%|████▉     | 592/1188 [00:07<00:07, 82.85it/s]
+[1ALoading weights:  51%|█████     | 602/1188 [00:07<00:07, 83.36it/s]
+[1ALoading weights:  52%|█████▏    | 615/1188 [00:07<00:06, 92.48it/s]
+[1ALoading weights:  53%|█████▎    | 628/1188 [00:08<00:05, 102.06it/s]
+[1ALoading weights:  54%|█████▍    | 639/1188 [00:08<00:05, 101.54it/s]
+[1ALoading weights:  55%|█████▍    | 650/1188 [00:08<00:05, 97.59it/s] 
+[1ALoading weights:  56%|█████▌    | 660/1188 [00:08<00:05, 89.88it/s]
+[1ALoading weights:  56%|█████▋    | 670/1188 [00:08<00:06, 84.85it/s]
+[1ALoading weights:  57%|█████▋    | 683/1188 [00:08<00:05, 95.01it/s]
+[1ALoading weights:  58%|█████▊    | 693/1188 [00:08<00:05, 93.52it/s]
+[1ALoading weights:  59%|█████▉    | 703/1188 [00:08<00:05, 91.86it/s]
+[1ALoading weights:  60%|██████    | 713/1188 [00:09<00:05, 85.66it/s]
+[1ALoading weights:  61%|██████    | 726/1188 [00:09<00:05, 90.43it/s]
+[1ALoading weights:  62%|██████▏   | 739/1188 [00:09<00:04, 95.58it/s]
+[1ALoading weights:  63%|██████▎   | 749/1188 [00:09<00:05, 87.01it/s]
+[1ALoading weights:  64%|██████▍   | 758/1188 [00:09<00:05, 84.25it/s]
+[1ALoading weights:  65%|██████▍   | 767/1188 [00:09<00:05, 84.19it/s]
+[1ALoading weights:  66%|██████▌   | 780/1188 [00:09<00:04, 93.29it/s]
+[1ALoading weights:  66%|██████▋   | 790/1188 [00:09<00:04, 90.33it/s]
+[1ALoading weights:  67%|██████▋   | 800/1188 [00:09<00:04, 86.92it/s]
+[1ALoading weights:  68%|██████▊   | 809/1188 [00:10<00:04, 77.65it/s]
+[1ALoading weights:  69%|██████▉   | 823/1188 [00:10<00:04, 87.17it/s]
+[1ALoading weights:  70%|███████   | 833/1188 [00:10<00:03, 90.29it/s]
+[1ALoading weights:  86%|████████▌ | 1017/1188 [00:10<00:00, 548.50it/s]
+[1ALoading weights: 100%|█████████▉| 1186/1188 [00:10<00:00, 857.76it/s]
+[1ALoading weights: 100%|██████████| 1188/1188 [00:10<00:00, 112.48it/s]
+model ready at 100.2s
+400/4820 observations at 49.9s; divergences logged 4
+800/4820 observations at 99.6s; divergences logged 8
+1200/4820 observations at 149.3s; divergences logged 8
+1600/4820 observations at 199.0s; divergences logged 10
+2000/4820 observations at 248.8s; divergences logged 12
+2400/4820 observations at 299.3s; divergences logged 16
+2800/4820 observations at 349.4s; divergences logged 22
+3200/4820 observations at 399.0s; divergences logged 22
+3600/4820 observations at 445.8s; divergences logged 22
+4000/4820 observations at 492.5s; divergences logged 22
+4400/4820 observations at 539.4s; divergences logged 26
+4800/4820 observations at 586.2s; divergences logged 28
+{
+ "verify": {
+  "hashes_and_shapes_ok": true,
+  "n_worlds": 4800
+ },
+ "bytes_downloaded": 3432740755,
+ "env": {
+  "torch": "2.6.0+cu124",
+  "transformers": "5.23.0",
+  "cuda": "12.4",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "max_mem_gb": 63.354207232
+ },
+ "timing": {
+  "load_s": 100.20130205154419,
+  "capture_s": 590.3438470363617,
+  "remote_total_s": 690.5536773204803,
+  "call_to_return_s": 700.6852877140045,
+  "return_to_visible_s": 11.075836420059204,
+  "download_s": 126.55015897750854,
+  "local_wall_s": 861.2657918930054
+ }
+}
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/sionisrael2/main/ap-wPTKSUy2kXQTtegmMVWRma
+exit=0

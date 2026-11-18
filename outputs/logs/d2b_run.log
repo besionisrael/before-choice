@@ -1,0 +1,55 @@
+✓ Initialized. View run at 
+https://modal.com/apps/sionisrael2/main/ap-w05OyvI29OYbXTgxrn0hLn
+✓ Created objects.
+├── ✓ Uploaded D:\Workspace\AIProjects\before_choice_starter\src\d2_smoke.py
+└── ✓ Created Function run.
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+[1AFetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s]
+[1AFetching 3 files:  33%|███▎      | 1/3 [00:02<00:04,  2.28s/it]
+[1AFetching 3 files:  67%|██████▋   | 2/3 [00:30<00:15, 15.01s/it]
+[1AFetching 3 files: 100%|██████████| 3/3 [00:35<00:00, 11.74s/it]Fetching 3 files: 100%|██████████| 3/3 [00:35<00:00, 11.74s/it]
+
+[1ALoading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+[1ALoading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 13.65it/s]
+[1ALoading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.56it/s]
+loaded in 42.8s
+replay 0 done at 45.1s
+replay 1 done at 46.4s
+{
+ "remote_wall_s": 46.37536144256592,
+ "timing": {
+  "remote_start_epoch": 1794574783.8068628,
+  "tokenizer_s": 1.63973069190979,
+  "weights_download_and_cpu_load_s": 38.28721356391907,
+  "to_gpu_s": 2.8741207122802734,
+  "forward_per_replay_s": [
+   2.258721351623535,
+   1.2977962493896484
+  ],
+  "remote_serialise_s": 0.012542009353637695,
+  "remote_end_epoch": 1794574830.1822226,
+  "local_call_epoch": 1794573546.3379614,
+  "local_receive_epoch": 1794574831.5240865,
+  "local_save_s": 0.003034830093383789,
+  "local_call_to_remote_start_s": 1237.4689013957977,
+  "remote_end_to_local_receive_s": 1.3418638706207275,
+  "clock_note": "cross-machine differences assume synchronised clocks"
+ },
+ "env": {
+  "torch": "2.5.1+cu124",
+  "transformers": "4.57.1",
+  "cuda": "12.4",
+  "gpu": "NVIDIA L4",
+  "max_mem_gb": 8.339341824,
+  "dtype": "bfloat16",
+  "hidden_states": "tuple of 37: [0]=embeddings, [i]=output of block i, last prompt position"
+ },
+ "acts_sha256": "cfe54b2d78dac6083859b16fcc657ddd3dceada5985c481a21a5baef5e5ece3a"
+}
+Next (local, CPU): python src/score_d2.py outputs/d2_smoke
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/sionisrael2/main/ap-w05OyvI29OYbXTgxrn0hLn
+exit=0

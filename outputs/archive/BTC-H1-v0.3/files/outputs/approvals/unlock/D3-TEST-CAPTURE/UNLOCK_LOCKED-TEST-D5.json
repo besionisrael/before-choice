@@ -1,0 +1,22 @@
+{
+ "owner_approval_id": "BTC-D3-TEST-R1 (owner AUTORISATION SCIENTIFIQUE — BTC-D3-TEST-R1, 2026-11-14)",
+ "approved_utc": "2026-11-14T13:35:14+00:00",
+ "scope": "D3-TEST-CAPTURE",
+ "files": [
+  "model_inputs.jsonl"
+ ],
+ "written_by": "Claude Code on the owner authorisation of a single R1 attempt",
+ "previous_approvals": [
+  {
+   "owner_approval_id": "BTC-D3-TEST-CAPTURE (owner decision DÉCISION SCIENTIFIQUE — BTC-D3-TEST, 2026-11-14)",
+   "approved_utc": "2026-11-14T06:00:07+00:00",
+   "scope": "D3-TEST-CAPTURE",
+   "files": [
+    "model_inputs.jsonl"
+   ],
+   "written_by": "Claude Code on the owner authorisation of a single capture",
+   "archived_copy": "history/UNLOCK_LOCKED-TEST-D5.attempt1.json",
+   "archived_copy_sha256": "6f66ce347494cc345b06a1456b513f858bda5fb53f170daf6b2ec1b77deb7358"
+  }
+ ]
+}

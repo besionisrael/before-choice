@@ -1,0 +1,25 @@
+{
+  "G2_bitwise_identity": {
+    "late_pairs": 400,
+    "identical": 400,
+    "mismatches": [],
+    "passed": true
+  },
+  "G3_competence": {
+    "overall": 0.723,
+    "late_pairs": 0.7275,
+    "by_variant": {
+      "base_E": 0.71,
+      "base_L": 0.72,
+      "cswap_L": 0.74,
+      "dswap_E": 0.71,
+      "dswap_L": 0.735
+    },
+    "thresholds": {
+      "overall": 0.7,
+      "late_pairs": 0.6
+    },
+    "passed": true
+  },
+  "analysis_allowed": true
+}

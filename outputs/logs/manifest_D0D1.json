@@ -1,0 +1,33 @@
+{
+  "experiment_id": "BTC-D0D1-001",
+  "timestamp_utc": "2026-11-13T05:20:07+00:00",
+  "git_commit": null,
+  "note": "not a git repository; source identified by sha256",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "dependencies": "standard library only (no third-party packages installed)",
+  "gpu": null,
+  "cloud_spend_usd": 0,
+  "commands": [
+    "python -m unittest discover -s tests -v",
+    "python generate_worlds.py --pairs 25 --seed 42 --output data/generated/pilot_v0.jsonl",
+    "python src/build_dataset.py --families-per-depth 10 --seed 20261113"
+  ],
+  "sha256": {
+    "generate_worlds.py": "ad9b783eacfeae33f403eaabe4a4db522f1bf43e4e283619630c9365f209d435",
+    "oracle.py": "6b0f6f2d4ff9735f478f39fce79d0c082622b2842482bd19ea48dab0315ee640",
+    "modal_smoke.py": "2f707bff9559494ca9387e7e044630dcd3c44c46b018d5399dbe4bd807df61b6",
+    "tests/test_oracle.py": "a86c45276576b8ff973bdd80811b607f8e728d04baae3a90576caf3be7573584",
+    "tests/test_dataset.py": "b21c2d2ff7bb8c99685d6459dc681d24189f20637dff687b633a015b3b17ce95",
+    "src/build_dataset.py": "c8e981136d39301213420c737fea8aba5e90095c6641a075bbe0e9ce4da07483",
+    "src/independent_check.py": "6c3cee87da8b0012c9271761668d7b35b7efd4798f6d947b4776691714392b1a",
+    "data/worlds.jsonl": "5d63d87e173efee41f5c5d909cb03977ac20680de321b4e2ae31a0fde3de7c9a",
+    "data/generated/pilot_v0.jsonl": "411a9baec00b0dcb26562112f7cb717ff82c3c57aa54cad66561cfd1bdf5c53e",
+    "data/generated/pilot_v1.jsonl": "f9073bdfdd64ff323bd0e4ab27d411245f36e3528344cef2ff265ba22e377907",
+    "data/generated/pilot_v1_model_inputs.jsonl": "0fa40be3c2cd3ea856537fbd2efdf14650b98b775290f11f39eaa1c3e2a85011",
+    "data/splits/train.jsonl": "1b46f44c86b95ca72c2eef11d964668197e634784fcf54e81245126f19d43cf1",
+    "data/splits/val.jsonl": "a172856b69ec7b1def4ec0c06db3c52a2563e4fd5d54c891f4eb9e11f5f420b1",
+    "data/splits/test.jsonl": "34ab38411b64bed8ce5c7490468a17e17ee10052ed9587fb4d49b20dc213e8c3"
+  },
+  "line_ending_note": "pilot_v0 written by legacy generator in text mode -> CRLF on Windows; LF-normalised content sha256 equals shipped data/worlds.jsonl (5d63d87e...)."
+}

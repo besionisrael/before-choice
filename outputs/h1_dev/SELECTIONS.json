@@ -1,0 +1,139 @@
+{
+  "grids": {
+    "P": 408,
+    "A": 1632,
+    "B1": 24,
+    "B5": 24,
+    "B3": 16
+  },
+  "primary_selection": {
+    "config": [
+      "P",
+      "u2",
+      32,
+      8,
+      0.1
+    ],
+    "mean_metric": 0.030303030303030304,
+    "E": 5
+  },
+  "anchor_selection": {
+    "c1": {
+      "config": [
+        "A",
+        "c1",
+        32,
+        32,
+        0.01
+      ],
+      "mean_metric": 0.24834307992202728,
+      "E": 10
+    },
+    "c3": {
+      "config": [
+        "A",
+        "c3",
+        40,
+        32,
+        0.01
+      ],
+      "mean_metric": 0.31272727272727274,
+      "E": 11
+    },
+    "u1": {
+      "config": [
+        "A",
+        "u1",
+        56,
+        32,
+        0.0001
+      ],
+      "mean_metric": 0.2436647173489279,
+      "E": 8
+    },
+    "u3": {
+      "config": [
+        "A",
+        "u3",
+        52,
+        32,
+        0.1
+      ],
+      "mean_metric": 0.27454545454545454,
+      "E": 14
+    }
+  },
+  "B1_selection": {
+    "config": [
+      "B1",
+      "u2",
+      "mean_emb",
+      8,
+      0.1
+    ],
+    "mean_metric": 0.0,
+    "E": 6
+  },
+  "B5_selection": {
+    "config": [
+      "B5",
+      "u2",
+      "none",
+      8,
+      0.1
+    ],
+    "mean_metric": 0.0,
+    "E": 6
+  },
+  "B3_selection": {
+    "config": [
+      "B3",
+      "u2",
+      "text",
+      0,
+      0.1
+    ],
+    "mean_metric": 0.15584415584415584,
+    "E": 0
+  },
+  "B3o_selection": {
+    "u1": {
+      "config": [
+        "B3o",
+        "u1",
+        "text",
+        0,
+        0.1
+      ],
+      "mean_metric": 1.0,
+      "E": 0
+    },
+    "u2": {
+      "config": [
+        "B3o",
+        "u2",
+        "text",
+        0,
+        0.1
+      ],
+      "mean_metric": 0.32748538011695905,
+      "E": 0
+    },
+    "u3": {
+      "config": [
+        "B3o",
+        "u3",
+        "text",
+        0,
+        0.1
+      ],
+      "mean_metric": 0.22181818181818183,
+      "E": 0
+    }
+  },
+  "order_E": {
+    "u1": 5,
+    "u3": 6
+  },
+  "completed_all_selection_grids": true
+}

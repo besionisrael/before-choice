@@ -1,0 +1,85 @@
+{
+  "run_id": "BTC-V2-S2",
+  "stage": "S",
+  "pool": "SCREEN",
+  "model_key": "olmo31_32b",
+  "model": {
+    "repo": "allenai/Olmo-3.1-32B-Instruct",
+    "revision": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+    "stack": "std",
+    "template_kwargs": {},
+    "tail": "<|im_start|>assistant\n",
+    "A_id": 32,
+    "B_id": 33,
+    "n_hidden_states": 65,
+    "est_cost_rank": 2
+  },
+  "pool_sha256": "cd3499d67f3be6fe03ee936f0c607134b5e14ae7b201ed26441b5c995eda34cd",
+  "inputs_sha256": "42cc0517246c101e676d517066001e359fe83d301149970b8e940f6602b5dc20",
+  "prompt_digest": "6e52d9dc17bf1fd7934ab7a686d6050d2819219e0829e1e66bb3e6257bb4de1b",
+  "gpu": "A100-80GB",
+  "cpu": [
+    4.0,
+    4.0
+  ],
+  "memory_mib": [
+    16384,
+    98304
+  ],
+  "timeout_s": 780,
+  "guard_s": 720,
+  "objective_usd": 1.0,
+  "worst_case_usd": 0.846,
+  "timing": {
+    "remote_start_epoch": 1794596334.0767052,
+    "tokenizer_s": 0.6522314548492432,
+    "load_s": 250.625075340271,
+    "forwards_s": 26.058035135269165,
+    "n_forwards": 260,
+    "remote_end_epoch": 1794596611.412131,
+    "local_call_to_remote_start_s": 7.34429931640625,
+    "remote_end_to_local_receive_s": -0.0891876220703125,
+    "local_wall_s": 284.6012644767761
+  },
+  "env": {
+    "torch": "2.5.1+cu124",
+    "transformers": "4.57.1",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 64.579919872,
+    "dtype": "bfloat16",
+    "test_mode": false,
+    "model": "allenai/Olmo-3.1-32B-Instruct",
+    "revision": "ac0587e4a7744a551c059d8cd17ba220bc940dae"
+  },
+  "behavior_sha256": "1bfbd02ba7a629f4a8b0e4243a1d92b872934aa207cefb0b31f34527d14b483c",
+  "cost_note": "record actual cost from `modal billing report --show-resources` immediately after the run",
+  "modal_app_id": "ap-krDl9AnSNOqObuyIA5IAUO",
+  "template_check": {
+    "chat_template_sha256": "49a944c9814e130bd3cc80a2420c55ff22e24a4e4ba97009aa60000909b5eac3",
+    "default_system_prompt_injected": true,
+    "tail": "<|im_start|>assistant\n",
+    "pre_answer_token": "\u010a",
+    "A_id": 32,
+    "B_id": 33,
+    "tail_ok_screen": "240/240"
+  },
+  "cost_actual": {
+    "source": "modal billing report --show-resources (read 2026-11-13 ~19:05 UTC; may lag)",
+    "A100-80GB": 0.19583,
+    "CPU": 0.01484,
+    "Memory": 0.01003,
+    "Network Egress": 0.02413,
+    "total_usd": 0.24483,
+    "image_build": "cached image reused (no rebuild line in log)",
+    "worst_case_usd": 0.846,
+    "overrun": false
+  },
+  "screen_decision": {
+    "S1": false,
+    "S2": false,
+    "S3": true,
+    "S4": true,
+    "SCREEN_PASS": false
+  }
+}

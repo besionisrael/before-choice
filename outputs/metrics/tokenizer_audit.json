@@ -1,0 +1,228 @@
+{
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "transformers": "4.57.1",
+  "answer_tokens": {
+    "A": [
+      32
+    ],
+    "B": [
+      33
+    ],
+    " A": [
+      362
+    ],
+    " B": [
+      425
+    ]
+  },
+  "template_tail": [
+    ".",
+    "<|im_end|>",
+    "Ċ",
+    "<|im_start|>",
+    "assistant",
+    "Ċ"
+  ],
+  "template_example": "<|im_start|>user\nX<|im_end|>\n<|im_start|>assistant\n",
+  "label_token_length_hist_with_leading_space": {
+    "1": 880,
+    "2": 574,
+    "3": 2344,
+    "4": 1502,
+    "5": 500
+  },
+  "prompt_tokens_by_variant_depth": {
+    "alias_base|d2": [
+      119,
+      133
+    ],
+    "alias_base|d3": [
+      151,
+      167
+    ],
+    "alias_base|d4": [
+      181,
+      195
+    ],
+    "alias_cf|d2": [
+      119,
+      133
+    ],
+    "alias_cf|d3": [
+      151,
+      167
+    ],
+    "alias_cf|d4": [
+      181,
+      195
+    ],
+    "base|d2": [
+      123,
+      131
+    ],
+    "base|d3": [
+      151,
+      161
+    ],
+    "base|d4": [
+      177,
+      191
+    ],
+    "cf|d2": [
+      123,
+      131
+    ],
+    "cf|d3": [
+      151,
+      161
+    ],
+    "cf|d4": [
+      177,
+      191
+    ],
+    "cpath_base|d3": [
+      151,
+      161
+    ],
+    "cpath_base|d4": [
+      177,
+      191
+    ],
+    "cpath_cf|d3": [
+      151,
+      161
+    ],
+    "cpath_cf|d4": [
+      177,
+      191
+    ],
+    "decoy_base|d2": [
+      158,
+      173
+    ],
+    "decoy_base|d3": [
+      201,
+      215
+    ],
+    "decoy_base|d4": [
+      246,
+      266
+    ],
+    "decoy_cf|d2": [
+      158,
+      173
+    ],
+    "decoy_cf|d3": [
+      201,
+      215
+    ],
+    "decoy_cf|d4": [
+      246,
+      266
+    ],
+    "shuffle_base|d2": [
+      123,
+      131
+    ],
+    "shuffle_base|d3": [
+      151,
+      161
+    ],
+    "shuffle_base|d4": [
+      177,
+      191
+    ],
+    "shuffle_cf|d2": [
+      123,
+      131
+    ],
+    "shuffle_cf|d3": [
+      151,
+      161
+    ],
+    "shuffle_cf|d4": [
+      177,
+      191
+    ],
+    "swap_base|d2": [
+      123,
+      131
+    ],
+    "swap_base|d3": [
+      151,
+      161
+    ],
+    "swap_base|d4": [
+      177,
+      191
+    ],
+    "swap_cf|d2": [
+      123,
+      131
+    ],
+    "swap_cf|d3": [
+      151,
+      161
+    ],
+    "swap_cf|d4": [
+      177,
+      191
+    ],
+    "upath_base|d3": [
+      151,
+      161
+    ],
+    "upath_base|d4": [
+      177,
+      191
+    ],
+    "upath_cf|d3": [
+      151,
+      161
+    ],
+    "upath_cf|d4": [
+      177,
+      191
+    ],
+    "xswap_base|d2": [
+      123,
+      131
+    ],
+    "xswap_base|d3": [
+      151,
+      161
+    ],
+    "xswap_base|d4": [
+      177,
+      191
+    ],
+    "xswap_cf|d2": [
+      123,
+      131
+    ],
+    "xswap_cf|d3": [
+      151,
+      161
+    ],
+    "xswap_cf|d4": [
+      177,
+      191
+    ]
+  },
+  "pair_alignment": {
+    "cf": {
+      "aligned": 220
+    },
+    "xswap": {
+      "aligned": 60
+    },
+    "upath": {
+      "aligned": 40
+    },
+    "cpath": {
+      "aligned": 40
+    }
+  },
+  "misaligned_examples": []
+}

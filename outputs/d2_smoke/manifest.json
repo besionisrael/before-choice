@@ -1,0 +1,78 @@
+{
+  "experiment_id": "BTC-D2-001b",
+  "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "world_ids": [
+    "F0001-base",
+    "F0001-cf",
+    "F0001-swap_base",
+    "F0001-swap_cf",
+    "F0013-base",
+    "F0013-cf",
+    "F0013-swap_base",
+    "F0013-swap_cf",
+    "F0020-base",
+    "F0020-cf",
+    "F0020-swap_base",
+    "F0020-swap_cf",
+    "F0013-upath_base",
+    "F0013-upath_cf",
+    "F0013-cpath_base",
+    "F0013-cpath_cf",
+    "F0020-upath_base",
+    "F0020-upath_cf",
+    "F0020-cpath_base",
+    "F0020-cpath_cf"
+  ],
+  "gpu_request": "L4 x1",
+  "timeout_s": 900,
+  "remote_wall_s": 46.37536144256592,
+  "local_wall_s": 1285.189172744751,
+  "env": {
+    "torch": "2.5.1+cu124",
+    "transformers": "4.57.1",
+    "cuda": "12.4",
+    "gpu": "NVIDIA L4",
+    "max_mem_gb": 8.339341824,
+    "dtype": "bfloat16",
+    "hidden_states": "tuple of 37: [0]=embeddings, [i]=output of block i, last prompt position"
+  },
+  "timing": {
+    "remote_start_epoch": 1794574783.8068628,
+    "tokenizer_s": 1.63973069190979,
+    "weights_download_and_cpu_load_s": 38.28721356391907,
+    "to_gpu_s": 2.8741207122802734,
+    "forward_per_replay_s": [
+      2.258721351623535,
+      1.2977962493896484
+    ],
+    "remote_serialise_s": 0.012542009353637695,
+    "remote_end_epoch": 1794574830.1822226,
+    "local_call_epoch": 1794573546.3379614,
+    "local_receive_epoch": 1794574831.5240865,
+    "local_save_s": 0.003034830093383789,
+    "local_call_to_remote_start_s": 1237.4689013957977,
+    "remote_end_to_local_receive_s": 1.3418638706207275,
+    "clock_note": "cross-machine differences assume synchronised clocks"
+  },
+  "log": [
+    "loaded in 42.8s"
+  ],
+  "acts_shape": [
+    40,
+    37,
+    2560
+  ],
+  "acts_order": "replay0 worlds, then replay1 worlds",
+  "acts_sha256": "cfe54b2d78dac6083859b16fcc657ddd3dceada5985c481a21a5baef5e5ece3a",
+  "modal_app_id": "ap-w05OyvI29OYbXTgxrn0hLn",
+  "cost_observed": {
+    "source": "Modal Usage & billing page, read 2026-11-13 ~13:01 UTC",
+    "ephemeral_apps_before": 17.1,
+    "ephemeral_apps_after": 17.12,
+    "estimated_run_cost_usd_credits": "0.01-0.02",
+    "charged_usd": 0.0,
+    "spend_limit_usd": 5.0,
+    "note": "billing granularity $0.01, may lag"
+  }
+}

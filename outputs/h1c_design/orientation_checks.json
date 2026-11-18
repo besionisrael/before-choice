@@ -1,0 +1,188 @@
+{
+  "n_families": 400,
+  "marginals": {
+    "o1_cont_canonical_first": {
+      "rate": 0.5025,
+      "n": 400,
+      "binomial_p": 0.9601306980362071
+    },
+    "o2_cont_line_first": {
+      "rate": 0.495,
+      "n": 400,
+      "binomial_p": 0.8807888035808977
+    },
+    "o3_cont_arrival_first": {
+      "rate": 0.5125,
+      "n": 400,
+      "binomial_p": 0.6527645977066692
+    },
+    "o5_opt_is_A": {
+      "rate": 0.5,
+      "n": 400,
+      "binomial_p": 1.0
+    },
+    "o4_cont_longer_excl_ties": {
+      "rate": 0.5344827586206896,
+      "n": 232,
+      "binomial_p": 0.32472941294248375
+    }
+  },
+  "pairwise_independence": {
+    "o1_cont_canonical_first|o2_cont_line_first": {
+      "table": [
+        [
+          98,
+          101
+        ],
+        [
+          104,
+          97
+        ]
+      ],
+      "chi2": 0.24903212839346978,
+      "p": 0.6177574115540483
+    },
+    "o1_cont_canonical_first|o3_cont_arrival_first": {
+      "table": [
+        [
+          91,
+          108
+        ],
+        [
+          104,
+          97
+        ]
+      ],
+      "chi2": 1.4469467427742617,
+      "p": 0.2290185059942174
+    },
+    "o1_cont_canonical_first|o5_opt_is_A": {
+      "table": [
+        [
+          97,
+          102
+        ],
+        [
+          103,
+          98
+        ]
+      ],
+      "chi2": 0.2500062501562539,
+      "p": 0.6170706765597488
+    },
+    "o1_cont_canonical_first|o4_cont_longer_excl_ties": {
+      "table": [
+        [
+          61,
+          55
+        ],
+        [
+          47,
+          69
+        ]
+      ],
+      "chi2": 3.395459976105137,
+      "p": 0.0653761265989182
+    },
+    "o2_cont_line_first|o3_cont_arrival_first": {
+      "table": [
+        [
+          105,
+          97
+        ],
+        [
+          90,
+          108
+        ]
+      ],
+      "chi2": 1.7042604823334147,
+      "p": 0.1917317401823493
+    },
+    "o2_cont_line_first|o5_opt_is_A": {
+      "table": [
+        [
+          100,
+          102
+        ],
+        [
+          100,
+          98
+        ]
+      ],
+      "chi2": 0.040004000400040006,
+      "p": 0.8414727596891236
+    },
+    "o2_cont_line_first|o4_cont_longer_excl_ties": {
+      "table": [
+        [
+          52,
+          69
+        ],
+        [
+          56,
+          55
+        ]
+      ],
+      "chi2": 1.3001744301842075,
+      "p": 0.25418136438605904
+    },
+    "o3_cont_arrival_first|o5_opt_is_A": {
+      "table": [
+        [
+          90,
+          105
+        ],
+        [
+          110,
+          95
+        ]
+      ],
+      "chi2": 2.25140712945591,
+      "p": 0.13349296556737414
+    },
+    "o3_cont_arrival_first|o4_cont_longer_excl_ties": {
+      "table": [
+        [
+          51,
+          64
+        ],
+        [
+          57,
+          60
+        ]
+      ],
+      "chi2": 0.44515729452615876,
+      "p": 0.5046436949777976
+    },
+    "o5_opt_is_A|o4_cont_longer_excl_ties": {
+      "table": [
+        [
+          47,
+          67
+        ],
+        [
+          61,
+          57
+        ]
+      ],
+      "chi2": 2.553059846221675,
+      "p": 0.11008087621006138
+    }
+  },
+  "marginals_train": {
+    "o1_cont_canonical_first": 0.52,
+    "o2_cont_line_first": 0.49666666666666665,
+    "o3_cont_arrival_first": 0.5266666666666666,
+    "o5_opt_is_A": 0.5,
+    "o4_cont_longer_excl_ties": 0.5433526011560693
+  },
+  "marginals_val": {
+    "o1_cont_canonical_first": 0.45,
+    "o2_cont_line_first": 0.49,
+    "o3_cont_arrival_first": 0.47,
+    "o5_opt_is_A": 0.5,
+    "o4_cont_longer_excl_ties": 0.5084745762711864
+  },
+  "min_p": 0.0653761265989182,
+  "note": "o5 is balanced by construction (200/200). Marginals of o1-o4 should not differ from 0.5; with ~14 tests a single p < 0.05 is expected by chance; the generator draws o1 (labels), o2/o3 (line shuffle) independently."
+}

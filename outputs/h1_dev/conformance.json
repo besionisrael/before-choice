@@ -1,0 +1,17 @@
+{
+ "h1_probe.py hash = freeze": true,
+ "h1_features.py hash = freeze": true,
+ "H1 document hash = final": true,
+ "layers = {0,4,...,60,61} (17)": true,
+ "ranks = (8,32)": true,
+ "wd = 1e-4..1e-1": true,
+ "seeds = (0,1,2)": true,
+ "AdamW lr/batch/max_epochs/patience = 1e-3/256/60/5": true,
+ "threads = 4; budget = 48 CPU-h": true,
+ "fit counts P/A/B1/B5/B3 = 408/1632/24/24/16": true,
+ "total bilinear = 2130": true,
+ "training rule: decoys excluded, ties excluded, forced choice correct": true,
+ "candidates prompt-only, canonical order": true,
+ "selection tie rule (smaller r, larger wd, lower layer)": true,
+ "no TEST evaluation / no sealed path literal": true
+}

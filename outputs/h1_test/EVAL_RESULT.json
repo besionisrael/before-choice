@@ -1,0 +1,188 @@
+{
+  "admissibility": {
+    "n_worlds": 4800,
+    "n_ties": 9,
+    "n_admissible": 3791,
+    "not_evaluable_K10_decoy": 224,
+    "not_evaluable_K7_decoy": 135
+  },
+  "primary": {
+    "population": "admissible depth-4 upath pairs",
+    "n_pairs": 293,
+    "n_families": 200,
+    "chance": 0.027777777777777776,
+    "point": {
+      "primary_u2": 0.020477815699658702,
+      "B1": 0.0,
+      "B3": 0.1945392491467577,
+      "B5": 0.0,
+      "B6": 0.01962457337883959,
+      "B2_perm0": 0.020477815699658702,
+      "B2_perm1": 0.006825938566552901,
+      "B2_perm2": 0.0,
+      "B2_max": 0.020477815699658702
+    },
+    "B4": {
+      "value": 0.0,
+      "note": "0 by construction on D-1' (v0.3 \u00a75); not computed"
+    },
+    "ci95": {
+      "primary_u2": [
+        0.006734006734006734,
+        0.03806228373702422
+      ]
+    },
+    "delta_ci95": {
+      "B1": {
+        "point": 0.020477815699658702,
+        "lower": 0.006734006734006734,
+        "upper": 0.03806228373702422,
+        "lower_gt_0": true
+      },
+      "B3": {
+        "point": -0.17406143344709898,
+        "lower": -0.21993127147766323,
+        "upper": -0.1289198606271777,
+        "lower_gt_0": false
+      },
+      "B6": {
+        "point": 0.0008532423208191114,
+        "lower": -0.015993265993265993,
+        "upper": 0.02040816326530612,
+        "lower_gt_0": false
+      },
+      "B2": {
+        "point": 0.0,
+        "lower": -0.020689655172413793,
+        "upper": 0.02033898305084746,
+        "lower_gt_0": false
+      }
+    },
+    "outcome": "NOT MET"
+  },
+  "L2": {
+    "status": "NOT EVALUATED (H1 not MET; v0.3 \u00a76.3)"
+  },
+  "secondary": {
+    "S1_pooled_depth3_4_upath": {
+      "n_pairs": 467,
+      "n_families": 300,
+      "probe": 0.014989293361884369,
+      "B3": 0.31905781584582443,
+      "delta": -0.30406852248394006,
+      "p_one_sided_boot": 1.0,
+      "p_holm": 1.0
+    },
+    "S2_xswap_depth4": {
+      "n_pairs": 286,
+      "n_families": 197,
+      "probe": 0.006993006993006993,
+      "B3": 0.23426573426573427,
+      "delta": -0.22727272727272727,
+      "p_one_sided_boot": 1.0,
+      "p_holm": 1.0
+    },
+    "B7_cpath_depth4": {
+      "n_pairs": 286,
+      "probe_paired_acc": 0.11888111888111888,
+      "note": "reference, not a threshold (v0.3 \u00a72)"
+    },
+    "S3_per_depth_heads_depth4_base_cf": {
+      "head_order_u1": 0.19141914191419143,
+      "primary_u2": 0.19801980198019803,
+      "head_order_u3": 0.20462046204620463,
+      "head_anchor_c1": 0.18811881188118812,
+      "head_anchor_c3": 0.36303630363036304,
+      "head_anchor_u1": 0.2376237623762376,
+      "head_anchor_u3": 0.2739273927392739,
+      "chance": 0.16666666666666666
+    },
+    "S4_decoy": {
+      "status": "NOT COMPUTABLE with the frozen predictors",
+      "reason": "decoy worlds expose 10 (depth 4) / 7 (depth 3) prompt candidates; the frozen decoders are 6-candidate softmaxes and restricting candidates would need the oracle"
+    },
+    "H2_layer_profiles": {
+      "status": "NOT RUN",
+      "reason": "frozen predictors exist at one vector index per head; a layer profile would need new per-layer DEV training (not authorised)"
+    },
+    "plan_status": [
+      {
+        "analysis": "depth 3+4 pooled (upath pairs)",
+        "id": "S1",
+        "status": "INFERENTIAL (Holm)",
+        "form": "probe - B3 paired accuracy; one-sided family bootstrap p (10,000, seed 0)"
+      },
+      {
+        "analysis": "xswap (depth 4)",
+        "id": "S2",
+        "status": "INFERENTIAL (Holm)",
+        "form": "probe - B3 paired accuracy on (base,xswap_base),(cf,xswap_cf); one-sided family bootstrap p"
+      },
+      {
+        "analysis": "per-depth reconstruction",
+        "id": "S3",
+        "status": "DESCRIPTIVE",
+        "form": "single-world accuracy of the frozen u1 / u2 / u3 (and anchor) heads on admissible depth-4 base/cf worlds vs 1/6",
+        "reason": "kept descriptive as approved in O-2; no new test added after the freeze"
+      },
+      {
+        "analysis": "decoy control",
+        "id": "S4",
+        "status": "NOT COMPUTABLE",
+        "reason": "decoy worlds expose 10 (depth 4) / 7 (depth 3) prompt candidates; the frozen decoders are 6-way softmaxes; restricting candidates would require the oracle"
+      },
+      {
+        "analysis": "H2 descriptive layer profiles",
+        "id": "H2",
+        "status": "NOT RUN",
+        "reason": "each frozen head exists at a single vector index; a profile needs new per-layer DEV training (not authorised)"
+      },
+      {
+        "analysis": "chosen-branch reference B7 (cpath pairs)",
+        "id": "B7",
+        "status": "DESCRIPTIVE (reference, v0.3 \u00a72)"
+      },
+      {
+        "analysis": "answer-only B4",
+        "id": "B4",
+        "status": "NOT COMPUTED",
+        "reason": "0 by construction on D-1' (the answer and visible rewards do not determine the unchosen depth-2 label), v0.3 \u00a75"
+      }
+    ],
+    "holm_family": {
+      "members": [
+        "S1_pooled_depth3_4_upath",
+        "S2_xswap_depth4"
+      ],
+      "m": 2,
+      "note": "Holm covers the computable INFERENTIAL secondaries only; it is a subset of the pre-registered secondary plan (v0.3 \u00a78), not the whole plan: see plan_status"
+    }
+  },
+  "H1_outcome": "NOT MET",
+  "prechecks": {
+    "frozen_code": true,
+    "evaluator_frozen": true,
+    "pool_seal_intact": true,
+    "activation_seal_intact": true,
+    "oracle_never_read_before": true,
+    "activations_never_read_before": true
+  },
+  "predictor_sha256": {
+    "primary_u2": "170c76569cb98a6b8b4b8d4a27e635ad4921fb5e26722d9531a99ac6847ff65a",
+    "anchor_c1": "82710a6eb4ac50091cbecc207b455f3722dccbccc0757c7982d09c37bb50438d",
+    "anchor_c3": "098b44f6ad49c2a04c1245f648d3ed0e745a9fcf566a426477df9b1a1051d753",
+    "anchor_u1": "64c39f2595d80e1b378e75ebd2156c48f8f8a1951ca7a4e2cf2c81896f9c57ba",
+    "anchor_u3": "339464972f6047a167d817cefaaffa9cafe5669b04dc1ac8a8657b9ee7c86f42",
+    "order_u1": "aa8c64a75b2a102271bc449043e0af1d8dfe00638a59e58eb3f88f8b9af7bb9a",
+    "order_u3": "2771fdf19e6c5118640cc232922696d251643fbd2e3d8aa18684afe0c0505600",
+    "B1": "6b6adf791ce1ea7aae08ef6f31c91f602e9bb7becacfc242eee4082747ee03d9",
+    "B5": "01e84e689c1499752cfac9ff901678cb703247f9438d6c4b683165e1c6d321b7",
+    "B2_perm0": "8a8944c7398b71bbc57b5c10eb174e5ed74affe4cc4bd84fe2f8fe0bfdbe3e6d",
+    "B2_perm1": "0e3c1ad46dea7c10396e10c6e0aa235ec0df9fc203e72fc0f0fdaee8c1d5e525",
+    "B2_perm2": "0cd613164e1ee59b59a78207c383bb79ec41ab9ca92776672c82ebbc7bdf0590",
+    "B3": "2216c55c0d69defdc6189326d4e0c1a32d83721c8346586dab0a137971d00ffe",
+    "B3o_u1": "7dedd469374e36bd9900f58b49243e43bf22ad55de0424235374ce86ca259f15",
+    "B3o_u2": "9fa7d3a0ef71cd8cef4c63a5a1d8fcd299620a04c6742030df0df8bb60223486",
+    "B3o_u3": "441c0d116eac044afe51774fa58a778976dbce5347678bd17e1fd75853dd1a70"
+  }
+}

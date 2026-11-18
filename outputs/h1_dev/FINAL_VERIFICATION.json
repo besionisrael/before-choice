@@ -1,0 +1,153 @@
+{
+  "hashes": {
+    "FINAL.json": true,
+    "SELECTIONS.json": true,
+    "h1_code_frozen": true,
+    "runner": true,
+    "16_predictors_vs_FINAL_and_manifest": true
+  },
+  "structure": {
+    "per_predictor": {
+      "primary_u2": {
+        "ok": true,
+        "input": 32,
+        "r": 8,
+        "wd": 0.1,
+        "E": 5
+      },
+      "order_u1": {
+        "ok": true,
+        "input": 32,
+        "r": 8,
+        "wd": 0.1,
+        "E": 5
+      },
+      "order_u3": {
+        "ok": true,
+        "input": 32,
+        "r": 8,
+        "wd": 0.1,
+        "E": 6
+      },
+      "B1": {
+        "ok": true,
+        "input": "mean_emb",
+        "r": 8,
+        "wd": 0.1,
+        "E": 6
+      },
+      "B5": {
+        "ok": true,
+        "input": "none",
+        "r": 8,
+        "wd": 0.1,
+        "E": 6
+      },
+      "anchor_c1": {
+        "ok": true,
+        "input": 32,
+        "r": 32,
+        "wd": 0.01,
+        "E": 10
+      },
+      "anchor_c3": {
+        "ok": true,
+        "input": 40,
+        "r": 32,
+        "wd": 0.01,
+        "E": 11
+      },
+      "anchor_u1": {
+        "ok": true,
+        "input": 56,
+        "r": 32,
+        "wd": 0.0001,
+        "E": 8
+      },
+      "anchor_u3": {
+        "ok": true,
+        "input": 52,
+        "r": 32,
+        "wd": 0.1,
+        "E": 14
+      },
+      "B2_perm0": {
+        "ok": true,
+        "input": 32,
+        "r": 8,
+        "wd": 0.1,
+        "E": 5
+      },
+      "B2_perm1": {
+        "ok": true,
+        "input": 32,
+        "r": 8,
+        "wd": 0.1,
+        "E": 5
+      },
+      "B2_perm2": {
+        "ok": true,
+        "input": 32,
+        "r": 8,
+        "wd": 0.1,
+        "E": 5
+      },
+      "B3": {
+        "ok": true,
+        "wd": 0.1
+      },
+      "B3o_u1": {
+        "ok": true,
+        "wd": 0.1
+      },
+      "B3o_u2": {
+        "ok": true,
+        "wd": 0.1
+      },
+      "B3o_u3": {
+        "ok": true,
+        "wd": 0.1
+      }
+    },
+    "all_ok": true,
+    "n": 16
+  },
+  "reproduction": {
+    "primary_u2": [
+      {
+        "seed": 0,
+        "U_equal": true,
+        "V_equal": true,
+        "max_abs_diff": 0.0
+      },
+      {
+        "seed": 1,
+        "U_equal": true,
+        "V_equal": true,
+        "max_abs_diff": 0.0
+      },
+      {
+        "seed": 2,
+        "U_equal": true,
+        "V_equal": true,
+        "max_abs_diff": 0.0
+      }
+    ],
+    "B3": {
+      "w_equal": true,
+      "max_abs_diff": 0.0
+    }
+  },
+  "standardisation": {
+    "written_now": true,
+    "sha256": "9cd6b2297a32fb90e6095a7d583094b8d7589615cda744634a519e1f42b7185a",
+    "z_identical_to_runner_transform": true,
+    "T_identical_to_runner_transform": true
+  },
+  "pipeline": {
+    "primary_u2_in_sample_DEV_world_acc": 0.5646551724137931,
+    "n_worlds": 3480,
+    "note": "in-sample (the final refit saw these worlds); checks the loading/scoring path only"
+  },
+  "all_pass": true
+}

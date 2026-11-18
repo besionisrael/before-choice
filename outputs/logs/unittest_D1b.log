@@ -1,0 +1,34 @@
+test_depth_and_optimal_balance (test_dataset.Balance.test_depth_and_optimal_balance) ... ok
+test_trivial_heuristics_at_chance_on_primary (test_dataset.Balance.test_trivial_heuristics_at_chance_on_primary) ... ok
+test_pilot_v0_passes_independent_audit (test_dataset.IndependentOracle.test_pilot_v0_passes_independent_audit) ... ok
+test_v1_all_worlds_pass_independent_audit (test_dataset.IndependentOracle.test_v1_all_worlds_pass_independent_audit) ... ok
+test_alias_isomorphic_disjoint_labels (test_dataset.Invariants.test_alias_isomorphic_disjoint_labels) ... ok
+test_cf_prompt_differs_in_exactly_two_lines (test_dataset.Invariants.test_cf_prompt_differs_in_exactly_two_lines) ... ok
+test_counterfactual_flips_optimal (test_dataset.Invariants.test_counterfactual_flips_optimal) ... ok
+test_decoy_unreachable_and_max_reward (test_dataset.Invariants.test_decoy_unreachable_and_max_reward) ... ok
+test_every_family_complete (test_dataset.Invariants.test_every_family_complete) ... ok
+test_shuffle_same_graph_different_order (test_dataset.Invariants.test_shuffle_same_graph_different_order) ... ok
+test_swap_differs_only_in_action_letters (test_dataset.Invariants.test_swap_differs_only_in_action_letters) ... ok
+test_committed_files_match_generator (test_dataset.Splits.test_committed_files_match_generator) ... ok
+test_deterministic (test_dataset.Splits.test_deterministic) ... ok
+test_model_inputs_have_no_oracle (test_dataset.Splits.test_model_inputs_have_no_oracle) ... ok
+test_no_family_or_label_crosses_split (test_dataset.Splits.test_no_family_or_label_crosses_split) ... ok
+test_split_sizes (test_dataset.Splits.test_split_sizes) ... ok
+test_command_line (test_oracle.GraphOracleTests.test_command_line) ... ok
+test_counterfactual_pairs (test_oracle.GraphOracleTests.test_counterfactual_pairs) ... ok
+test_choice_and_outcome_preserved (test_path_cf.PathCF.test_choice_and_outcome_preserved) ... ok
+test_committed_file_matches (test_path_cf.PathCF.test_committed_file_matches) ... ok
+test_counts (test_path_cf.PathCF.test_counts) ... ok
+test_depth4_upath_root_line_unchanged (test_path_cf.PathCF.test_depth4_upath_root_line_unchanged) ... ok
+test_independent_audit (test_path_cf.PathCF.test_independent_audit) ... ok
+test_only_targeted_branch_changes (test_path_cf.PathCF.test_only_targeted_branch_changes) ... ok
+test_pair_invariant_decoder_has_zero_paired_accuracy (test_path_cf.PathCF.test_pair_invariant_decoder_has_zero_paired_accuracy)
+Any decoder that sees only answer/rewards/label inventory/length outputs the same ... ok
+test_primary_target_changes_in_every_upath_pair (test_path_cf.PathCF.test_primary_target_changes_in_every_upath_pair) ... ok
+test_depth1_state_is_one_hop_lexical (test_path_cf.ShortcutDocumentation.test_depth1_state_is_one_hop_lexical) ... ok
+test_nonoptimal_terminal_is_lowest_visible_reward_everywhere (test_path_cf.ShortcutDocumentation.test_nonoptimal_terminal_is_lowest_visible_reward_everywhere) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.305s
+
+OK

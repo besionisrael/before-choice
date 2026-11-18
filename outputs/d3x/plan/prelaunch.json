@@ -1,0 +1,12 @@
+{
+  "frozen_files_unchanged": true,
+  "d3_capture_core_frozen": true,
+  "v2_common_frozen": true,
+  "model": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "dev_inputs_sha": true,
+  "positions_sha": true,
+  "d3dev_manifest": true,
+  "no_prior_capture": true,
+  "no_locked_test_reference": true,
+  "all_pass": true
+}

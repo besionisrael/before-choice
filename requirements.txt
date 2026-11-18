@@ -1,0 +1,8 @@
+# D0/D1 core: standard library only (Python 3.11+; tested on 3.13.5).
+# Tokenizer audit + D2 local side (CPU, no torch):
+transformers==4.57.1
+tokenizers==0.22.2
+huggingface_hub==0.36.2
+jinja2==3.1.6
+modal==1.6.4
+# Remote container deps are pinned inside src/d2_smoke.py (torch 2.5.1, transformers 4.57.1, numpy 2.1.3).

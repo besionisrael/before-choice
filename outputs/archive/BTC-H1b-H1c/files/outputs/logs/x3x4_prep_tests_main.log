@@ -1,0 +1,109 @@
+test_constant_policy_fails (test_d2_competence.Scorer.test_constant_policy_fails) ... ok
+test_perfect (test_d2_competence.Scorer.test_perfect) ... ok
+test_tie_rules (test_d2_competence.Scorer.test_tie_rules) ... ok
+test_oracle_has_no_test_rows (test_d2_competence.Selection.test_oracle_has_no_test_rows) ... ok
+test_train_val_only_and_limits (test_d2_competence.Selection.test_train_val_only_and_limits) ... ok
+test_always_A (test_d2_pipeline.Scorer.test_always_A) ... ok
+test_perfect_model (test_d2_pipeline.Scorer.test_perfect_model) ... ok
+test_function_limits (test_d2_pipeline.SmokeSelection.test_function_limits) ... ok
+test_no_torch_objects_cross_the_wire (test_d2_pipeline.SmokeSelection.test_no_torch_objects_cross_the_wire) ... ok
+test_selection_fixed_train_only (test_d2_pipeline.SmokeSelection.test_selection_fixed_train_only) ... ok
+test_imports_without_remote_call (test_d3_run.D3Run.test_imports_without_remote_call) ... ok
+test_limits_and_volume (test_d3_run.D3Run.test_limits_and_volume) ... ok
+test_worst_case_cost_within_objective (test_d3_run.D3Run.test_worst_case_cost_within_objective) ... ok
+test_verify_before_volume_deletion_and_commit_wait (test_d3_run.D3RunTransferOrder.test_verify_before_volume_deletion_and_commit_wait) ... ok
+test_imports_as_mounted_in_the_container (test_d3_test_run.D3TestRun.test_imports_as_mounted_in_the_container)
+Regression for attempt 1: Modal mounts the script as /root/<name>.py (no project parents). Importing a copy ... ok
+test_imports_without_remote_call (test_d3_test_run.D3TestRun.test_imports_without_remote_call) ... ok
+test_prompts_only (test_d3_test_run.D3TestRun.test_prompts_only) ... ok
+test_same_function_limits_and_image_as_dev (test_d3_test_run.D3TestRun.test_same_function_limits_and_image_as_dev) ... ok
+test_verify_inside_volume_block_then_seal (test_d3_test_run.D3TestRun.test_verify_inside_volume_block_then_seal) ... ok
+test_generation_refused_without_approval (test_d5_dev.LockedTestSealing.test_generation_refused_without_approval) ... ok
+test_locked_test_sealed_read_only (test_d5_dev.LockedTestSealing.test_locked_test_sealed_read_only) ... FAIL
+test_no_dev_module_references_sealed_paths (test_d5_dev.LockedTestSealing.test_no_dev_module_references_sealed_paths) ... ok
+test_seal_roundtrip (test_d5_dev.LockedTestSealing.test_seal_roundtrip) ... ok
+test_composition_and_balance (test_d5_dev.ProbeDev.test_composition_and_balance) ... ok
+test_family_isolation_and_label_disjointness (test_d5_dev.ProbeDev.test_family_isolation_and_label_disjointness) ... ok
+test_files_match_generator_and_manifest (test_d5_dev.ProbeDev.test_files_match_generator_and_manifest) ... ok
+test_independent_oracle_and_template (test_d5_dev.ProbeDev.test_independent_oracle_and_template) ... ok
+test_model_inputs_oracle_free (test_d5_dev.ProbeDev.test_model_inputs_oracle_free) ... ok
+test_primary_population_constructible (test_d5_dev.ProbeDev.test_primary_population_constructible) ... ok
+test_no_overlap (test_d5_independence.Independence.test_no_overlap) ... ok
+test_regeneration_equals_sealed_bytes (test_d5_independence.Independence.test_regeneration_equals_sealed_bytes) ... ok
+test_test_pool_shape (test_d5_independence.Independence.test_test_pool_shape) ... ok
+test_depth_and_optimal_balance (test_dataset.Balance.test_depth_and_optimal_balance) ... ok
+test_trivial_heuristics_at_chance_on_primary (test_dataset.Balance.test_trivial_heuristics_at_chance_on_primary) ... ok
+test_pilot_v0_passes_independent_audit (test_dataset.IndependentOracle.test_pilot_v0_passes_independent_audit) ... ok
+test_v1_all_worlds_pass_independent_audit (test_dataset.IndependentOracle.test_v1_all_worlds_pass_independent_audit) ... ok
+test_alias_isomorphic_disjoint_labels (test_dataset.Invariants.test_alias_isomorphic_disjoint_labels) ... ok
+test_cf_prompt_differs_in_exactly_two_lines (test_dataset.Invariants.test_cf_prompt_differs_in_exactly_two_lines) ... ok
+test_counterfactual_flips_optimal (test_dataset.Invariants.test_counterfactual_flips_optimal) ... ok
+test_decoy_unreachable_and_max_reward (test_dataset.Invariants.test_decoy_unreachable_and_max_reward) ... ok
+test_every_family_complete (test_dataset.Invariants.test_every_family_complete) ... ok
+test_shuffle_same_graph_different_order (test_dataset.Invariants.test_shuffle_same_graph_different_order) ... ok
+test_swap_differs_only_in_action_letters (test_dataset.Invariants.test_swap_differs_only_in_action_letters) ... ok
+test_committed_files_match_generator (test_dataset.Splits.test_committed_files_match_generator) ... ok
+test_deterministic (test_dataset.Splits.test_deterministic) ... ok
+test_model_inputs_have_no_oracle (test_dataset.Splits.test_model_inputs_have_no_oracle) ... ok
+test_no_family_or_label_crosses_split (test_dataset.Splits.test_no_family_or_label_crosses_split) ... ok
+test_split_sizes (test_dataset.Splits.test_split_sizes) ... ok
+test_container_mount_import (test_h1b_x3x4_run.X3X4Run.test_container_mount_import) ... ok
+test_imports_and_constants (test_h1b_x3x4_run.X3X4Run.test_imports_and_constants) ... ok
+test_limits_image_transfer_and_no_sealed_path (test_h1b_x3x4_run.X3X4Run.test_limits_image_transfer_and_no_sealed_path) ... ok
+test_command_line (test_oracle.GraphOracleTests.test_command_line) ... ok
+test_counterfactual_pairs (test_oracle.GraphOracleTests.test_counterfactual_pairs) ... ok
+test_choice_and_outcome_preserved (test_path_cf.PathCF.test_choice_and_outcome_preserved) ... ok
+test_committed_file_matches (test_path_cf.PathCF.test_committed_file_matches) ... ok
+test_counts (test_path_cf.PathCF.test_counts) ... ok
+test_depth4_upath_root_line_unchanged (test_path_cf.PathCF.test_depth4_upath_root_line_unchanged) ... ok
+test_independent_audit (test_path_cf.PathCF.test_independent_audit) ... ok
+test_only_targeted_branch_changes (test_path_cf.PathCF.test_only_targeted_branch_changes) ... ok
+test_pair_invariant_decoder_has_zero_paired_accuracy (test_path_cf.PathCF.test_pair_invariant_decoder_has_zero_paired_accuracy)
+Any decoder that sees only answer/rewards/label inventory/length outputs the same ... ok
+test_primary_target_changes_in_every_upath_pair (test_path_cf.PathCF.test_primary_target_changes_in_every_upath_pair) ... ok
+test_depth1_state_is_one_hop_lexical (test_path_cf.ShortcutDocumentation.test_depth1_state_is_one_hop_lexical) ... ok
+test_nonoptimal_terminal_is_lowest_visible_reward_everywhere (test_path_cf.ShortcutDocumentation.test_nonoptimal_terminal_is_lowest_visible_reward_everywhere) ... ok
+test_counts_and_balance (test_v2_dataset.Balance.test_counts_and_balance) ... ok
+test_builder_never_reads_v1_files (test_v2_dataset.Integrity.test_builder_never_reads_v1_files) ... ok
+test_files_and_manifest_match_generator (test_v2_dataset.Integrity.test_files_and_manifest_match_generator) ... ok
+test_ground_truth_independent_oracle (test_v2_dataset.Integrity.test_ground_truth_independent_oracle) ... ok
+test_model_inputs_have_no_oracle (test_v2_dataset.Integrity.test_model_inputs_have_no_oracle) ... ok
+test_prompts_are_v1_template (test_v2_dataset.Integrity.test_prompts_are_v1_template) ... ok
+test_seed_and_determinism (test_v2_dataset.Integrity.test_seed_and_determinism) ... ok
+test_family_ids_and_pools (test_v2_dataset.Isolation.test_family_ids_and_pools) ... ok
+test_labels_private_to_family (test_v2_dataset.Isolation.test_labels_private_to_family) ... ok
+test_no_v1_label_reused (test_v2_dataset.Isolation.test_no_v1_label_reused) ... ok
+test_cf_flips_and_minimal (test_v2_dataset.Variants.test_cf_flips_and_minimal) ... ok
+test_competence_controls (test_v2_dataset.Variants.test_competence_controls) ... ok
+test_pathcf_choice_preserving (test_v2_dataset.Variants.test_pathcf_choice_preserving) ... ok
+test_swap_only_letters (test_v2_dataset.Variants.test_swap_only_letters) ... ok
+test_lf_hash_stable (test_v2_dataset.Writer.test_lf_hash_stable) ... ok
+test_image_pins_match_cpu_check_envs (test_v2_run.Budget.test_image_pins_match_cpu_check_envs) ... ok
+test_limits_match_freeze (test_v2_run.Budget.test_limits_match_freeze) ... ok
+test_modal_decorators (test_v2_run.Budget.test_modal_decorators) ... ok
+test_worst_case_within_objectives_with_margin (test_v2_run.Budget.test_worst_case_within_objectives_with_margin) ... ok
+test_counts_equal (test_v2_run.CrossEnvTokens.test_counts_equal) ... None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+ok
+test_cpu_check_reports_pass (test_v2_run.CrossEnvTokens.test_cpu_check_reports_pass) ... ok
+test_payload_source_is_frozen_inputs_only (test_v2_run.Isolation.test_payload_source_is_frozen_inputs_only) ... ok
+test_run_registry (test_v2_run.Isolation.test_run_registry) ... ok
+test_competence_perfect (test_v2_run.Scorer.test_competence_perfect) ... ok
+test_competence_shallow_only (test_v2_run.Scorer.test_competence_shallow_only) ... ok
+test_constant_policy_fails_s1_s2 (test_v2_run.Scorer.test_constant_policy_fails_s1_s2) ... ok
+test_results_must_cover_pool (test_v2_run.Scorer.test_results_must_cover_pool) ... ok
+test_screen_perfect_passes (test_v2_run.Scorer.test_screen_perfect_passes) ... ok
+test_top1_conformity_independent_of_forced_choice (test_v2_run.Scorer.test_top1_conformity_independent_of_forced_choice) ... ok
+
+======================================================================
+FAIL: test_locked_test_sealed_read_only (test_d5_dev.LockedTestSealing.test_locked_test_sealed_read_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\Workspace\AIProjects\before_choice_starter\tests\test_d5_dev.py", line 102, in test_locked_test_sealed_read_only
+    self.assertTrue(r["purpose"].startswith("D3-TEST-CAPTURE:"), r)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'utc': '2026-11-14T14:07:12+00:00', 'file': 'model_inputs.jsonl', 'purpose': 'H1-TEST-EVAL: prompts', 'approval': 'BTC-H1-TEST-EVAL (owner AUTORISATION SCIENTIFIQUE — BTC-H1-TEST-EVAL, 2026-11-14; single analytical access)'}
+
+----------------------------------------------------------------------
+Ran 92 tests in 21.070s
+
+FAILED (failures=1)

@@ -1,0 +1,16 @@
+{
+ "layer": 48,
+ "query": "Q_END",
+ "rep": "ctx_tgt",
+ "c1_val": 0.9578947368421052,
+ "c1_keyonly_val": 0.5380116959064327,
+ "A1_val": 0.9426900584795321,
+ "criteria": {
+  "S-A": true,
+  "S-B": true,
+  "S-C": true
+ },
+ "verdict": "SENSITIVE",
+ "c1_choice_keys_val": 1.0
+}
+EXIT=0

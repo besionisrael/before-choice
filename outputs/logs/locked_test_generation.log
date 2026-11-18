@@ -1,0 +1,10 @@
+{
+  "pool": "LOCKED-TEST",
+  "seed": 2026111402,
+  "n_worlds": 4800,
+  "n_families": 300,
+  "sha256": {
+    "all": "0a9938a79494dc5b44aba2e051761878295c5aa822d35ac190dcf84a8d14562f",
+    "model_inputs": "8fbc920d44295a5d54749c7bf9913fa27c882b78c049cd38880895dbbd43bd4f"
+  }
+}

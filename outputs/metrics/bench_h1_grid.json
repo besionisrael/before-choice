@@ -1,0 +1,167 @@
+{
+ "shapes": {
+  "d": 5376,
+  "labels": 5800,
+  "train": 2850,
+  "val": 930
+ },
+ "by_threads": {
+  "1": {
+   "8": {
+    "cpu_s_per_epoch": 0.140625,
+    "wall_s_per_epoch": 0.1445582707722982
+   },
+   "32": {
+    "cpu_s_per_epoch": 0.22916666666666666,
+    "wall_s_per_epoch": 0.23765110969543457
+   },
+   "128": {
+    "cpu_s_per_epoch": 4.932291666666667,
+    "wall_s_per_epoch": 5.041978200276692
+   }
+  },
+  "4": {
+   "8": {
+    "cpu_s_per_epoch": 0.203125,
+    "wall_s_per_epoch": 0.07256038983662923
+   },
+   "32": {
+    "cpu_s_per_epoch": 0.3541666666666667,
+    "wall_s_per_epoch": 0.11024045944213867
+   },
+   "128": {
+    "cpu_s_per_epoch": 4.229166666666667,
+    "wall_s_per_epoch": 1.2572343349456787
+   }
+  },
+  "16": {
+   "8": {
+    "cpu_s_per_epoch": 0.515625,
+    "wall_s_per_epoch": 0.07099342346191406
+   },
+   "32": {
+    "cpu_s_per_epoch": 0.5625,
+    "wall_s_per_epoch": 0.09002431233723958
+   },
+   "128": {
+    "cpu_s_per_epoch": 2.020833333333333,
+    "wall_s_per_epoch": 0.39003920555114746
+   }
+  }
+ },
+ "fits": {
+  "primary_u2 (layer x r x wd x seed)": 2232,
+  "B6 anchors c1,c3,u1,u3 (each full grid)": 8928,
+  "order heads u1,u3 at (l*, r*, wd*) x 3 seeds": 6,
+  "B1 mean_emb (r x wd x seed)": 36,
+  "B2 3 permutations x 3 seeds at (l*, r*, wd*)": 9,
+  "B5 candidate-only (r x wd x seed)": 36,
+  "final refits (primary 3 + anchors 12 + order 6 + B1 3 + B5 3)": 27
+ },
+ "extrapolation": {
+  "threads1_worst_60_epochs": {
+   "cpu_hours_all": 332.0871527777778,
+   "wall_hours_all": 339.7349488072924,
+   "cpu_hours_without_B6_layer_search": 69.10381944444445
+  },
+  "threads1_typical_20_epochs": {
+   "cpu_hours_all": 110.6957175925926,
+   "wall_hours_all": 113.24498293576416,
+   "cpu_hours_without_B6_layer_search": 23.034606481481486
+  },
+  "threads4_worst_60_epochs": {
+   "cpu_hours_all": 299.79184027777785,
+   "wall_hours_all": 90.19420370525783,
+   "cpu_hours_without_B6_layer_search": 62.383506944444456
+  },
+  "threads4_typical_20_epochs": {
+   "cpu_hours_all": 99.93061342592594,
+   "wall_hours_all": 30.06473456841928,
+   "cpu_hours_without_B6_layer_search": 20.794502314814817
+  },
+  "threads16_worst_60_epochs": {
+   "cpu_hours_all": 194.09809027777774,
+   "wall_hours_all": 34.51453309324052,
+   "cpu_hours_without_B6_layer_search": 40.389756944444436
+  },
+  "threads16_typical_20_epochs": {
+   "cpu_hours_all": 64.69936342592591,
+   "wall_hours_all": 11.504844364413508,
+   "cpu_hours_without_B6_layer_search": 13.463252314814813
+  }
+ },
+ "proposed_grid_v03": {
+  "proposed_grid": {
+   "layers": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    61
+   ],
+   "ranks": [
+    8,
+    32
+   ],
+   "weight_decays": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ]
+  },
+  "fits": {
+   "primary_u2": 408,
+   "B6_anchors_4heads": 1632,
+   "order_u1_u3": 6,
+   "B1": 24,
+   "B2": 9,
+   "B5": 24,
+   "final_refits": 27
+  },
+  "total_fits": 2130,
+  "estimates": {
+   "threads1_worst_60": {
+    "cpu_hours": 6.6,
+    "wall_hours": 6.8
+   },
+   "threads1_typical_20": {
+    "cpu_hours": 2.2,
+    "wall_hours": 2.3
+   },
+   "threads4_worst_60": {
+    "cpu_hours": 9.9,
+    "wall_hours": 3.2
+   },
+   "threads4_typical_20": {
+    "cpu_hours": 3.3,
+    "wall_hours": 1.1
+   },
+   "threads16_worst_60": {
+    "cpu_hours": 19.1,
+    "wall_hours": 2.9
+   },
+   "threads16_typical_20": {
+    "cpu_hours": 6.4,
+    "wall_hours": 1.0
+   }
+  }
+ }
+}

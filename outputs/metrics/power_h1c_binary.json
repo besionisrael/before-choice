@@ -1,0 +1,257 @@
+{
+  "doc": "BTC-H1c (revised C-2): power of the BINARY primary rule on late dead-end-swap pairs, simulated with the exact rule.\n\n    python src/power_h1c_binary.py   -> outputs/metrics/power_h1c_binary.json\n\nPrimary: for each admissible late pair, the binary decision between the two successors of the unchosen depth-1 label,\nscored from their arrival keys; pair success = both members correct. Rule: in every family-bootstrap resample\n  Delta = mean(P) - max(0.25, mean(C_max), mean(P_perm))\nH1c MET iff the 2.5 % percentile of Delta > 0.\nModel: m = 2 late pairs per family; pair admissible iff both worlds admissible (per-world rate a); family ICC 0.15;\nP pair success marginal 0.25 + delta; C_max pair success = 0 (identical inputs across members, proven on CPU);\nP_perm pair value = mean over K = 50 draws of Bernoulli products with per-world success 0.5 (independent of P),\ni.e. expectation 0.25 with sampling noise. B = 1,000 resamples, 400 datasets per cell.",
+  "cells": [
+    {
+      "admissibility": 0.6,
+      "delta": 0.0,
+      "families": 400,
+      "power": 0.025,
+      "mean_pairs": 288.8775
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.0,
+      "families": 600,
+      "power": 0.0225,
+      "mean_pairs": 431.885
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.0,
+      "families": 800,
+      "power": 0.02,
+      "mean_pairs": 575.635
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.05,
+      "families": 400,
+      "power": 0.3975,
+      "mean_pairs": 287.48
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.05,
+      "families": 600,
+      "power": 0.5775,
+      "mean_pairs": 430.7
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.05,
+      "families": 800,
+      "power": 0.775,
+      "mean_pairs": 574.39
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.1,
+      "families": 400,
+      "power": 0.93,
+      "mean_pairs": 289.1175
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.1,
+      "families": 600,
+      "power": 0.985,
+      "mean_pairs": 431.585
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.1,
+      "families": 800,
+      "power": 0.9975,
+      "mean_pairs": 576.195
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.15,
+      "families": 400,
+      "power": 1.0,
+      "mean_pairs": 287.8475
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.15,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 433.24
+    },
+    {
+      "admissibility": 0.6,
+      "delta": 0.15,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 575.9775
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.0,
+      "families": 400,
+      "power": 0.0175,
+      "mean_pairs": 451.2875
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.0,
+      "families": 600,
+      "power": 0.015,
+      "mean_pairs": 674.245
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.0,
+      "families": 800,
+      "power": 0.0325,
+      "mean_pairs": 900.3425
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.05,
+      "families": 400,
+      "power": 0.6275,
+      "mean_pairs": 450.3825
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.05,
+      "families": 600,
+      "power": 0.7775,
+      "mean_pairs": 674.18
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.05,
+      "families": 800,
+      "power": 0.885,
+      "mean_pairs": 900.2225
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.1,
+      "families": 400,
+      "power": 0.9925,
+      "mean_pairs": 450.5825
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.1,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 675.9475
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.1,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 899.27
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.15,
+      "families": 400,
+      "power": 1.0,
+      "mean_pairs": 449.86
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.15,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 676.415
+    },
+    {
+      "admissibility": 0.75,
+      "delta": 0.15,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 899.965
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.0,
+      "families": 400,
+      "power": 0.0075,
+      "mean_pairs": 647.505
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.0,
+      "families": 600,
+      "power": 0.02,
+      "mean_pairs": 971.6
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.0,
+      "families": 800,
+      "power": 0.015,
+      "mean_pairs": 1295.55
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.05,
+      "families": 400,
+      "power": 0.73,
+      "mean_pairs": 648.395
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.05,
+      "families": 600,
+      "power": 0.8825,
+      "mean_pairs": 971.8975
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.05,
+      "families": 800,
+      "power": 0.95,
+      "mean_pairs": 1295.2625
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.1,
+      "families": 400,
+      "power": 1.0,
+      "mean_pairs": 648.255
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.1,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 972.4775
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.1,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 1294.6825
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.15,
+      "families": 400,
+      "power": 1.0,
+      "mean_pairs": 648.255
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.15,
+      "families": 600,
+      "power": 1.0,
+      "mean_pairs": 971.4925
+    },
+    {
+      "admissibility": 0.9,
+      "delta": 0.15,
+      "families": 800,
+      "power": 1.0,
+      "mean_pairs": 1295.335
+    }
+  ]
+}

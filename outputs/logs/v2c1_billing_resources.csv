@@ -1,0 +1,29 @@
+Object ID,Description,Environment,Interval Start,Resource,Cost
+ap-Fl6k865yhqxoWcvFmdD6Bs,btc-v2-gemma4,main,2026-11-13T00:00:00,Network Egress,0.01181474
+ap-Fl6k865yhqxoWcvFmdD6Bs,btc-v2-gemma4,main,2026-11-13T00:00:00,Memory,0.01237332
+ap-Fl6k865yhqxoWcvFmdD6Bs,btc-v2-gemma4,main,2026-11-13T00:00:00,A100-80GB,0.24166648
+ap-Fl6k865yhqxoWcvFmdD6Bs,btc-v2-gemma4,main,2026-11-13T00:00:00,CPU,0.01828932
+ap-GV4MRnyCstbgagfYYv5G21,btc-d2-smoke-001,main,2026-11-13T00:00:00,Network Egress,0.00745731
+ap-GV4MRnyCstbgagfYYv5G21,btc-d2-smoke-001,main,2026-11-13T00:00:00,Memory,0.00027643
+ap-GV4MRnyCstbgagfYYv5G21,btc-d2-smoke-001,main,2026-11-13T00:00:00,L4,0.01416008
+ap-GV4MRnyCstbgagfYYv5G21,btc-d2-smoke-001,main,2026-11-13T00:00:00,CPU,0.00566681
+ap-JfQvAzr6gTXsVrri1n7c98,btc-v2-std,main,2026-11-13T00:00:00,Network Egress,0.02000008
+ap-JfQvAzr6gTXsVrri1n7c98,btc-v2-std,main,2026-11-13T00:00:00,Memory,0.00760121
+ap-JfQvAzr6gTXsVrri1n7c98,btc-v2-std,main,2026-11-13T00:00:00,A100-80GB,0.14722224
+ap-JfQvAzr6gTXsVrri1n7c98,btc-v2-std,main,2026-11-13T00:00:00,CPU,0.01438937
+ap-YkjX7dMpMtv3riNTTQBV1G,btc-d2-competence-002,main,2026-11-13T00:00:00,Network Egress,0.00672475
+ap-YkjX7dMpMtv3riNTTQBV1G,btc-d2-competence-002,main,2026-11-13T00:00:00,Memory,0.00025268
+ap-YkjX7dMpMtv3riNTTQBV1G,btc-d2-competence-002,main,2026-11-13T00:00:00,L4,0.01733328
+ap-YkjX7dMpMtv3riNTTQBV1G,btc-d2-competence-002,main,2026-11-13T00:00:00,CPU,0.00291675
+ap-krDl9AnSNOqObuyIA5IAUO,btc-v2-std,main,2026-11-13T00:00:00,Network Egress,0.02412919
+ap-krDl9AnSNOqObuyIA5IAUO,btc-v2-std,main,2026-11-13T00:00:00,Memory,0.01002668
+ap-krDl9AnSNOqObuyIA5IAUO,btc-v2-std,main,2026-11-13T00:00:00,A100-80GB,0.19583365
+ap-krDl9AnSNOqObuyIA5IAUO,btc-v2-std,main,2026-11-13T00:00:00,CPU,0.01484361
+ap-w05OyvI29OYbXTgxrn0hLn,btc-d2-smoke-001,main,2026-11-13T00:00:00,Network Egress,0.00684197
+ap-w05OyvI29OYbXTgxrn0hLn,btc-d2-smoke-001,main,2026-11-13T00:00:00,Memory,0.00018778
+ap-w05OyvI29OYbXTgxrn0hLn,btc-d2-smoke-001,main,2026-11-13T00:00:00,L4,0.01244460
+ap-w05OyvI29OYbXTgxrn0hLn,btc-d2-smoke-001,main,2026-11-13T00:00:00,CPU,0.00253960
+ap-yjwZVM5mErrWE8YuBbn29W,btc-v2-gemma4,main,2026-11-13T00:00:00,Network Egress,0.01518635
+ap-yjwZVM5mErrWE8YuBbn29W,btc-v2-gemma4,main,2026-11-13T00:00:00,Memory,0.00831952
+ap-yjwZVM5mErrWE8YuBbn29W,btc-v2-gemma4,main,2026-11-13T00:00:00,A100-80GB,0.16111146
+ap-yjwZVM5mErrWE8YuBbn29W,btc-v2-gemma4,main,2026-11-13T00:00:00,CPU,0.01572842

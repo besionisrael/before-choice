@@ -1,0 +1,154 @@
+{
+  "status": "EXPLORATORY (POST HOC); PROBE-DEV already used for H1 v0.3 selection; no LOCKED-TEST access",
+  "splits": {
+    "outer": "existing PROBE-DEV train/val (family-disjoint)",
+    "inner": "DEV-train families 80/20, seed 2026111501",
+    "choices_made_on": "inner-val only",
+    "reported": "inner-train (train), DEV-val (val)"
+  },
+  "X1a": {
+    "targets": [
+      "choice_is_A",
+      "depth_is_4",
+      "gap_above_train_median"
+    ],
+    "inputs": "17 sampled vectors + mean_emb",
+    "model": "L2 logistic (LBFGS)",
+    "lambda_grid": [
+      0.001,
+      0.1,
+      10.0
+    ],
+    "baseline": "majority class (train)",
+    "prompt_only_reference": {
+      "depth_is_4": "exact from rule-line count (1.0)",
+      "gap_above_train_median": "exact from printed rewards (1.0)",
+      "choice_is_A": "requires path following (no trivial prompt rule)"
+    }
+  },
+  "X1b": {
+    "slots": [
+      "c1",
+      "c2",
+      "c3",
+      "u1",
+      "u2",
+      "u3",
+      "A1"
+    ],
+    "vectors": [
+      0,
+      16,
+      32,
+      48,
+      61
+    ],
+    "probe": "H1 bilinear, r=8",
+    "lambda_grid": [
+      0.01,
+      0.1
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "baseline": "B3+ conditional logit, lambda grid [1e-4, 1e-2, 1.0]",
+    "lexical_vs_relational": {
+      "lexical (printed in an action line)": [
+        "A1",
+        "c1",
+        "u1"
+      ],
+      "1 hop": [
+        "c2",
+        "u2"
+      ],
+      "2 hops": [
+        "c3",
+        "u3"
+      ]
+    }
+  },
+  "X2": {
+    "targets": [
+      "u2",
+      "c1"
+    ],
+    "vectors": [
+      16,
+      32,
+      48
+    ],
+    "bilinear": {
+      "r": [
+        2,
+        8,
+        32
+      ],
+      "lambda": [
+        0.1,
+        1.0,
+        10.0
+      ]
+    },
+    "pca_bilinear": {
+      "k": [
+        16,
+        64,
+        256
+      ],
+      "r": 8,
+      "lambda": 0.1
+    },
+    "mlp": {
+      "pca_z": 64,
+      "pca_e": 64,
+      "hidden": 64,
+      "weight_decay": 0.01
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "learning_curve": {
+      "fractions_of_inner_train_families": [
+        0.25,
+        0.5,
+        1.0
+      ],
+      "config": "inner-val-best X2 configuration per target"
+    }
+  },
+  "X7": {
+    "confidence": "|logp_A - logp_B| tertiles of DEV-train training-rule worlds",
+    "depth": [
+      3,
+      4
+    ],
+    "evaluated": [
+      "X1b u2 and c1 probes at vector 32 (inner-val lambda)",
+      "B3+ u2 and c1"
+    ],
+    "also": "admissibility rate per confidence tertile, all non-decoy DEV-val worlds",
+    "inference": "none (counts + Wilson 95% CI)"
+  },
+  "budget": {
+    "cpu_hours": 5.0,
+    "threads": 4,
+    "meter": "time.process_time()"
+  },
+  "script_sha256": "2fa1f3e4d9402d7b9698e58ea5fc8f8cba855903d48496f2a3477d85d7e96130",
+  "n": {
+    "inner_train": 2112,
+    "inner_val": 513,
+    "val": 855,
+    "inner_train_families": 181,
+    "val_pairs_u2": 77
+  },
+  "X7_thresholds_from_train_margins": [
+    12.812499786774424,
+    19.124999312431708
+  ]
+}

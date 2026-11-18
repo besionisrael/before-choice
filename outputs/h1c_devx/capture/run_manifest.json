@@ -1,0 +1,269 @@
+{
+  "run_id": "BTC-H1c-DEVX",
+  "inputs_sha256": "ab4ee61e5ffa37f60555de15d3193752ba690751d51b8085264875ac9ae5d832",
+  "positions_sha256": "c4c58f0b80ef6ded38002c745ef250f71ecd12e878bcadfe724d6f1d8c252ed7",
+  "digest": "b6aac877aecb8ff87299f926ddbe3982ae06a046e7778b45a78b2fad191c9602",
+  "G1": {
+    "hashes_and_shapes_ok": true,
+    "n_worlds": 3000
+  },
+  "fidelity": {
+    "max_abs_diff": {
+      "post_norm": 0.19520950317382812,
+      "pre_norm": 0.19520950317382812
+    },
+    "tau": 0.125,
+    "limit": 0.25,
+    "n_divergences_logged": 22,
+    "divergences": [
+      {
+        "world_id": "F51006-base_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51006-base_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51020-dswap_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14107131958007812,
+        "tolerance": 0.40714263916015625,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51020-dswap_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.14107131958007812,
+        "tolerance": 0.40714263916015625,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51114-base_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51114-base_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51190-dswap_L",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51190-dswap_L",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51200-base_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51200-base_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51212-dswap_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51212-dswap_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51229-dswap_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1415119171142578,
+        "tolerance": 0.4080238342285156,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51229-dswap_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1415119171142578,
+        "tolerance": 0.4080238342285156,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51253-dswap_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51253-dswap_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51254-base_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51254-base_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51359-dswap_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51359-dswap_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51364-dswap_E",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F51364-dswap_E",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      }
+    ]
+  },
+  "env": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.23.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 63.471587328
+  },
+  "timing": {
+    "load_s": 96.39286828041077,
+    "capture_s": 465.979873418808,
+    "remote_total_s": 562.3746657371521,
+    "call_to_return_s": 592.4877347946167,
+    "return_to_visible_s": 5.732219219207764,
+    "download_s": 49.87472724914551
+  },
+  "resources": {
+    "gpu": "A100-80GB",
+    "cpu": [
+      4.0,
+      4.0
+    ],
+    "memory_mib": [
+      16384,
+      98304
+    ],
+    "timeout_s": 950,
+    "guard_s": 900
+  }
+}

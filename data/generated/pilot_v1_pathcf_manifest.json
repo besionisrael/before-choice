@@ -1,0 +1,12 @@
+{
+  "dataset_version": "v1_pathcf",
+  "n_worlds": 140,
+  "sha256": {
+    "source_pilot_v1": "f9073bdfdd64ff323bd0e4ab27d411245f36e3528344cef2ff265ba22e377907",
+    "all": "571444a84b0789f931bfe8dbd712ab6d6714f736b168d0b8ebfb6d875ea5ecb6",
+    "train": "aa0391fa9fb5a999daf410a3cb95d1e45daebc5305c46d717e566f5309e7ff18",
+    "val": "43826c724898044e0c5d57d0b94648265c04bdbcc82ddb775ea3dd6463c48a68",
+    "test": "20e559e020ba318ce4a1c281a757022c2982d57dc195fad955146ad93cd0e652",
+    "model_inputs": "38b7298604e4fb05bdd63c3e94bc8c3ff68bd8709ebcde488e15e609482be484"
+  }
+}

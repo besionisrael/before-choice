@@ -1,0 +1,56 @@
+{
+ "dev_report": {
+  "u2_dev_report": {
+   "C_lin_adamw": {
+    "epochs": [
+     12,
+     6,
+     10
+    ],
+    "inner_val": 0.7251461988304093,
+    "val": 0.7169590643274854,
+    "val_paired": 0.5844155844155844
+   },
+   "C_lin_lbfgs_grid": [
+    {
+     "lambda": 0.01,
+     "inner_val": 0.7270955165692008,
+     "val": 0.7228070175438597,
+     "val_paired": 0.5714285714285714
+    },
+    {
+     "lambda": 1.0,
+     "inner_val": 0.7212475633528265,
+     "val": 0.7192982456140351,
+     "val_paired": 0.6493506493506493
+    },
+    {
+     "lambda": 100.0,
+     "inner_val": 0.3684210526315789,
+     "val": 0.4105263157894737,
+     "val_paired": 0.2597402597402597
+    }
+   ],
+   "C_lin_lbfgs": {
+    "lambda": 0.01,
+    "inner_val": 0.7270955165692008,
+    "val": 0.7228070175438597,
+    "val_paired": 0.5714285714285714
+   },
+   "C_lin_competitive": "lbfgs",
+   "elimination": {
+    "P_c2_val": 0.7883040935672515,
+    "u2_elim_val": 0.8830409356725146,
+    "u2_elim_val_paired": 0.8181818181818182
+   }
+  }
+ },
+ "C_lin_frozen_variant": "lbfgs",
+ "lambdas": {
+  "C_lin_lbfgs": 0.01,
+  "K": 1.0,
+  "B3plus": 0.0001
+ },
+ "cpu_hours": 0.06355902777777778
+}
+EXIT=0

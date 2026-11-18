@@ -1,0 +1,157 @@
+{
+  "config": {
+    "layer": 40,
+    "query": "ANS",
+    "rep": "ctx_tgt",
+    "r": 8,
+    "lambda": 0.1,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "k_perm": 50
+  },
+  "script_sha256": "3556002e6dbb5ed9bac3c718f577f7784ed9d1557db8728b7516fde90de05b9d",
+  "u2": {
+    "P": {
+      "train": 0.9995265151515151,
+      "inner_val": 0.7719298245614035,
+      "val": 0.8152046783625732,
+      "epochs": [
+        8,
+        9,
+        10
+      ],
+      "n_params": 86016,
+      "distinct_query_vectors_train": null,
+      "val_choice_A": 0.8242424242424242,
+      "val_choice_B": 0.8027777777777778,
+      "val_paired": 0.6883116883116883,
+      "n_pairs": 77
+    },
+    "C": {
+      "train": 0.6036931818181818,
+      "inner_val": 0.5029239766081871,
+      "val": 0.5017543859649123,
+      "epochs": [
+        7,
+        9,
+        7
+      ],
+      "n_params": 86016,
+      "distinct_query_vectors_train": 2,
+      "val_choice_A": 0.5313131313131313,
+      "val_choice_B": 0.46111111111111114,
+      "val_paired": 0.4025974025974026,
+      "n_pairs": 77
+    },
+    "P_perm": {
+      "val": 0.2980818713450292,
+      "val_paired": 0.07506493506493507,
+      "n_pairs": 77,
+      "partners_per_world": {
+        "min": 7,
+        "median": 15.0,
+        "max": 24
+      },
+      "strata_sizes_val": {
+        "('A', 'alias_base', 3)": 11,
+        "('A', 'alias_base', 4)": 24,
+        "('A', 'alias_cf', 3)": 12,
+        "('A', 'alias_cf', 4)": 24,
+        "('A', 'base', 3)": 11,
+        "('A', 'base', 4)": 23,
+        "('A', 'cf', 3)": 12,
+        "('A', 'cf', 4)": 25,
+        "('A', 'cpath_base', 3)": 11,
+        "('A', 'cpath_base', 4)": 20,
+        "('A', 'cpath_cf', 3)": 12,
+        "('A', 'cpath_cf', 4)": 25,
+        "('A', 'shuffle_base', 3)": 12,
+        "('A', 'shuffle_base', 4)": 24,
+        "('A', 'shuffle_cf', 3)": 12,
+        "('A', 'shuffle_cf', 4)": 24,
+        "('A', 'swap_base', 3)": 12,
+        "('A', 'swap_base', 4)": 25,
+        "('A', 'swap_cf', 3)": 12,
+        "('A', 'swap_cf', 4)": 23,
+        "('A', 'upath_base', 3)": 11,
+        "('A', 'upath_base', 4)": 23,
+        "('A', 'upath_cf', 3)": 12,
+        "('A', 'upath_cf', 4)": 23,
+        "('A', 'xswap_base', 3)": 11,
+        "('A', 'xswap_base', 4)": 24,
+        "('A', 'xswap_cf', 3)": 12,
+        "('A', 'xswap_cf', 4)": 25,
+        "('B', 'alias_base', 3)": 10,
+        "('B', 'alias_base', 4)": 13,
+        "('B', 'alias_cf', 3)": 11,
+        "('B', 'alias_cf', 4)": 15,
+        "('B', 'base', 3)": 9,
+        "('B', 'base', 4)": 16,
+        "('B', 'cf', 3)": 11,
+        "('B', 'cf', 4)": 17,
+        "('B', 'cpath_base', 3)": 8,
+        "('B', 'cpath_base', 4)": 14,
+        "('B', 'cpath_cf', 3)": 11,
+        "('B', 'cpath_cf', 4)": 20,
+        "('B', 'shuffle_base', 3)": 10,
+        "('B', 'shuffle_base', 4)": 15,
+        "('B', 'shuffle_cf', 3)": 10,
+        "('B', 'shuffle_cf', 4)": 18,
+        "('B', 'swap_base', 3)": 10,
+        "('B', 'swap_base', 4)": 15,
+        "('B', 'swap_cf', 3)": 11,
+        "('B', 'swap_cf', 4)": 12,
+        "('B', 'upath_base', 3)": 9,
+        "('B', 'upath_base', 4)": 14,
+        "('B', 'upath_cf', 3)": 11,
+        "('B', 'upath_cf', 4)": 18,
+        "('B', 'xswap_base', 3)": 11,
+        "('B', 'xswap_base', 4)": 14,
+        "('B', 'xswap_cf', 3)": 10,
+        "('B', 'xswap_cf', 4)": 17
+      },
+      "same_family_partners": 0
+    },
+    "contrasts_dev_val": {
+      "P_minus_C_paired": 0.2857142857142857,
+      "P_minus_Pperm_paired": 0.6132467532467533,
+      "P_minus_C_single": 0.31345029239766087,
+      "P_minus_Pperm_single": 0.517122807017544
+    }
+  },
+  "c1": {
+    "P": {
+      "train": 1.0,
+      "inner_val": 0.8830409356725146,
+      "val": 0.9298245614035088,
+      "epochs": [
+        5,
+        9,
+        60
+      ],
+      "n_params": 86016,
+      "distinct_query_vectors_train": null,
+      "val_choice_A": 0.9393939393939394,
+      "val_choice_B": 0.9166666666666666
+    },
+    "C": {
+      "train": 0.9971590909090909,
+      "inner_val": 0.9551656920077972,
+      "val": 0.9614035087719298,
+      "epochs": [
+        9,
+        13,
+        9
+      ],
+      "n_params": 86016,
+      "distinct_query_vectors_train": 2,
+      "val_choice_A": 0.9676767676767677,
+      "val_choice_B": 0.9527777777777777
+    }
+  },
+  "cpu_hours": 0.013042534722222223,
+  "capacity_note": "C has the same parameter shapes as P (U: d x r, V: d x r); its query takes only 2 distinct values (mu_A, mu_B), so its effective score class is s(c) = w_choice^T k_c with w_A, w_B in the rank-r image of V U^T: a rank-constrained choice + keys decoder trained exactly like P"
+}

@@ -1,0 +1,114 @@
+{
+  "Qwen/Qwen3-32B": {
+    "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+    "template_kwargs": {
+      "enable_thinking": false
+    },
+    "A_ids": [
+      32
+    ],
+    "B_ids": [
+      33
+    ],
+    "pre_answer_tail_tokens": [
+      "assistant",
+      "Ċ",
+      "<think>",
+      "ĊĊ",
+      "</think>",
+      "ĊĊ"
+    ],
+    "prompt_tokens_min_max": [
+      121,
+      271
+    ],
+    "pairs_total": {
+      "cf_pair": 570,
+      "swap_letters": 150,
+      "xswap": 180,
+      "cpath": 120,
+      "upath": 120
+    },
+    "pairs_length_mismatch": {
+      "cf_pair": 0,
+      "swap_letters": 0,
+      "xswap": 0,
+      "cpath": 0,
+      "upath": 0
+    }
+  },
+  "allenai/Olmo-3.1-32B-Instruct": {
+    "revision": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+    "template_kwargs": {},
+    "A_ids": [
+      32
+    ],
+    "B_ids": [
+      33
+    ],
+    "pre_answer_tail_tokens": [
+      ".",
+      "<|im_end|>",
+      "Ċ",
+      "<|im_start|>",
+      "assistant",
+      "Ċ"
+    ],
+    "prompt_tokens_min_max": [
+      175,
+      320
+    ],
+    "pairs_total": {
+      "cf_pair": 570,
+      "swap_letters": 150,
+      "xswap": 180,
+      "cpath": 120,
+      "upath": 120
+    },
+    "pairs_length_mismatch": {
+      "cf_pair": 0,
+      "swap_letters": 0,
+      "xswap": 0,
+      "cpath": 0,
+      "upath": 0
+    }
+  },
+  "google/gemma-4-31B-it": {
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "template_kwargs": {
+      "enable_thinking": false
+    },
+    "A_ids": [
+      236776
+    ],
+    "B_ids": [
+      236799
+    ],
+    "pre_answer_tail_tokens": [
+      "model",
+      "\n",
+      "<|channel>",
+      "thought",
+      "\n",
+      "<channel|>"
+    ],
+    "prompt_tokens_min_max": [
+      128,
+      285
+    ],
+    "pairs_total": {
+      "cf_pair": 570,
+      "swap_letters": 150,
+      "xswap": 180,
+      "cpath": 120,
+      "upath": 120
+    },
+    "pairs_length_mismatch": {
+      "cf_pair": 0,
+      "swap_letters": 0,
+      "xswap": 0,
+      "cpath": 0,
+      "upath": 0
+    }
+  }
+}

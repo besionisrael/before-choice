@@ -1,0 +1,26 @@
+{
+  "model_key": "gemma4_31b",
+  "repo": "google/gemma-4-31B-it",
+  "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "torch": "2.6.0+cpu",
+  "transformers": "5.23.0",
+  "template_tail_ok": "1560/1560",
+  "gemma_jinja_equals_transformers5": "1560/1560",
+  "token_counts_sha256": "e49f8ba08dadaa73fa0212af8f223b738e9eb1775c4c73562652cb0657bf24bf",
+  "pre_answer_last_token": "<channel|>",
+  "meta_vocab_out": 262144,
+  "meta_num_hidden_layers": 60,
+  "n_hidden_states_expected": 61,
+  "meta_params_b": 31.27,
+  "e2e_tiny_model": {
+    "n_results": 45,
+    "vocab_size": 262144,
+    "top1_in_AB_rate_random_model": 0.0,
+    "replay_identical": true
+  },
+  "tamper_rejected": {
+    "extra_field": true,
+    "wrong_digest": true,
+    "wrong_tokens": true
+  }
+}

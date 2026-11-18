@@ -1,0 +1,644 @@
+{
+  "model": "BTC-H1b confirmatory protocol (PROPOSAL): family-level power for a PAIRED advantage of the pointer over a",
+  "p_pairs_per_family": [
+    0.02,
+    0.45,
+    0.53
+  ],
+  "icc": 0.15,
+  "control_paired": 0.55,
+  "control_world_acc": 0.7309020996376653,
+  "n_sim": 2000,
+  "cells": [
+    {
+      "delta_target": 0.05,
+      "rho": 0.5,
+      "families": 200,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.3475,
+      "mean_est": 0.04987036718392714,
+      "mean_pairs": 301.9325,
+      "mean_contributing_families": 195.975
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.5,
+      "families": 300,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.4735,
+      "mean_est": 0.04865664437882178,
+      "mean_pairs": 453.045,
+      "mean_contributing_families": 294.067
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.5,
+      "families": 400,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.576,
+      "mean_est": 0.04873219895611735,
+      "mean_pairs": 604.1025,
+      "mean_contributing_families": 392.0155
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.5,
+      "families": 500,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.6615,
+      "mean_est": 0.04845352168463261,
+      "mean_pairs": 755.011,
+      "mean_contributing_families": 489.9785
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.5,
+      "families": 600,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.7455,
+      "mean_est": 0.048734648366992074,
+      "mean_pairs": 905.795,
+      "mean_contributing_families": 587.957
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.5,
+      "families": 800,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.8585,
+      "mean_est": 0.048627654106720514,
+      "mean_pairs": 1208.03,
+      "mean_contributing_families": 784.1305
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.5,
+      "families": 1000,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.919,
+      "mean_est": 0.04829913970016154,
+      "mean_pairs": 1509.6395,
+      "mean_contributing_families": 980.0435
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.7,
+      "families": 200,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.415,
+      "mean_est": 0.049241765037282594,
+      "mean_pairs": 301.9225,
+      "mean_contributing_families": 196.0085
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.7,
+      "families": 300,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.536,
+      "mean_est": 0.047967384784238225,
+      "mean_pairs": 453.2215,
+      "mean_contributing_families": 293.95
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.7,
+      "families": 400,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.668,
+      "mean_est": 0.04847202549663733,
+      "mean_pairs": 604.193,
+      "mean_contributing_families": 391.9135
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.7,
+      "families": 500,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.7745,
+      "mean_est": 0.048423717713888766,
+      "mean_pairs": 755.395,
+      "mean_contributing_families": 490.101
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.7,
+      "families": 600,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.8315,
+      "mean_est": 0.04793535666680194,
+      "mean_pairs": 906.086,
+      "mean_contributing_families": 587.8865
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.7,
+      "families": 800,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.931,
+      "mean_est": 0.0488722472693409,
+      "mean_pairs": 1208.0675,
+      "mean_contributing_families": 783.988
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.7,
+      "families": 1000,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.972,
+      "mean_est": 0.0488046810847743,
+      "mean_pairs": 1510.4715,
+      "mean_contributing_families": 980.0245
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.85,
+      "families": 200,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.518,
+      "mean_est": 0.048226113050582387,
+      "mean_pairs": 302.0115,
+      "mean_contributing_families": 195.978
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.85,
+      "families": 300,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.691,
+      "mean_est": 0.04808923773122966,
+      "mean_pairs": 453.5085,
+      "mean_contributing_families": 294.048
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.85,
+      "families": 400,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.8165,
+      "mean_est": 0.0488048139848173,
+      "mean_pairs": 604.3815,
+      "mean_contributing_families": 392.077
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.85,
+      "families": 500,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.888,
+      "mean_est": 0.04820963466152624,
+      "mean_pairs": 755.1965,
+      "mean_contributing_families": 489.975
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.85,
+      "families": 600,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.93,
+      "mean_est": 0.04858460791831162,
+      "mean_pairs": 905.5935,
+      "mean_contributing_families": 588.018
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.85,
+      "families": 800,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.983,
+      "mean_est": 0.048862790185276055,
+      "mean_pairs": 1207.884,
+      "mean_contributing_families": 784.054
+    },
+    {
+      "delta_target": 0.05,
+      "rho": 0.85,
+      "families": 1000,
+      "pointer_world_acc": 0.7648512867060603,
+      "power": 0.997,
+      "mean_est": 0.04870200518613285,
+      "mean_pairs": 1510.4805,
+      "mean_contributing_families": 980.1365
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.5,
+      "families": 200,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.657,
+      "mean_est": 0.07455868917128612,
+      "mean_pairs": 301.955,
+      "mean_contributing_families": 196.0145
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.5,
+      "families": 300,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.8315,
+      "mean_est": 0.07575938075378397,
+      "mean_pairs": 452.614,
+      "mean_contributing_families": 294.0195
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.5,
+      "families": 400,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.925,
+      "mean_est": 0.07512430499194696,
+      "mean_pairs": 603.6135,
+      "mean_contributing_families": 391.971
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.5,
+      "families": 500,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.9595,
+      "mean_est": 0.07525536847148372,
+      "mean_pairs": 755.3045,
+      "mean_contributing_families": 490.0065
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.5,
+      "families": 600,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.985,
+      "mean_est": 0.07547442696868233,
+      "mean_pairs": 905.7645,
+      "mean_contributing_families": 587.9085
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.5,
+      "families": 800,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.9985,
+      "mean_est": 0.07553504126019635,
+      "mean_pairs": 1207.689,
+      "mean_contributing_families": 784.1
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.5,
+      "families": 1000,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.999,
+      "mean_est": 0.07518992289226926,
+      "mean_pairs": 1510.295,
+      "mean_contributing_families": 980.034
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.7,
+      "families": 200,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.7585,
+      "mean_est": 0.0747881634319948,
+      "mean_pairs": 301.9225,
+      "mean_contributing_families": 196.033
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.7,
+      "families": 300,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.897,
+      "mean_est": 0.07587565829002682,
+      "mean_pairs": 453.2135,
+      "mean_contributing_families": 293.963
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.7,
+      "families": 400,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.9635,
+      "mean_est": 0.07482010055127204,
+      "mean_pairs": 604.712,
+      "mean_contributing_families": 392.1855
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.7,
+      "families": 500,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.99,
+      "mean_est": 0.07481122140601826,
+      "mean_pairs": 755.5535,
+      "mean_contributing_families": 490.0505
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.7,
+      "families": 600,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.9975,
+      "mean_est": 0.07455734961859442,
+      "mean_pairs": 906.2945,
+      "mean_contributing_families": 588.042
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.7,
+      "families": 800,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.9995,
+      "mean_est": 0.07459060049139257,
+      "mean_pairs": 1208.3535,
+      "mean_contributing_families": 784.0355
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.7,
+      "families": 1000,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 1.0,
+      "mean_est": 0.07555258418331182,
+      "mean_pairs": 1509.534,
+      "mean_contributing_families": 979.9765
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.85,
+      "families": 200,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.8715,
+      "mean_est": 0.07488739944175245,
+      "mean_pairs": 301.885,
+      "mean_contributing_families": 195.998
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.85,
+      "families": 300,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.9695,
+      "mean_est": 0.07555094100218213,
+      "mean_pairs": 453.0535,
+      "mean_contributing_families": 293.937
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.85,
+      "families": 400,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.992,
+      "mean_est": 0.07510358783142479,
+      "mean_pairs": 604.297,
+      "mean_contributing_families": 391.9505
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.85,
+      "families": 500,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 0.999,
+      "mean_est": 0.07563418481142477,
+      "mean_pairs": 755.0525,
+      "mean_contributing_families": 490.017
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.85,
+      "families": 600,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 1.0,
+      "mean_est": 0.0747907094086495,
+      "mean_pairs": 906.116,
+      "mean_contributing_families": 588.0765
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.85,
+      "families": 800,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 1.0,
+      "mean_est": 0.07498829543991303,
+      "mean_pairs": 1208.201,
+      "mean_contributing_families": 784.0925
+    },
+    {
+      "delta_target": 0.075,
+      "rho": 0.85,
+      "families": 1000,
+      "pointer_world_acc": 0.7826103515634536,
+      "power": 1.0,
+      "mean_est": 0.07523479316788209,
+      "mean_pairs": 1509.947,
+      "mean_contributing_families": 979.934
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.5,
+      "families": 200,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.8555,
+      "mean_est": 0.09760063312730576,
+      "mean_pairs": 301.8725,
+      "mean_contributing_families": 195.9485
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.5,
+      "families": 300,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.9655,
+      "mean_est": 0.09850984221507549,
+      "mean_pairs": 452.8955,
+      "mean_contributing_families": 294.029
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.5,
+      "families": 400,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.99,
+      "mean_est": 0.09836222420398022,
+      "mean_pairs": 604.205,
+      "mean_contributing_families": 392.0315
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.5,
+      "families": 500,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.998,
+      "mean_est": 0.09781178292373666,
+      "mean_pairs": 754.6685,
+      "mean_contributing_families": 489.916
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.5,
+      "families": 600,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.999,
+      "mean_est": 0.09882418355632182,
+      "mean_pairs": 906.5935,
+      "mean_contributing_families": 588.05
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.5,
+      "families": 800,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09848370452405886,
+      "mean_pairs": 1208.0535,
+      "mean_contributing_families": 784.0245
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.5,
+      "families": 1000,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09835972689297415,
+      "mean_pairs": 1510.0025,
+      "mean_contributing_families": 980.025
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.7,
+      "families": 200,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.9415,
+      "mean_est": 0.09833808236161298,
+      "mean_pairs": 301.9635,
+      "mean_contributing_families": 196.0295
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.7,
+      "families": 300,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.986,
+      "mean_est": 0.09839336471404626,
+      "mean_pairs": 452.8925,
+      "mean_contributing_families": 294.0925
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.7,
+      "families": 400,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.999,
+      "mean_est": 0.0980264304583894,
+      "mean_pairs": 603.922,
+      "mean_contributing_families": 392.076
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.7,
+      "families": 500,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.9995,
+      "mean_est": 0.09909081618500591,
+      "mean_pairs": 755.017,
+      "mean_contributing_families": 489.9595
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.7,
+      "families": 600,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09880342928104625,
+      "mean_pairs": 906.0385,
+      "mean_contributing_families": 588.1275
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.7,
+      "families": 800,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09863255020402041,
+      "mean_pairs": 1207.587,
+      "mean_contributing_families": 783.842
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.7,
+      "families": 1000,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09840715149794349,
+      "mean_pairs": 1510.732,
+      "mean_contributing_families": 980.146
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.85,
+      "families": 200,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.9805,
+      "mean_est": 0.09778103517311804,
+      "mean_pairs": 302.0945,
+      "mean_contributing_families": 195.977
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.85,
+      "families": 300,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 0.9985,
+      "mean_est": 0.09836499994585325,
+      "mean_pairs": 453.172,
+      "mean_contributing_families": 294.001
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.85,
+      "families": 400,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.0981178552991576,
+      "mean_pairs": 604.0095,
+      "mean_contributing_families": 392.0835
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.85,
+      "families": 500,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09905803004478145,
+      "mean_pairs": 754.894,
+      "mean_contributing_families": 490.051
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.85,
+      "families": 600,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09887595481806255,
+      "mean_pairs": 906.1775,
+      "mean_contributing_families": 588.004
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.85,
+      "families": 800,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09867017274711183,
+      "mean_pairs": 1207.222,
+      "mean_contributing_families": 784.0235
+    },
+    {
+      "delta_target": 0.1,
+      "rho": 0.85,
+      "families": 1000,
+      "pointer_world_acc": 0.7981290131141973,
+      "power": 1.0,
+      "mean_est": 0.09843393413332956,
+      "mean_pairs": 1510.1655,
+      "mean_contributing_families": 980.026
+    }
+  ]
+}

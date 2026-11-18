@@ -1,0 +1,24 @@
+{
+  "dataset_version": "v2",
+  "master_seed": 2026111302,
+  "fid_base": 10000,
+  "excluded_v1_labels": 480,
+  "pools": {
+    "SCREEN": {
+      "n_worlds": 240,
+      "n_families": 60,
+      "sha256": "cd3499d67f3be6fe03ee936f0c607134b5e14ae7b201ed26441b5c995eda34cd",
+      "model_inputs_sha256": "42cc0517246c101e676d517066001e359fe83d301149970b8e940f6602b5dc20"
+    },
+    "COMPETENCE": {
+      "n_worlds": 1320,
+      "n_families": 90,
+      "sha256": "b1df46cd67e87e938a9ace023f4c46dccac154968b160467113e9cecf4e245d6",
+      "model_inputs_sha256": "dc6c7115bcb2b15e21af952ca623562ded6708b5212d9f0df75a20d836fea0da"
+    }
+  },
+  "not_generated": [
+    "PROBE-DEV",
+    "LOCKED-TEST"
+  ]
+}

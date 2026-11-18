@@ -1,0 +1,41 @@
+{
+  "utc": "2026-11-14T20:08:41+00:00",
+  "status": "PREPARED, NOT RUN",
+  "sha256": {
+    "src/build_h1c_devx.py": "c0aca4b127f354d415bacaae8c760f1c8ec3a1f194fd6a49b0751387d59f4188",
+    "src/h1c_devx_positions.py": "d47fdc976082c17e7a2693172730625b46f0d1269c62149ab152369733669449",
+    "src/h1c_devx_capture.py": "72f2a5f83fdf8c1b265d07abe07ee4145d002350f61329885fe7687b27677542",
+    "src/h1c_devx_analysis.py": "3b87545a359b5c98da9b6b76ef305fde4048e0591179375efc5dd726d5556dd1",
+    "src/h1c_gates.py": "cb86889bb10bb1fa123d2ec33a57e67715bd5c9eb1dea6e222ea8a4d4cfcc3f6",
+    "src/h1c_dev_analysis.py": "c1cc0a4f5798dfffdadbead3d425c56df67473ddaeca073fab1c7dbae57a347e",
+    "src/h1c_positions.py": "3eb2d9f82ae53dd98ffb2e2780cbc567fd24c46ba851be78428904800d74deaf",
+    "src/build_h1c.py": "84a08cb6910865433d89b0a33454726e9c947e12f7de2b1bc33c70975a3f294d",
+    "src/d3x_capture_core.py": "0284cd4233ad2ad00e22fa2bf9c1b7df34c56b2613ab09fadd0adebcb84214e1",
+    "src/d3_capture_core.py": "00a3fa225ed36f668d7473cd3ddc89cdfedf4c821d36b42c8e24a2c21f13e65c",
+    "src/v2_common.py": "8f6d6a53426308f2dfc50c6f015d57213bf023032580679522fd342b51c9a34f",
+    "data/h1c/devx/worlds.jsonl": "5737cbde6f4a85d9ac8cb67eebfc14f6e6f9b31681652d35119a6ac70727a8c0",
+    "data/h1c/devx/model_inputs.jsonl": "ab4ee61e5ffa37f60555de15d3193752ba690751d51b8085264875ac9ae5d832",
+    "data/h1c/devx/manifest.json": "3792922f0187d56ba89b711fe2584a39533f0cb133f87272995776092ddcb6be",
+    "outputs/h1c_devx/plan/SPLITS.json": "68ca7d14ae72a30160414311f5a71079914f0f8ecf08b3f63d544f642a4a95ef",
+    "outputs/h1c_devx/plan/positions.jsonl": "c4c58f0b80ef6ded38002c745ef250f71ecd12e878bcadfe724d6f1d8c252ed7",
+    "outputs/h1c_devx/plan/audit.json": "1ddb60c08ac432f821960ac431155cb3a8da3bc33ee30becbbb7a2fa00155018",
+    "tests_cpucheck/test_h1c_devx.py": "f397c8fb9cb31a9140331da7b96611c51f5d55c81adc9a5d5f334f0833ef5b17",
+    "tests/test_h1c_devx_capture_run.py": "e6535a89fc5edcae6635620ce1fa57420aa440e7cfe9f50cae20236e16f733da",
+    "tests_gemma/test_h1c_devx_capture.py": "8d076a0550111a22253f466c7cd7b23604431e08fd9bfb3f27e157e8b96b060b",
+    "outputs/logs/h1c_devx_prep_tests_cpucheck.log": "0ecee12bf0d3f72d1553f820adeb1f17424b0076edc3914f32d23530a1d511cc",
+    "outputs/logs/h1c_devx_prep_tests_main.log": "b2beaf7b193233a77d252dbab1943d37d792c0daa4fe5ee73b1e87617b863e3c",
+    "outputs/logs/h1c_devx_prep_tests_gemma.log": "12c155fb12664e0e5db59b0eca2d4a722a6022024965209c0c212ae287b79a22",
+    "outputs/logs/h1c_devx_prep_tests_post_eval.log": "18fe374c1cc0a6f1c5a1417301cb83f899a4f5426f23b9dfe8a79a9dcdc3b7e2"
+  },
+  "reporting_amendment_before_capture": {
+    "utc": "2026-11-14T20:24:02+00:00",
+    "note": "family-bootstrap 95% CIs and admissible counts added to the report (owner condition); procedure, selection and SC1-SC3 unchanged",
+    "sha256": {
+      "src/h1c_devx_analysis.py": "829124fdda3052efdbdd887f9934bcfeac2d255bd993afa2659d4dbad54078b8",
+      "src/h1c_devx_capture.py": "72f2a5f83fdf8c1b265d07abe07ee4145d002350f61329885fe7687b27677542",
+      "outputs/h1c_devx/plan/SPLITS.json": "68ca7d14ae72a30160414311f5a71079914f0f8ecf08b3f63d544f642a4a95ef",
+      "data/h1c/devx/model_inputs.jsonl": "ab4ee61e5ffa37f60555de15d3193752ba690751d51b8085264875ac9ae5d832",
+      "outputs/h1c_devx/plan/positions.jsonl": "c4c58f0b80ef6ded38002c745ef250f71ecd12e878bcadfe724d6f1d8c252ed7"
+    }
+  }
+}

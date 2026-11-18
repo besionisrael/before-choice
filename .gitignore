@@ -1,0 +1,31 @@
+# Python / environments
+.venv/
+.venv-cpucheck/
+.venv-gemma4/
+__pycache__/
+*.pyc
+.modal/
+results/
+
+# Starter data (regenerable)
+data/*.jsonl
+
+# Large activation tensors (3.4 GB per pool) — referenced by hash in the manifests, not versioned
+outputs/d3/**/*.npy
+
+# Sealed LOCKED-TEST pool: kept out of version control (hashes recorded in BTC-H1_FREEZE_MANIFEST.json
+# and outputs/archive/BTC-H1-v0.3/; access-log snapshots are archived there)
+data/d5/locked_test/
+
+# BTC-H1b X3+X4 multi-position tensors (7.4 GB) — referenced by hash in outputs/d3x/probe_dev/MANIFEST.json
+outputs/d3x/**/*.npy
+
+# H1c DEV activation tensors (3.2 GB) - referenced by hash in outputs/h1c_dev/capture/MANIFEST.json
+outputs/h1c_dev/capture/*.npy
+
+# H1c DEV extension tensors - referenced by hash
+outputs/h1c_devx/capture/*.npy
+
+# Internal working notes (not part of the published research artifact)
+CLAUDE.md
+reports/RESULTS_FOR_CHATGPT.md

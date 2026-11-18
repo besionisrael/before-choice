@@ -1,0 +1,105 @@
+{
+  "status": "EXPLORATORY; PROBE-DEV only (already used for H1 selection); LOCKED-TEST not accessed",
+  "factorial": {
+    "representation": [
+      "static",
+      "ctx_tgt",
+      "ctx_src"
+    ],
+    "query": [
+      "ANS",
+      "Q_END",
+      "ACT_END_A",
+      "ACT_END_B",
+      "LAST_RULE_END"
+    ],
+    "layers": [
+      0,
+      8,
+      16,
+      24,
+      32,
+      40,
+      48,
+      56,
+      61
+    ],
+    "slots": [
+      "A1",
+      "c1",
+      "c2",
+      "u2"
+    ]
+  },
+  "decoder": {
+    "form": "bilinear z^T U V^T k",
+    "r": 8,
+    "lambda": 0.1,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "early_stopping": "inner-val"
+  },
+  "key_only": {
+    "reps": [
+      "ctx_tgt",
+      "ctx_src"
+    ],
+    "lambda_grid": [
+      0.01,
+      1.0,
+      100.0
+    ],
+    "choice": "inner-val"
+  },
+  "choice_plus_keys": {
+    "reps": [
+      "ctx_tgt",
+      "ctx_src"
+    ],
+    "form": "w_A^T k 1[choice=A] + w_B^T k 1[choice=B]",
+    "lambda_grid": [
+      0.01,
+      1.0,
+      100.0
+    ],
+    "choice": "inner-val"
+  },
+  "pre_reward_queries": "ACT_END_A, ACT_END_B, LAST_RULE_END: measured as controls, no automatic causal reading",
+  "missing_positions": "depth-3 masks (slots 9-12, 19-20); PAD -> probability 0; never imputed; unexpected gaps raise",
+  "per_choice_report": "c1 and A1 at the selected cell split by model choice A / B",
+  "baselines": [
+    "B3+ (h1b_explore)",
+    "chance"
+  ],
+  "sensitivity_rule": {
+    "S-A_c1_min": 0.8,
+    "S-B_c1_minus_keyonly_min": 0.25,
+    "S-C_A1_min": 0.8
+  },
+  "selected_cell_extra": {
+    "slots": [
+      "A1",
+      "c1",
+      "c2",
+      "c3",
+      "u1",
+      "u2",
+      "u3"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "precondition": "replication check: all ANS vectors bitwise identical to D3-DEV-R1",
+  "splits": "h1b_explore inner/outer family splits (identical worlds and partitions)",
+  "budget": {
+    "cpu_hours": 6.0,
+    "threads": 4
+  },
+  "script_sha256": "f92586d03af942c28e3a5f380bfc5d7399ee0238f0eac396457ed26966dfb4c0"
+}

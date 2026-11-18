@@ -1,0 +1,80 @@
+{
+  "utc": "2026-11-14T05:59:38+00:00",
+  "predictors_16_hash_ok": true,
+  "predictor_sha256": {
+    "primary_u2": "170c76569cb98a6b8b4b8d4a27e635ad4921fb5e26722d9531a99ac6847ff65a",
+    "anchor_c1": "82710a6eb4ac50091cbecc207b455f3722dccbccc0757c7982d09c37bb50438d",
+    "anchor_c3": "098b44f6ad49c2a04c1245f648d3ed0e745a9fcf566a426477df9b1a1051d753",
+    "anchor_u1": "64c39f2595d80e1b378e75ebd2156c48f8f8a1951ca7a4e2cf2c81896f9c57ba",
+    "anchor_u3": "339464972f6047a167d817cefaaffa9cafe5669b04dc1ac8a8657b9ee7c86f42",
+    "order_u1": "aa8c64a75b2a102271bc449043e0af1d8dfe00638a59e58eb3f88f8b9af7bb9a",
+    "order_u3": "2771fdf19e6c5118640cc232922696d251643fbd2e3d8aa18684afe0c0505600",
+    "B1": "6b6adf791ce1ea7aae08ef6f31c91f602e9bb7becacfc242eee4082747ee03d9",
+    "B5": "01e84e689c1499752cfac9ff901678cb703247f9438d6c4b683165e1c6d321b7",
+    "B2_perm0": "8a8944c7398b71bbc57b5c10eb174e5ed74affe4cc4bd84fe2f8fe0bfdbe3e6d",
+    "B2_perm1": "0e3c1ad46dea7c10396e10c6e0aa235ec0df9fc203e72fc0f0fdaee8c1d5e525",
+    "B2_perm2": "0cd613164e1ee59b59a78207c383bb79ec41ab9ca92776672c82ebbc7bdf0590",
+    "B3": "2216c55c0d69defdc6189326d4e0c1a32d83721c8346586dab0a137971d00ffe",
+    "B3o_u1": "7dedd469374e36bd9900f58b49243e43bf22ad55de0424235374ce86ca259f15",
+    "B3o_u2": "9fa7d3a0ef71cd8cef4c63a5a1d8fcd299620a04c6742030df0df8bb60223486",
+    "B3o_u3": "441c0d116eac044afe51774fa58a778976dbce5347678bd17e1fd75853dd1a70"
+  },
+  "standardisation_sha256": "9cd6b2297a32fb90e6095a7d583094b8d7589615cda744634a519e1f42b7185a",
+  "standardisation_hash_ok": true,
+  "dev_source": {
+    "capture": "outputs/d3/probe_dev",
+    "MANIFEST_sha256": "306573de935f2092b49a60171b6831443a52f4f9132649949e0e5c1aef3d4d8d",
+    "MANIFEST_matches_freeze": true,
+    "n_train_worlds_used": 2625,
+    "splits_used": [
+      "train"
+    ],
+    "pools_in_rows": [
+      "F"
+    ]
+  },
+  "standardisation_recomputed_from_DEV_identical": true,
+  "standardisation_keys": [
+    "T_mu",
+    "T_sd",
+    "mean_emb_mu",
+    "mean_emb_sd",
+    "z32_mu",
+    "z32_sd",
+    "z40_mu",
+    "z40_sd",
+    "z52_mu",
+    "z52_sd",
+    "z56_mu",
+    "z56_sd"
+  ],
+  "reproduces_training_transform": true,
+  "model": {
+    "repo": "google/gemma-4-31B-it",
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "pin_ok": true,
+    "v2_common_frozen": true,
+    "A_id": 236776,
+    "B_id": 236799
+  },
+  "capture_scope": {
+    "worlds.jsonl_refused": true,
+    "manifest.json_refused": true,
+    "allowed_files": [
+      "model_inputs.jsonl"
+    ],
+    "capture_script_hash_ok": true,
+    "sealed_access_hash_ok": true
+  },
+  "D3_A3": {
+    "d3_capture_core_frozen": true,
+    "FIDELITY_MAX_ABS": 0.25,
+    "TAU": 0.125
+  },
+  "seal": {
+    "pool_intact": true,
+    "access_log_absent": true,
+    "activation_dir_absent": true
+  },
+  "all_pass": true
+}

@@ -1,0 +1,401 @@
+{
+  "protocol": "BTC-H1 confirmatory protocol v0.3",
+  "status": "FROZEN",
+  "frozen_utc": "2026-11-13T21:57:32+00:00",
+  "owner_decision": "H1-R2', H1-R4', H1-R5' approved; H1-R7 conditional approval (verifications 11.1, 11.2 PASS)",
+  "protocol_document_sha256_before_manifest_insert": "30ecade17785d818cdeef90a1b57a44893259c8d7981f5d7124e370eed715030",
+  "code_sha256": {
+    "src/h1_probe.py": "b97fd04fd959bfd843a8e9c4fc35b0277e8345acdb986e62ffd428415b03ec55",
+    "src/h1_features.py": "0620e73f309d2c2cb62d8041cc8e82997bf8c0ac235b0c2f884af0c482a93a73",
+    "src/sealed.py": "cff32bf1328385c26f305e33ef04ba42132fd19062676358efde8f579a286637",
+    "src/build_d5.py": "10f3c54a9a5ad03ccef11a471fa7cf78601c18e5ed04429599c386b80ad0d3ad",
+    "src/build_dataset.py": "c8e981136d39301213420c737fea8aba5e90095c6641a075bbe0e9ce4da07483",
+    "src/build_path_cf.py": "a405f93ccca1089f37cf30d418fedb32b3e8c6e00762a0cf0d124a4aa24636aa",
+    "oracle.py": "6b0f6f2d4ff9735f478f39fce79d0c082622b2842482bd19ea48dab0315ee640",
+    "src/independent_check.py": "6c3cee87da8b0012c9271761668d7b35b7efd4798f6d947b4776691714392b1a",
+    "src/d3_capture_core.py": "00a3fa225ed36f668d7473cd3ddc89cdfedf4c821d36b42c8e24a2c21f13e65c",
+    "src/d3_run_gemma.py": "bb2145cf3a6f1d57902d0ef622589cfc81ae5a2a2151f2de7c0cad2af57e04a6",
+    "src/v2_common.py": "8f6d6a53426308f2dfc50c6f015d57213bf023032580679522fd342b51c9a34f",
+    "src/v2_local.py": "555eff1fb141ecd1d4211771fd06552d8a070991e5376ec29983e462237f8d86",
+    "src/v2_token_audit.py": "501fbeb1d3d2402d297555f4cf4ebf69abebafc8f1ce73806eaf451a2cbf2cff",
+    "src/bench_h1_grid.py": "56f619c212e70220157db0de23fc5062a2ed2222abb8e3a91114f655826cfaee",
+    "src/power_d1prime.py": "c622d295ba8016390780f006a7926c297b105b92e1e0f33a7458aa3f5de78042",
+    "tests/test_d5_dev.py": "4d1e0dc8dd04b778afa14750e1a490694a80f0a793579027128da23c52e6971c",
+    "tests/test_d5_independence.py": "0f170576f6e1e1584b4d629d7eba5dd337dde6772acccede5851639b9dc3e6ce",
+    "tests/test_d3_run.py": "924fe26bd9ee7ba2d52f0eadfe515b4be58da077eab546080f2d7d8aea763818",
+    "tests_cpucheck/test_h1_probe.py": "85c2a5c45bd4e32b02be34349f4bf507ff14b5ea19c4c4ae5d5e627cc8d9e835",
+    "tests_gemma/test_d3_capture.py": "44385360ce012c4cfb6fa66bdfe60423f41ae50fd60f30192ab3f437a14a1b40",
+    "tests_cpucheck/test_d3_fidelity.py": "2adfb0d12e2db3391e478ea06fbde28f1ab6ac9d06aca5f6c8b9293795bb7005"
+  },
+  "test_logs": {
+    "main": {
+      "file": "outputs/logs/freeze_tests_main.log",
+      "sha256": "8a117a846ed983ab168089be669f1457e1e5be6826ea6dbecc2397b506608230"
+    },
+    "cpucheck": {
+      "file": "outputs/logs/freeze_tests_cpucheck.log",
+      "sha256": "9de9bbe267e5b95d199b2306beb985b6c57f8add7da1d09084e7e81a449820d3"
+    },
+    "gemma": {
+      "file": "outputs/logs/freeze_tests_gemma.log",
+      "sha256": "16c3ce329383a6274577a0f5f2e3797aea2928b433a8cb9a77d0b1482676405c"
+    }
+  },
+  "environments": {
+    "main": ".venv (py3.13, transformers 4.57.1, modal 1.6.4, no torch)",
+    "cpucheck": ".venv-cpucheck (py3.11, torch 2.5.1+cpu, transformers 4.57.1)",
+    "gemma": ".venv-gemma4 (py3.11, torch 2.6.0+cpu, transformers 5.23.0)"
+  },
+  "data": {
+    "PROBE-DEV": {
+      "all": "d26b51270dd1970dc193db4e88e814c137a993715cdf67066a4a72f3e7f0f15a",
+      "model_inputs": "a3c814363726493477b785397c5118035bd35b449cecc046d4fd1cc62ba47fa1",
+      "train": "4058e539ac5ebd1a0654c4bc8918189dc7f32740b0a2173e097b13420112b043",
+      "val": "b764d3e8ac06ff241a23b4378e2e9ed3a2fdc123924bc785c5d4b21fecf6b736"
+    },
+    "LOCKED-TEST_seal": {
+      "seal_id": "LOCKED-TEST-D5",
+      "sealed_utc": "2026-11-13T21:56:25+00:00",
+      "files": {
+        "manifest.json": "746586a9b47a1c9245bea2845006004b8fc58051f8fff356029d74c94bb04c19",
+        "model_inputs.jsonl": "8fbc920d44295a5d54749c7bf9913fa27c882b78c049cd38880895dbbd43bd4f",
+        "worlds.jsonl": "0a9938a79494dc5b44aba2e051761878295c5aa822d35ac190dcf84a8d14562f"
+      },
+      "SEAL_MANIFEST.json_sha256": "f1d541e297a261ab13573e6f36ea4082847d4fd968cef7a228559f86d0918392"
+    },
+    "LOCKED-TEST_generation_approval": "outputs/approvals/H1-R7_LOCKED-TEST_GENERATION.json"
+  },
+  "independence": "tests/test_d5_independence.py: 0 overlapping family ids / world ids / labels / prompt hashes; regeneration byte-identical to sealed file",
+  "not_done": [
+    "no D3 capture (GPU)",
+    "no probe trained on real activations",
+    "no unlock of LOCKED-TEST"
+  ],
+  "protocol_document_sha256_final": "09523e0f230e6b74d6c1b28a934b366d66356b91b0a7a30d791eeb144cdb69c7",
+  "amendments": [
+    {
+      "utc": "2026-11-13T22:11:06+00:00",
+      "files": {
+        "src/d3_run_gemma.py": {
+          "frozen": "e056f9feeb37af72e3999f60f1e90a2100c1a90b8ea9e0a7b01caeb66c88e56f",
+          "now": "7c3cff0bd5a088bfe6019e0baf23fc3bc7e6c0c86445d651bfcecba5f846437c"
+        },
+        "tests/test_d3_run.py": {
+          "frozen": "fb31e169d91a73adb84ac2da6a21409a89b9fd622bd25f7fd877cb40c92e6289",
+          "now": "924fe26bd9ee7ba2d52f0eadfe515b4be58da077eab546080f2d7d8aea763818"
+        }
+      },
+      "reason": "BTC-D3-DEV owner conditions: verify shard hashes/shapes BEFORE ephemeral Volume deletion; wait for Volume commit (max 300 s); scaledown_window=2; record GPU memory, env and timing. No H1 criterion, probe, baseline or data change.",
+      "tests": {
+        "main_log": "outputs/logs/d3dev_prelaunch_tests_main.log",
+        "main_log_sha256": "d91e417df36370b9d1f3f21a534f647063c97d9c2229abd84151a0cb869930fd"
+      },
+      "pre_amendment_copy": "outputs/logs/d3_run_gemma_as_frozen.py"
+    },
+    {
+      "id": "D3-A2",
+      "utc": "2026-11-13T22:30:13+00:00",
+      "type": "D3 technical amendment (owner decision on incident BTC-D3-DEV); H1 v0.3 freeze, criteria, data and baselines unchanged",
+      "rule": {
+        "max_abs_diff_full_vocab": 0.25,
+        "ab_decision": "identical (strict); original exact tie -> reconstruction |A-B| <= 2d+tau (logged; submitted for validation)",
+        "top1": "accepted iff equal or orig[t1]-orig[r1] <= 2*max_abs_diff + tau (any number of tokens)",
+        "tau": 0.125,
+        "tau_rationale": "largest bf16 ULP under soft-cap 30 (|x| in [16,32))",
+        "conformity": "always from original logits"
+      },
+      "diagnostics": "world_id in all assertions; divergence log (world_id, orig/recon top-1, margin, max diff, near_tie_top1, ab_tie_original); progress every 400 observations; run_id BTC-D3-DEV-R1",
+      "files": {
+        "src/d3_capture_core.py": {
+          "previous": "3649342f022c0c3ca9c5bc0d1efb58cb2d676b7e0b77ffa4a40d580922dcf369",
+          "now": "4e5741727184daa2eb16f707b5cecc5b77255c47a5ae2359c89355e7a9ddb14f"
+        },
+        "src/d3_run_gemma.py": {
+          "previous": "7c3cff0bd5a088bfe6019e0baf23fc3bc7e6c0c86445d651bfcecba5f846437c",
+          "now": "bb2145cf3a6f1d57902d0ef622589cfc81ae5a2a2151f2de7c0cad2af57e04a6"
+        },
+        "tests_gemma/test_d3_capture.py": {
+          "previous": "707a02909a9424e10186107652a786a76b649f600de909a225ba83e48b21fff5",
+          "now": "44385360ce012c4cfb6fa66bdfe60423f41ae50fd60f30192ab3f437a14a1b40"
+        }
+      },
+      "new_files": {
+        "tests_cpucheck/test_d3_fidelity.py": "1a0f59e0fabbdec364fb6cbe6c82101b9eb27679538c2ea83f0c9d07a66b6148"
+      },
+      "tests": {
+        "main": {
+          "log": "outputs/logs/r1_tests_main.log",
+          "sha256": "ded77708c202462fec4d6ccdbf297162c6abfba40dba247ab33f631138c66cea"
+        },
+        "cpucheck": {
+          "log": "outputs/logs/r1_tests_cpucheck.log",
+          "sha256": "2fa908ba3fb8fe78e00ceba09712e93dc1fb455f134217886a99674021cd4331"
+        },
+        "gemma": {
+          "log": "outputs/logs/r1_tests_gemma.log",
+          "sha256": "a354a274f7d0a1318cf35a0cf00a6ea925c03c20570eba612118b60c53fa9ff5"
+        }
+      },
+      "run_script_diff": "outputs/logs/d3_amendment_A1_run_script.diff"
+    },
+    {
+      "id": "D3-A3",
+      "utc": "2026-11-13T22:58:39+00:00",
+      "type": "D3 technical (owner R1 condition 4: reject non-finite values); H1 freeze unchanged",
+      "change": "check_fidelity rejects non-finite original/reconstructed logits; capture_world rejects non-finite activations or mean_emb",
+      "files": {
+        "src/d3_capture_core.py": {
+          "previous": "4e5741727184daa2eb16f707b5cecc5b77255c47a5ae2359c89355e7a9ddb14f",
+          "now": "00a3fa225ed36f668d7473cd3ddc89cdfedf4c821d36b42c8e24a2c21f13e65c"
+        },
+        "tests_cpucheck/test_d3_fidelity.py": {
+          "previous": "1a0f59e0fabbdec364fb6cbe6c82101b9eb27679538c2ea83f0c9d07a66b6148",
+          "now": "2adfb0d12e2db3391e478ea06fbde28f1ab6ac9d06aca5f6c8b9293795bb7005"
+        }
+      },
+      "tests": {
+        "main": {
+          "log": "outputs/logs/r1_tests_main.log",
+          "sha256": "6e9683cea8d0c6ee0d40684a94c2537c8e20d1511ba24d66c20492d857603cfd"
+        },
+        "cpucheck": {
+          "log": "outputs/logs/r1_tests_cpucheck.log",
+          "sha256": "71e6ce734f83e5caa13a7baf328dea981efbc9b3f192522c262d6b87a2b6fd7c"
+        },
+        "gemma": {
+          "log": "outputs/logs/r1_tests_gemma.log",
+          "sha256": "c78fcecdee4bf7fb07f9986e11c299de4b8b068928fb4c69028251c073b60891"
+        }
+      },
+      "owner_validation": "R1 authorisation 2026-11-13: original A/B tie rule approved (non-admissible, fully logged); top-1 near-tie rule approved as diagnostic (implied by full-vocabulary bound), tau=0.125"
+    },
+    {
+      "id": "D3-A4",
+      "utc": "2026-11-14T06:00:07+00:00",
+      "files": {
+        "tests/test_d5_dev.py": {
+          "frozen": "a43d338c2e2613f81348c9e240292881c993a9633ff81162e558a2d149027671",
+          "now": "4d1e0dc8dd04b778afa14750e1a490694a80f0a793579027128da23c52e6971c"
+        }
+      },
+      "reason": "Owner decision T-1 (D\u00c9CISION SCIENTIFIQUE \u2014 BTC-D3-TEST): post-capture seal check distinguishes legitimate capture-stage prompt reads (model_inputs.jsonl, purpose D3-TEST-CAPTURE) from forbidden oracle access; the access log is never deleted or reset. No H1 criterion, predictor, threshold or data change."
+    }
+  ],
+  "artifacts": {
+    "D3-DEV-R1_activations": {
+      "dir": "outputs/d3/probe_dev",
+      "MANIFEST.json_sha256": "306573de935f2092b49a60171b6831443a52f4f9132649949e0e5c1aef3d4d8d",
+      "candidate_embeddings_sha256": "93a6d07cb8c7147c4e1e581f56064e41adae7a1fcdd76e90866135dc4cefb376",
+      "run_manifest_sha256": "5a6878e5b4b501139c9670365e2007ecfdcd2d696756aed0119ee6d6e2a032e4",
+      "code": {
+        "d3_capture_core.py": "00a3fa225ed36f668d7473cd3ddc89cdfedf4c821d36b42c8e24a2c21f13e65c",
+        "d3_run_gemma.py": "bb2145cf3a6f1d57902d0ef622589cfc81ae5a2a2151f2de7c0cad2af57e04a6"
+      },
+      "captured_utc": "2026-11-13T23:13Z"
+    },
+    "H1-DEV-TRAIN": {
+      "utc": "2026-11-14T05:30:34+00:00",
+      "FINAL.json_sha256": "2c290489cba56dc06a05c9e6f013941727b560bf9ef906e37990855bd136b425",
+      "SELECTIONS.json_sha256": "d633d1a47312c684935280236f696be05c4ff701fce9ca5d0c3c4d57c6933d1f",
+      "fits.jsonl_sha256": "088f7620136fc973d60089f029f9504c3d130d35ee25320bd8bba95d6d62537f",
+      "budget.tsv_sha256": "1467e9e7eb0faa0bd33d9ae0765dfa6308d335dcb96f343a11a7e865ed230bf3",
+      "runner_sha256": "5c9b10f7ddce3f22b84d20d09f5f7accc3a5ccd252da06596a4750c11afa9b0d",
+      "predictors": {
+        "primary_u2": "170c76569cb98a6b8b4b8d4a27e635ad4921fb5e26722d9531a99ac6847ff65a",
+        "anchor_c1": "82710a6eb4ac50091cbecc207b455f3722dccbccc0757c7982d09c37bb50438d",
+        "anchor_c3": "098b44f6ad49c2a04c1245f648d3ed0e745a9fcf566a426477df9b1a1051d753",
+        "anchor_u1": "64c39f2595d80e1b378e75ebd2156c48f8f8a1951ca7a4e2cf2c81896f9c57ba",
+        "anchor_u3": "339464972f6047a167d817cefaaffa9cafe5669b04dc1ac8a8657b9ee7c86f42",
+        "order_u1": "aa8c64a75b2a102271bc449043e0af1d8dfe00638a59e58eb3f88f8b9af7bb9a",
+        "order_u3": "2771fdf19e6c5118640cc232922696d251643fbd2e3d8aa18684afe0c0505600",
+        "B1": "6b6adf791ce1ea7aae08ef6f31c91f602e9bb7becacfc242eee4082747ee03d9",
+        "B5": "01e84e689c1499752cfac9ff901678cb703247f9438d6c4b683165e1c6d321b7",
+        "B2_perm0": "8a8944c7398b71bbc57b5c10eb174e5ed74affe4cc4bd84fe2f8fe0bfdbe3e6d",
+        "B2_perm1": "0e3c1ad46dea7c10396e10c6e0aa235ec0df9fc203e72fc0f0fdaee8c1d5e525",
+        "B2_perm2": "0cd613164e1ee59b59a78207c383bb79ec41ab9ca92776672c82ebbc7bdf0590",
+        "B3": "2216c55c0d69defdc6189326d4e0c1a32d83721c8346586dab0a137971d00ffe",
+        "B3o_u1": "7dedd469374e36bd9900f58b49243e43bf22ad55de0424235374ce86ca259f15",
+        "B3o_u2": "9fa7d3a0ef71cd8cef4c63a5a1d8fcd299620a04c6742030df0df8bb60223486",
+        "B3o_u3": "441c0d116eac044afe51774fa58a778976dbce5347678bd17e1fd75853dd1a70"
+      },
+      "cpu_hours": 1.4749262152777778
+    },
+    "D3-TEST-R1_activations": {
+      "utc": "2026-11-14T13:55:24+00:00",
+      "app_id": "ap-e6GnzMcEj5dOt6gVMmUiod",
+      "utc_start": "2026-11-14T13:35:44Z",
+      "utc_end": "2026-11-14T13:53:51Z",
+      "seal_id": "LOCKED-TEST-D3-ACT",
+      "sealed_utc": "2026-11-14T13:53:47+00:00",
+      "SEAL_MANIFEST_sha256": "fe7c57569a727eaf9b75bbbd0d01be1b917e3b50495f54a2fb2dcec972980597",
+      "n_sealed_files": 40,
+      "capture_summary_sha256": "7956f5217fe3c5489d621cdebe178df5d3fdefd99578613752bffa0bba825f74",
+      "prelaunch": "outputs/d3/d3_test_r1_prelaunch.json",
+      "prelaunch_sha256": "def1dce8b39ecca3ddc4bf93fadd9801aead933b12bc20acaca6c996d5fccbfc",
+      "run_log_sha256": "713090aa2ed3a48422553cb4dc74c4cc7f3bda0e39aa42986687a20165f56919",
+      "watchdog_log_sha256": "1bc9481be65e7736b26e5d16328cedf7132fb57db525df1fdb33831a79192734",
+      "pool_access_log_sha256": "60e708ccca68e955531db502e1cf6e35c76fd9a8b7782dcbcc3a01b9514cfb18",
+      "pool_access_log_entries": 2,
+      "unlock_capture_sha256": "1710b9751763ad44ac36087a0dd925ae695e9af23acb4bd4a2e62399e025e461",
+      "unlock_attempt1_archive_sha256": "6f66ce347494cc345b06a1456b513f858bda5fb53f170daf6b2ec1b77deb7358",
+      "capture_code_sha256": "d793662422f32d2c6245b98882b1b93503c451e5c031873859c8188c5285e436",
+      "cost_usd": {
+        "A100-80GB": 0.62501261,
+        "CPU": 0.04733275,
+        "Memory": 0.03200065,
+        "Network": 0.04139777,
+        "total": 0.74574378
+      },
+      "attempt_1_cost_usd_reconfirmed": 0.0,
+      "post_tests": {
+        "main": "outputs/logs/d3test_r1_post_tests_main.log",
+        "main_sha256": "6e14b03d875198316a75aa83b7bfe4378b8fb95c9843225ad9953974bcd02bb7",
+        "cpucheck": "outputs/logs/d3test_r1_post_tests_cpucheck.log",
+        "cpucheck_sha256": "19c8536fd5b734b514a4b85746bc15c281552eb1e08613b0f2c9c56be82883ba"
+      }
+    },
+    "H1-TEST-EVAL": {
+      "utc_start": "2026-11-14T14:06:58Z",
+      "utc_end": "2026-11-14T14:07:28Z",
+      "outcome": "NOT MET",
+      "evaluator_sha256": "a967c42e20e3b4852b0e9e491c0b8436d405dfe0f7026abb5d1db6ef0d53c3c2",
+      "files": {
+        "outputs/h1_test/EVAL_RESULT.json": "e021937853ee2919c85b79cc1c804ae5967ffae3a848fdf28e7a94b49f3c58b2",
+        "outputs/h1_test/per_world.jsonl": "5f3aa6de2b872a66b6cd2fdbe06ccf022def789c368914fb531434a8176dab33",
+        "outputs/h1_test/EVAL_STARTED.json": "ed458d279950f07709a3afc733e41e33a20d2c2292cc7387946c0e12c8409d5d",
+        "outputs/h1_test_preconditions.json": "0ef885c3a35c3a0117a7813f777403db2c7999c90fae2ea480aec3bd8d8bf810",
+        "outputs/logs/h1_test_eval_run.log": "1cf08440616ef31e8d93644bbf44c769a7036fbc79a69ae4178f6c754529371a",
+        "outputs/approvals/unlock/H1-TEST-EVAL/UNLOCK_LOCKED-TEST-D5.json": "3af21bdbc8210fc5ef29e6ea464c0130f165dca006ddbe93e08d8e03fcb8291b",
+        "outputs/approvals/unlock/H1-TEST-EVAL/UNLOCK_LOCKED-TEST-D3-ACT.json": "9e018487116bb4f89d58b01df926f19ff7df25cb840ba104885adf2d76cc1658",
+        "data/d5/locked_test/SEAL_ACCESS_LOG.jsonl": "66922721e4a0dd4dbd4ac5aa3f0fb472c88c5f2b6f91ecc9bc0e09ca54d58deb",
+        "outputs/d3/locked_test/SEAL_ACCESS_LOG.jsonl": "79f0d2617d8cc6a183e94600d3f0be43123bc699e2fffc4f1cfaf75cff26444e"
+      },
+      "note": "tests/test_d5_dev.py::test_locked_test_sealed_read_only now fails by design (D3-A4 allowed only capture reads until the H1-TEST-EVAL unlock); not modified without owner decision"
+    }
+  },
+  "prepared": {
+    "BTC-H1-DEV-TRAIN": {
+      "utc": "2026-11-14T04:45:57+00:00",
+      "status": "prepared, NOT executed on real activations",
+      "files": {
+        "src/h1_train_dev.py": "5c9b10f7ddce3f22b84d20d09f5f7accc3a5ccd252da06596a4750c11afa9b0d",
+        "src/h1_dev_precheck.py": "fb1ad7fd5914d058202f294ed3f8b70256a7ffe088f173db9c5a257371dbccb5",
+        "tests_cpucheck/test_h1_train_dev.py": "0d4fb2f22b5e7ef1349c4bc341a9a7c5928ac0b544427958c3cb01e814896ce7"
+      },
+      "precheck": {
+        "file": "outputs/h1_dev/precheck.json",
+        "sha256": "d0a1ce9c0d2ef9154c5eab6996972721cfd0cfab61994f9afde296ce644ed2aa"
+      },
+      "conformance": {
+        "file": "outputs/h1_dev/conformance.json",
+        "sha256": "315ab4cdf5f4e96b341ab200723204a6fb1dfc4d8189f3369c754b64121827fb"
+      },
+      "tests": {
+        "cpucheck_log": "outputs/logs/h1train_tests_cpucheck.log",
+        "sha256": "0e175a1a29156094a909a57ee9e73eccbbafd3e7959f5803ab5af198dd226d3a",
+        "main_log": "outputs/logs/h1train_tests_main.log",
+        "main_sha256": "b6bc77b1ab80b5b62fb6fcb1704df08531cf83bc8fe459a88e80e58272ee6de3"
+      },
+      "pre_launch_update": {
+        "utc": "2026-11-14T04:53:55+00:00",
+        "changes": "B2 predictors saved (trained on all DEV, fixed E*; 9 frozen fits); 16 final predictors asserted; DEV-train metrics and hit_epoch_cap logged per fit",
+        "tests": {
+          "cpucheck_sha256": "39f1ea78ceb0ae80584a6b08a88b013668d68a8ee1887437cc7ba034d4c6a58d",
+          "main_sha256": "1b16c418d82a31dc30c686ee057ac2cc8ccbbe8ba017d21fdd05cd6ec437b533"
+        }
+      }
+    },
+    "BTC-D3-TEST": {
+      "utc": "2026-11-14T05:52:31+00:00",
+      "status": "PREPARED, NOT RUN (no GPU, no unlock, no evaluation)",
+      "code_sha256": {
+        "src/h1_frozen.py": "0917870e086122f39a72d31c4aa3e843959c991cd3129f32b9e1c2dbb72ecaef",
+        "src/h1_verify_final.py": "423afda8f891a3eb9799bfac7762698772011f3a941a7a0347876410a751f9fd",
+        "src/sealed_stage/sealed_access.py": "87b1e3a653ed0f9932151101a209e94dce7ab487e13012f6fb1a84743bd18043",
+        "src/sealed_stage/d3_run_gemma_test.py": "3318895a8d3c4ed68a76f07891541e4e24f278bbaec7d93dcefc94939149fe3b",
+        "src/sealed_stage/h1_eval_test.py": "a91d386d080113669fccb20edc7393f5b39026870ccf88dd23bf3e5e5c513f8c",
+        "tests_cpucheck/test_d3_test_prep.py": "8b3c343ed260f4ec0113479d759c27598664e407caec5bf4bb7bc6707c889a59",
+        "tests/test_d3_test_run.py": "ff28691643b5be1df89842d776f38c270fda91a337e47e0a5bf19805f5f1b109"
+      },
+      "standardisation_sha256": "9cd6b2297a32fb90e6095a7d583094b8d7589615cda744634a519e1f42b7185a",
+      "final_verification_sha256": "1a87724fce0ec4b5d25d719b86305cc91585655ea02e01a54a07c574afb6d4c6",
+      "test_logs": {
+        "cpucheck": "outputs/logs/d3test_prep_tests_cpucheck.log",
+        "cpucheck_sha256": "84732860f72cb9871a6a062790b4a24ef515b6d56960005838172681bc7a5257",
+        "main": "outputs/logs/d3test_prep_tests_main.log",
+        "main_sha256": "b7b9ef1aff264d3b7faddc1e326a13ab37906f1b19ea9c5988516fbcf0606111"
+      },
+      "locked_test_access_log_present": false,
+      "attempt_1": {
+        "utc_start": "2026-11-14T06:00:18Z",
+        "utc_end": "2026-11-14T06:02:43Z",
+        "app_id": "ap-GmiXKvUh7mZPZ2ZiqLwRCS",
+        "outcome": "FAILED at container startup (IndexError in module-level ROOT = parents[2]); app stopped manually; no activations; no retry",
+        "prelaunch": "outputs/d3/d3_test_prelaunch.json",
+        "prelaunch_sha256": "b85963da2756ef86cd417d01aa424477ebb5969c6e0fb54118d14f00c7abb7cc",
+        "log": "outputs/logs/d3test_run.log",
+        "log_sha256": "85a95deae3a2c87719a62d4006791e29be671dcbc7eb0059309fbe3573af61a2",
+        "pool_access_log_sha256": "bcd1c64f7d35e0a9965f905bb3c4bc743f60eeb28c28269554368ea4e7717673",
+        "code_sha256_at_launch": {
+          "src/h1_frozen.py": "0917870e086122f39a72d31c4aa3e843959c991cd3129f32b9e1c2dbb72ecaef",
+          "src/h1_verify_final.py": "423afda8f891a3eb9799bfac7762698772011f3a941a7a0347876410a751f9fd",
+          "src/sealed_stage/sealed_access.py": "87b1e3a653ed0f9932151101a209e94dce7ab487e13012f6fb1a84743bd18043",
+          "src/sealed_stage/d3_run_gemma_test.py": "3318895a8d3c4ed68a76f07891541e4e24f278bbaec7d93dcefc94939149fe3b",
+          "src/sealed_stage/h1_eval_test.py": "a91d386d080113669fccb20edc7393f5b39026870ccf88dd23bf3e5e5c513f8c",
+          "tests_cpucheck/test_d3_test_prep.py": "8b3c343ed260f4ec0113479d759c27598664e407caec5bf4bb7bc6707c889a59",
+          "tests/test_d3_test_run.py": "ff28691643b5be1df89842d776f38c270fda91a337e47e0a5bf19805f5f1b109"
+        }
+      }
+    },
+    "BTC-D3-TEST-R1": {
+      "utc": "2026-11-14T06:05:10+00:00",
+      "status": "PREPARED, NOT RUN",
+      "code_sha256": {
+        "src/h1_frozen.py": "0917870e086122f39a72d31c4aa3e843959c991cd3129f32b9e1c2dbb72ecaef",
+        "src/h1_verify_final.py": "423afda8f891a3eb9799bfac7762698772011f3a941a7a0347876410a751f9fd",
+        "src/sealed_stage/sealed_access.py": "87b1e3a653ed0f9932151101a209e94dce7ab487e13012f6fb1a84743bd18043",
+        "src/sealed_stage/d3_run_gemma_test.py": "d793662422f32d2c6245b98882b1b93503c451e5c031873859c8188c5285e436",
+        "src/sealed_stage/h1_eval_test.py": "1b7814301015231712925e6a6616da373a9830da45473926a419dcc17d97a22d",
+        "tests_cpucheck/test_d3_test_prep.py": "48b8a2bba4a8593501bedede96af48abd80db6844e9b1b34870879b127051ff5",
+        "tests/test_d3_test_run.py": "96a4447c182c8109a49e2919710d650cbf7f07b30718ef63a030f06f86eeba44"
+      },
+      "changes": {
+        "src/sealed_stage/d3_run_gemma_test.py": "ROOT resolved only locally (container-safe import); preflight accepts the empty unsealed directory left by attempt 1; directory created with exist_ok",
+        "src/sealed_stage/h1_eval_test.py": "owner decisions C-1 (B2 scored vs true u2) and O-2 (plan_status for every pre-registered secondary; Holm family flagged as subset)",
+        "tests": "container-mount import regression; C-1 and O-2 tests"
+      },
+      "test_logs": {
+        "cpucheck": "outputs/logs/d3test_attempt1_post_tests_cpucheck.log",
+        "cpucheck_sha256": "73833b979679c79cd6d26e4c0e902f79119960fa748dac4ce5bbc3c7d5f66340",
+        "main": "outputs/logs/d3test_attempt1_post_tests_main.log",
+        "main_sha256": "d34d386b2c062f065f2ac1931d933905d990c2eeac187ec543b20b57f171d7ae"
+      },
+      "standardisation_sha256": "9cd6b2297a32fb90e6095a7d583094b8d7589615cda744634a519e1f42b7185a"
+    },
+    "BTC-H1-TEST-EVAL": {
+      "utc": "2026-11-14T13:56:11+00:00",
+      "status": "PREPARED, NOT RUN (no analytical unlock exists)",
+      "code_sha256": {
+        "src/sealed_stage/h1_eval_test.py": "a967c42e20e3b4852b0e9e491c0b8436d405dfe0f7026abb5d1db6ef0d53c3c2",
+        "src/sealed_stage/sealed_access.py": "87b1e3a653ed0f9932151101a209e94dce7ab487e13012f6fb1a84743bd18043",
+        "src/h1_frozen.py": "0917870e086122f39a72d31c4aa3e843959c991cd3129f32b9e1c2dbb72ecaef",
+        "src/h1_probe.py": "b97fd04fd959bfd843a8e9c4fc35b0277e8345acdb986e62ffd428415b03ec55",
+        "src/h1_features.py": "0620e73f309d2c2cb62d8041cc8e82997bf8c0ac235b0c2f884af0c482a93a73",
+        "tests_cpucheck/test_d3_test_prep.py": "48b8a2bba4a8593501bedede96af48abd80db6844e9b1b34870879b127051ff5"
+      },
+      "standardisation_sha256": "9cd6b2297a32fb90e6095a7d583094b8d7589615cda744634a519e1f42b7185a",
+      "predictors": "artifacts.H1-DEV-TRAIN.predictors (16)",
+      "activation_seal_SEAL_MANIFEST_sha256": "fe7c57569a727eaf9b75bbbd0d01be1b917e3b50495f54a2fb2dcec972980597",
+      "owner_decisions_applied": {
+        "C-1": "B2 scored vs true u2; max over k inside each replicate",
+        "C-2": "L2(a) admissible depth-4 base/cf",
+        "O-2": "plan_status for every pre-registered secondary; Holm over computable inferential S1,S2 flagged as subset",
+        "T-1": "amendment D3-A4"
+      },
+      "test_logs": {
+        "cpucheck": "outputs/logs/d3test_r1_post_tests_cpucheck.log",
+        "cpucheck_sha256": "19c8536fd5b734b514a4b85746bc15c281552eb1e08613b0f2c9c56be82883ba"
+      }
+    }
+  }
+}

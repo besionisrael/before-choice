@@ -1,0 +1,11 @@
+{
+ "H1_outcome": "NOT MET",
+ "admissibility": {
+  "n_worlds": 4800,
+  "n_ties": 9,
+  "n_admissible": 3791,
+  "not_evaluable_K10_decoy": 224,
+  "not_evaluable_K7_decoy": 135
+ }
+}
+EXIT=0

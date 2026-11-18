@@ -1,0 +1,9 @@
+{
+ "owner_approval_id": "BTC-D3-TEST-CAPTURE (owner decision D\u00c9CISION SCIENTIFIQUE \u2014 BTC-D3-TEST, 2026-11-14)",
+ "approved_utc": "2026-11-14T06:00:07+00:00",
+ "scope": "D3-TEST-CAPTURE",
+ "files": [
+  "model_inputs.jsonl"
+ ],
+ "written_by": "Claude Code on the owner authorisation of a single capture"
+}

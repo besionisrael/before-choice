@@ -1,0 +1,43 @@
+{
+  "utc": "2026-11-14T15:20:27+00:00",
+  "status": "PREPARED, NOT RUN",
+  "sha256": {
+    "src/d3x_positions.py": "78b090cbc42385645eeab4cddd55fa44215f788f3f504603cc308513f93de086",
+    "src/d3x_build_positions.py": "fdc3708550c2bc0f799bd2e6f620e78019840ab112b2c79238226784a78dd001",
+    "src/d3x_capture_core.py": "0284cd4233ad2ad00e22fa2bf9c1b7df34c56b2613ab09fadd0adebcb84214e1",
+    "src/h1b_x3x4_run_gemma.py": "ffdef1aaf2cb6bccf5b8f07ae2a4d13d0022622c011a86b845611eb5d60a494a",
+    "src/h1b_x3x4_analysis.py": "4d89d809d4f47f64484b222e130790220aaf11ebefe13012044edcdb5a5ee898",
+    "src/d3_capture_core.py": "00a3fa225ed36f668d7473cd3ddc89cdfedf4c821d36b42c8e24a2c21f13e65c",
+    "src/h1b_explore.py": "2fa1f3e4d9402d7b9698e58ea5fc8f8cba855903d48496f2a3477d85d7e96130",
+    "tests_gemma/test_d3x_capture.py": "32e785320980d01614541608a68a7ac0fc03df5fcca987c9eee845359683c394",
+    "tests_cpucheck/test_h1b_x3x4.py": "b850fd65068a4a217a9b3228a59278b077abdc0e2cc9c21fe202d635da2f256b",
+    "tests/test_h1b_x3x4_run.py": "bc1e36b8526c9e2cd02d5db30af4d867e808613287ccff9d48726101d55178f8",
+    "outputs/d3x/plan/positions.jsonl": "2663054996281ca566bd48820ad77fe3702ac9c118fa162db6a3b5d0d9d44760",
+    "outputs/d3x/plan/audit.json": "0be3088e2d8c957f411dbaa1f0e88576a4e1f2cf712a9a4bb037026783b19510",
+    "outputs/logs/x3x4_prep_tests_main.log": "2b7ad46e9cb254bcc1bacfeec8304a05b3760dbc980ca259fff727f2ce182cff",
+    "outputs/logs/x3x4_prep_tests_cpucheck.log": "d33d23560c86a5aa281ac6e7d1041a669c622c6037a2e1c9766c9187bbc76de3",
+    "outputs/logs/x3x4_prep_tests_gemma.log": "8aa853e0cf7e2367153c01a441d4064090b61a2c1f5a9062efacf779a30f90c5",
+    "outputs/logs/x3x4_prep_tests_post_eval.log": "cc2b0736a85457411bdc42129b3f66a148282d50869913202b8d098a5abbe0d1"
+  },
+  "frozen_before_capture": {
+    "utc": "2026-11-14T15:32:50+00:00",
+    "decision": "DECISION SCIENTIFIQUE - BTC-H1b-X3X4 (GO conditionnel; amendments 1-3 applied)",
+    "sha256": {
+      "src/d3x_positions.py": "78b090cbc42385645eeab4cddd55fa44215f788f3f504603cc308513f93de086",
+      "src/d3x_build_positions.py": "fdc3708550c2bc0f799bd2e6f620e78019840ab112b2c79238226784a78dd001",
+      "src/d3x_capture_core.py": "0284cd4233ad2ad00e22fa2bf9c1b7df34c56b2613ab09fadd0adebcb84214e1",
+      "src/h1b_x3x4_run_gemma.py": "ffdef1aaf2cb6bccf5b8f07ae2a4d13d0022622c011a86b845611eb5d60a494a",
+      "src/h1b_x3x4_analysis.py": "f92586d03af942c28e3a5f380bfc5d7399ee0238f0eac396457ed26966dfb4c0",
+      "src/d3_capture_core.py": "00a3fa225ed36f668d7473cd3ddc89cdfedf4c821d36b42c8e24a2c21f13e65c",
+      "src/h1b_explore.py": "2fa1f3e4d9402d7b9698e58ea5fc8f8cba855903d48496f2a3477d85d7e96130",
+      "tests_gemma/test_d3x_capture.py": "32e785320980d01614541608a68a7ac0fc03df5fcca987c9eee845359683c394",
+      "tests_cpucheck/test_h1b_x3x4.py": "d7e6028cc832fc7fc3fffd02ba53ef69a0e4e0f5384f02d17f86cc1a56a9a2ff",
+      "tests/test_h1b_x3x4_run.py": "bc1e36b8526c9e2cd02d5db30af4d867e808613287ccff9d48726101d55178f8",
+      "outputs/d3x/plan/positions.jsonl": "2663054996281ca566bd48820ad77fe3702ac9c118fa162db6a3b5d0d9d44760",
+      "outputs/d3x/plan/audit.json": "0be3088e2d8c957f411dbaa1f0e88576a4e1f2cf712a9a4bb037026783b19510",
+      "outputs/logs/x3x4_frozen_tests_cpucheck.log": "bad98e8f748be3c6445de6fb03378ded4a1691a6f7dc136e79e00dc2717bdd23",
+      "outputs/logs/x3x4_frozen_tests_main.log": "95c9a5f7f7b75393fad7311144aa262ed46a034251b742a813d542bb293d1927",
+      "outputs/logs/x3x4_frozen_tests_gemma.log": "1793245942d2631ac2b71729bf758dc88986d18fabc9b7de467caef20937891e"
+    }
+  }
+}

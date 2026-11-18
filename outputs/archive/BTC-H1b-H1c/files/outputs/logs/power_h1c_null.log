@@ -1,0 +1,5 @@
+N1_boundary_independent {'mean_pair_success_P': 0.24991969354271681, 'rejection_rate': 0.02, 'mc_se': 0.001979898987322333, 'ci95': [0.016119397984848228, 0.023880602015151773], 'calibrated_le_0.025': True}
+N2_family_icc0.40 {'mean_pair_success_P': 0.18470556545058592, 'rejection_rate': 0.0, 'mc_se': 1.414213562373095e-08, 'ci95': [0.0, 2.7718585822512662e-08], 'calibrated_le_0.025': True}
+N3_deterministic {'mean_pair_success_P': 0.0, 'rejection_rate': 0.0, 'mc_se': 1.414213562373095e-08, 'ci95': [0.0, 2.7718585822512662e-08], 'calibrated_le_0.025': True}
+N4_perm_below_floor {'mean_pair_success_P': 0.2502418151232238, 'rejection_rate': 0.0228, 'mc_se': 0.00211093154791907, 'ci95': [0.018662574166078624, 0.026937425833921377], 'calibrated_le_0.025': True}
+EXIT=0

@@ -1,0 +1,25 @@
+{
+  "model_key": "olmo31_32b",
+  "repo": "allenai/Olmo-3.1-32B-Instruct",
+  "revision": "ac0587e4a7744a551c059d8cd17ba220bc940dae",
+  "torch": "2.5.1+cpu",
+  "transformers": "4.57.1",
+  "template_tail_ok": "1560/1560",
+  "token_counts_sha256": "043f39eab2236a5a9a1ee10b05ae7a9aa5abce3ebf31f44bbeeb0e023f5ef646",
+  "pre_answer_last_token": "\u010a",
+  "meta_vocab_out": 100278,
+  "meta_num_hidden_layers": 64,
+  "n_hidden_states_expected": 65,
+  "meta_params_b": 32.23,
+  "e2e_tiny_model": {
+    "n_results": 45,
+    "vocab_size": 100278,
+    "top1_in_AB_rate_random_model": 0.0,
+    "replay_identical": true
+  },
+  "tamper_rejected": {
+    "extra_field": true,
+    "wrong_digest": true,
+    "wrong_tokens": true
+  }
+}

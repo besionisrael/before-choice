@@ -1,0 +1,123 @@
+{
+ "shards": [
+  {
+   "name": "xshard_000",
+   "n": 400,
+   "files": {
+    "xshard_000_acts.npy": "5b7eb62d88d2c7d6e74c81753b0257b29bb8db32ea6e22f32f0e43cba9d80049",
+    "xshard_000_index.jsonl": "830406df1c4783904c8a61921726e4bb684c0929132b03bfc4830910128b7752"
+   }
+  },
+  {
+   "name": "xshard_001",
+   "n": 400,
+   "files": {
+    "xshard_001_acts.npy": "bdf03ab66c5c73a0f4d1bcd3577eb1a34e5dbcc112c1f1d70a71a97618f968bb",
+    "xshard_001_index.jsonl": "7cb252145a3b6d9a13f76c598a45c80fea0a8bc4469eadcc5cc6e1ef3694d214"
+   }
+  },
+  {
+   "name": "xshard_002",
+   "n": 400,
+   "files": {
+    "xshard_002_acts.npy": "a4c506d021eb03285fecb8313422fcd685a59554dc3b0ac8ea01c655083661c6",
+    "xshard_002_index.jsonl": "2429d62ea6111005aea0994af1e6adf84d47e29ce2cca52c28784b1b8290f749"
+   }
+  },
+  {
+   "name": "xshard_003",
+   "n": 400,
+   "files": {
+    "xshard_003_acts.npy": "2dab0f487729ba144cf0a4797b5df685a995f253da356ef9807a15f82373f015",
+    "xshard_003_index.jsonl": "1265119b26f8675b9cfc34e3b95d47607194b63542089f82cd1d4725fd93867f"
+   }
+  },
+  {
+   "name": "xshard_004",
+   "n": 400,
+   "files": {
+    "xshard_004_acts.npy": "447ff7195971f9568f312b44dbdd2b6e1ab7fdcb7943d1b1f28b58ce4eff65d4",
+    "xshard_004_index.jsonl": "06e9397108419bb67a662d91053e586976027278d932c9a81f50626d35407b06"
+   }
+  },
+  {
+   "name": "xshard_005",
+   "n": 400,
+   "files": {
+    "xshard_005_acts.npy": "6acd6119a1cc93fb511cb7a7aa0bed23da036336532b2399c76cb919c8aa98e5",
+    "xshard_005_index.jsonl": "e0c56870d7f924b50026e815d0273f385f1b79e8001d3583c8c7af92752b13e3"
+   }
+  },
+  {
+   "name": "xshard_006",
+   "n": 400,
+   "files": {
+    "xshard_006_acts.npy": "a46cc8fbec45e62c4b4e41fe5f56000de861c2404a8b76d8d81fbbe8ce8f4355",
+    "xshard_006_index.jsonl": "705419ee69ce6b7c91ac36d57b6fdb41614169c083968b01c8bf3e4b9ab1ed6a"
+   }
+  },
+  {
+   "name": "xshard_007",
+   "n": 400,
+   "files": {
+    "xshard_007_acts.npy": "c6b4020d81e0d7da0a09dae25bc4e72870e6c1d26b909f4e34805f008a461154",
+    "xshard_007_index.jsonl": "900d88bf2d73bab34e69de34cc087ff0481b69bf470c8797b4f20dbf0df71b37"
+   }
+  },
+  {
+   "name": "xshard_008",
+   "n": 280,
+   "files": {
+    "xshard_008_acts.npy": "f11f8bb4fa99ea8d556779fc762e23ad9d30cd1f168f3badd52bf385c6ff9d45",
+    "xshard_008_index.jsonl": "e7a8dd59d28f5ecfc898f9d4c406982250ae0330583b3c976b2844a0516272fe"
+   }
+  }
+ ],
+ "n_worlds": 3480,
+ "layers": [
+  0,
+  8,
+  16,
+  24,
+  32,
+  40,
+  48,
+  56,
+  61
+ ],
+ "P": 22,
+ "replay_bitwise_identical": 20,
+ "fidelity_summary": {
+  "max_abs_diff": {
+   "post_norm": 0.19520950317382812,
+   "pre_norm": 0.20506000518798828
+  },
+  "tau": 0.125,
+  "limit": 0.25,
+  "n_divergences_logged": 2,
+  "divergences": [
+   {
+    "world_id": "F20168-base",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 236799,
+    "max_abs_diff": 0.18315505981445312,
+    "tolerance": 0.49131011962890625,
+    "near_tie_top1": true,
+    "ab_tie_original": false
+   },
+   {
+    "world_id": "F20168-base",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 236799,
+    "max_abs_diff": 0.18315505981445312,
+    "tolerance": 0.49131011962890625,
+    "near_tie_top1": true,
+    "ab_tie_original": false
+   }
+  ]
+ },
+ "layout": "acts[i] = P x L x d uint16(bf16); slots per d3x_positions.SLOT_NAMES; layers 0..60 HF hidden_states, 61 raw block-60 pre-norm; masked slots are zero",
+ "wall_s": 588.1375346183777
+}

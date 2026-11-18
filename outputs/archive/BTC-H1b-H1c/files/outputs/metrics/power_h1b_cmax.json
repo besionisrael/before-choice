@@ -1,0 +1,677 @@
+{
+  "doc": "BTC-H1b v1.0: joint power with the EXACT decision rule (owner condition 3).\n\n    python src/power_h1b_cmax.py   -> outputs/metrics/power_h1b_cmax.json\n\nRule simulated exactly: family-cluster percentile bootstrap (shared resamples); in EVERY resample\n  Delta_C    = mean(P) - max(mean(C_bil), mean(C_lin))      (C_max chosen inside the replicate)\n  Delta_perm = mean(P) - mean(P_perm)\nH1b MET iff the 2.5 % percentile of both is > 0. Point estimates use the full sample.\nPer world: latent-Gaussian correctness of P, C_bil, C_lin, Q (=P_perm) with a shared family effect (ICC 0.15) and the\ncorrelation matrix of each scenario; paired success = both worlds of a pair correct. Pairs per family from PROBE-DEV\n(0.02 / 0.45 / 0.53) unless a scenario says otherwise. Bootstrap B = 1,000 per simulated dataset (the protocol uses\n10,000; B = 1,000 changes percentile noise only marginally); 400 simulated datasets per cell.\nScenarios (assumptions reported in the JSON):\n  base         C_lin paired 0.55, C_bil 0.40 (DEV pattern), rho(P,C_lin)=0.7, rho(P,C_bil)=0.5, rho(C_bil,C_lin)=0.7,\n               rho(P,Q)=0.5, rho(C,Q)=0.4\n  equal_ctrl   ADVERSE: C_bil = C_lin = 0.55 (max of two equally strong noisy controls is biased upwards)\n  low_corr     ADVERSE: all correlations 0.3 (decoders disagree more -> larger variance of differences)\n  low_adm      ADVERSE: fewer pairs per family (0.10 / 0.50 / 0.40), 1,000 and 875 (INSUFFICIENT boundary) families",
+  "n_sim": 400,
+  "B": 1000,
+  "scenarios": {
+    "base": {
+      "Cl": 0.55,
+      "Cb": 0.4,
+      "pairs": [
+        0.02,
+        0.45,
+        0.53
+      ],
+      "corr": {
+        "P-Cl": 0.7,
+        "P-Cb": 0.5,
+        "Cb-Cl": 0.7,
+        "P-Q": 0.5,
+        "Cb-Q": 0.4,
+        "Cl-Q": 0.4
+      }
+    },
+    "equal_ctrl": {
+      "Cl": 0.55,
+      "Cb": 0.55,
+      "pairs": [
+        0.02,
+        0.45,
+        0.53
+      ],
+      "corr": {
+        "P-Cl": 0.7,
+        "P-Cb": 0.7,
+        "Cb-Cl": 0.7,
+        "P-Q": 0.5,
+        "Cb-Q": 0.4,
+        "Cl-Q": 0.4
+      }
+    },
+    "low_corr": {
+      "Cl": 0.55,
+      "Cb": 0.4,
+      "pairs": [
+        0.02,
+        0.45,
+        0.53
+      ],
+      "corr": {
+        "P-Cl": 0.3,
+        "P-Cb": 0.3,
+        "Cb-Cl": 0.3,
+        "P-Q": 0.3,
+        "Cb-Q": 0.3,
+        "Cl-Q": 0.3
+      }
+    },
+    "low_adm": {
+      "Cl": 0.55,
+      "Cb": 0.4,
+      "pairs": [
+        0.1,
+        0.5,
+        0.4
+      ],
+      "corr": {
+        "P-Cl": 0.7,
+        "P-Cb": 0.5,
+        "Cb-Cl": 0.7,
+        "P-Q": 0.5,
+        "Cb-Q": 0.4,
+        "Cl-Q": 0.4
+      }
+    }
+  },
+  "cells": [
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 0.965,
+      "power_perm": 0.0075,
+      "power_joint": 0.0075,
+      "mean_contributing_families": 979.705
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 0.985,
+      "power_perm": 0.445,
+      "power_joint": 0.445,
+      "mean_contributing_families": 980.2025
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 0.975,
+      "power_perm": 0.945,
+      "power_joint": 0.9225,
+      "mean_contributing_families": 980.02
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 0.975,
+      "power_perm": 1.0,
+      "power_joint": 0.975,
+      "mean_contributing_families": 980.02
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.035,
+      "power_joint": 0.035,
+      "mean_contributing_families": 979.6325
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.41,
+      "power_joint": 0.41,
+      "mean_contributing_families": 980.165
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.96,
+      "power_joint": 0.96,
+      "mean_contributing_families": 979.59
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 979.7875
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.025,
+      "power_joint": 0.025,
+      "mean_contributing_families": 979.9675
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.475,
+      "power_joint": 0.475,
+      "mean_contributing_families": 980.3575
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.925,
+      "power_joint": 0.925,
+      "mean_contributing_families": 979.8725
+    },
+    {
+      "scenario": "base",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 980.195
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 0.96,
+      "power_perm": 0.03,
+      "power_joint": 0.03,
+      "mean_contributing_families": 979.7525
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 0.93,
+      "power_perm": 0.3875,
+      "power_joint": 0.3825,
+      "mean_contributing_families": 979.5175
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 0.94,
+      "power_perm": 0.9475,
+      "power_joint": 0.9025,
+      "mean_contributing_families": 980.025
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 0.955,
+      "power_perm": 1.0,
+      "power_joint": 0.955,
+      "mean_contributing_families": 979.8925
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.025,
+      "power_joint": 0.025,
+      "mean_contributing_families": 980.185
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.4225,
+      "power_joint": 0.4225,
+      "mean_contributing_families": 979.9775
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.9425,
+      "power_joint": 0.9425,
+      "mean_contributing_families": 979.725
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 979.8625
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.0375,
+      "power_joint": 0.0375,
+      "mean_contributing_families": 980.165
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.38,
+      "power_joint": 0.38,
+      "mean_contributing_families": 979.825
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.955,
+      "power_joint": 0.955,
+      "mean_contributing_families": 979.76
+    },
+    {
+      "scenario": "equal_ctrl",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 980.2875
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 0.875,
+      "power_perm": 0.02,
+      "power_joint": 0.02,
+      "mean_contributing_families": 980.12
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 0.8875,
+      "power_perm": 0.3275,
+      "power_joint": 0.325,
+      "mean_contributing_families": 979.7025
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 0.8875,
+      "power_perm": 0.8975,
+      "power_joint": 0.8225,
+      "mean_contributing_families": 980.6125
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 0.865,
+      "power_perm": 1.0,
+      "power_joint": 0.865,
+      "mean_contributing_families": 979.8125
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.0425,
+      "power_joint": 0.0425,
+      "mean_contributing_families": 979.975
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.3825,
+      "power_joint": 0.3825,
+      "mean_contributing_families": 979.9525
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 0.995,
+      "power_perm": 0.885,
+      "power_joint": 0.8825,
+      "mean_contributing_families": 980.035
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 980.105
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.02,
+      "power_joint": 0.02,
+      "mean_contributing_families": 979.815
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.36,
+      "power_joint": 0.36,
+      "mean_contributing_families": 979.5875
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.895,
+      "power_joint": 0.895,
+      "mean_contributing_families": 980.165
+    },
+    {
+      "scenario": "low_corr",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 980.09
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 0.9475,
+      "power_perm": 0.02,
+      "power_joint": 0.02,
+      "mean_contributing_families": 899.77
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.0,
+      "families": 875,
+      "power_C": 0.9025,
+      "power_perm": 0.02,
+      "power_joint": 0.02,
+      "mean_contributing_families": 787.0025
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 0.955,
+      "power_perm": 0.41,
+      "power_joint": 0.4025,
+      "mean_contributing_families": 899.935
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.025,
+      "families": 875,
+      "power_C": 0.93,
+      "power_perm": 0.3225,
+      "power_joint": 0.32,
+      "mean_contributing_families": 787.305
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 0.955,
+      "power_perm": 0.915,
+      "power_joint": 0.89,
+      "mean_contributing_families": 899.67
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.05,
+      "families": 875,
+      "power_C": 0.9375,
+      "power_perm": 0.8675,
+      "power_joint": 0.8275,
+      "mean_contributing_families": 786.5875
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 0.9525,
+      "power_perm": 1.0,
+      "power_joint": 0.9525,
+      "mean_contributing_families": 900.0825
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.05,
+      "delta_perm": 0.1,
+      "families": 875,
+      "power_C": 0.8875,
+      "power_perm": 1.0,
+      "power_joint": 0.8875,
+      "mean_contributing_families": 787.635
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.015,
+      "power_joint": 0.015,
+      "mean_contributing_families": 900.4375
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.0,
+      "families": 875,
+      "power_C": 0.9975,
+      "power_perm": 0.01,
+      "power_joint": 0.01,
+      "mean_contributing_families": 787.3075
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.3425,
+      "power_joint": 0.3425,
+      "mean_contributing_families": 899.395
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.025,
+      "families": 875,
+      "power_C": 1.0,
+      "power_perm": 0.3275,
+      "power_joint": 0.3275,
+      "mean_contributing_families": 787.15
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.925,
+      "power_joint": 0.925,
+      "mean_contributing_families": 901.235
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.05,
+      "families": 875,
+      "power_C": 1.0,
+      "power_perm": 0.86,
+      "power_joint": 0.86,
+      "mean_contributing_families": 787.425
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 900.0575
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.075,
+      "delta_perm": 0.1,
+      "families": 875,
+      "power_C": 0.9975,
+      "power_perm": 1.0,
+      "power_joint": 0.9975,
+      "mean_contributing_families": 787.3125
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.0,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.03,
+      "power_joint": 0.03,
+      "mean_contributing_families": 900.33
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.0,
+      "families": 875,
+      "power_C": 1.0,
+      "power_perm": 0.0325,
+      "power_joint": 0.0325,
+      "mean_contributing_families": 787.885
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.025,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.405,
+      "power_joint": 0.405,
+      "mean_contributing_families": 900.275
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.025,
+      "families": 875,
+      "power_C": 1.0,
+      "power_perm": 0.3525,
+      "power_joint": 0.3525,
+      "mean_contributing_families": 787.6225
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.05,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 0.89,
+      "power_joint": 0.89,
+      "mean_contributing_families": 900.75
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.05,
+      "families": 875,
+      "power_C": 1.0,
+      "power_perm": 0.85,
+      "power_joint": 0.85,
+      "mean_contributing_families": 786.765
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.1,
+      "families": 1000,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 900.0625
+    },
+    {
+      "scenario": "low_adm",
+      "delta_C_vs_Clin": 0.1,
+      "delta_perm": 0.1,
+      "families": 875,
+      "power_C": 1.0,
+      "power_perm": 1.0,
+      "power_joint": 1.0,
+      "mean_contributing_families": 787.8425
+    }
+  ]
+}

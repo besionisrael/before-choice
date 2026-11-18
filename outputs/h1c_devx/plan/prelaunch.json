@@ -1,0 +1,17 @@
+{
+  "frozen": {
+    "src/h1c_devx_capture.py": true,
+    "src/h1c_gates.py": true,
+    "src/d3x_capture_core.py": true,
+    "src/d3_capture_core.py": true,
+    "src/v2_common.py": true,
+    "src/h1c_positions.py": true,
+    "data/h1c/devx/model_inputs.jsonl": true,
+    "outputs/h1c_devx/plan/positions.jsonl": true,
+    "outputs/h1c_devx/plan/SPLITS.json": true,
+    "src/h1c_devx_analysis.py": true
+  },
+  "no_prior_capture": true,
+  "dev_gates_ok": true,
+  "all_pass": true
+}

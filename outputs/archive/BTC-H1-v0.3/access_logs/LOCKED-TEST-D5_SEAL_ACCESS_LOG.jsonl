@@ -1,0 +1,4 @@
+{"utc": "2026-11-14T06:00:20+00:00", "file": "model_inputs.jsonl", "purpose": "D3-TEST-CAPTURE: BTC-D3-TEST forward passes (prompts only)", "approval": "BTC-D3-TEST-CAPTURE (owner decision D\u00c9CISION SCIENTIFIQUE \u2014 BTC-D3-TEST, 2026-11-14)"}
+{"utc": "2026-11-14T13:35:47+00:00", "file": "model_inputs.jsonl", "purpose": "D3-TEST-CAPTURE: BTC-D3-TEST forward passes (prompts only)", "approval": "BTC-D3-TEST-R1 (owner AUTORISATION SCIENTIFIQUE \u2014 BTC-D3-TEST-R1, 2026-11-14)"}
+{"utc": "2026-11-14T14:07:12+00:00", "file": "model_inputs.jsonl", "purpose": "H1-TEST-EVAL: prompts", "approval": "BTC-H1-TEST-EVAL (owner AUTORISATION SCIENTIFIQUE \u2014 BTC-H1-TEST-EVAL, 2026-11-14; single analytical access)"}
+{"utc": "2026-11-14T14:07:12+00:00", "file": "worlds.jsonl", "purpose": "H1-TEST-EVAL: oracle labels", "approval": "BTC-H1-TEST-EVAL (owner AUTORISATION SCIENTIFIQUE \u2014 BTC-H1-TEST-EVAL, 2026-11-14; single analytical access)"}

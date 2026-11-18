@@ -1,0 +1,24 @@
+{
+ "verify": {
+  "hashes_and_shapes_ok": true,
+  "n_worlds": 4800
+ },
+ "nonfinite": 0,
+ "max_abs_diff": {
+  "post_norm": 0.19520950317382812,
+  "pre_norm": 0.20506000518798828
+ },
+ "quantiles_median_p99": {
+  "post_norm": [
+   0.1304,
+   0.1952
+  ],
+  "pre_norm": [
+   0.1304,
+   0.1952
+  ]
+ },
+ "divergences": 28,
+ "top1_in_AB": 4329,
+ "ab_ties": 11
+}

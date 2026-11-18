@@ -1,0 +1,190 @@
+{
+  "status": "POST HOC / EXPLORATORY",
+  "layer": 40,
+  "n": {
+    "TRAIN": 2551,
+    "SELECT": 364,
+    "EVAL": 711
+  },
+  "key_identity_within_pairs": {
+    "early_unchosen": "0/118",
+    "late_unchosen": "141/141",
+    "cswap_chosen": "26/141"
+  },
+  "E1_early_unchosen": {
+    "P": {
+      "n_families": 118,
+      "n_worlds": 236,
+      "acc": 0.7033898305084746,
+      "ci95": [
+        0.6483050847457628,
+        0.7584745762711864
+      ],
+      "signflip_p_one_sided": 9.999000099990002e-05
+    },
+    "key_only": {
+      "n_families": 118,
+      "n_worlds": 236,
+      "acc": 0.4449152542372881,
+      "ci95": [
+        0.3813559322033898,
+        0.5084745762711864
+      ],
+      "signflip_p_one_sided": 0.967003299670033
+    },
+    "C_lin": {
+      "n_families": 118,
+      "n_worlds": 236,
+      "acc": 0.4872881355932203,
+      "ci95": [
+        0.4322033898305085,
+        0.5466101694915254
+      ],
+      "signflip_p_one_sided": 0.6114388561143885
+    },
+    "C_bil": {
+      "n_families": 118,
+      "n_worlds": 236,
+      "acc": 0.5169491525423728,
+      "ci95": [
+        0.461864406779661,
+        0.5720338983050848
+      ],
+      "signflip_p_one_sided": 0.22777722227777222
+    },
+    "best_control": "C_bil",
+    "P_minus_best_control": {
+      "n_families": 118,
+      "mean_diff": 0.18644067645072937,
+      "ci95": [
+        0.11016949266195297,
+        0.26271185278892517
+      ],
+      "signflip_p_two_sided": 9.999000099990002e-05
+    }
+  },
+  "E2_cswap_chosen": {
+    "all_pairs": {
+      "PC2": {
+        "n_families": 141,
+        "n_worlds": 282,
+        "acc": 0.7695035460992907,
+        "ci95": [
+          0.7198581560283688,
+          0.8191489361702128
+        ],
+        "signflip_p_one_sided": 9.999000099990002e-05
+      },
+      "key_only": {
+        "n_families": 141,
+        "n_worlds": 282,
+        "acc": 0.5141843971631206,
+        "ci95": [
+          0.46808510638297873,
+          0.5602836879432624
+        ],
+        "signflip_p_one_sided": 0.33556644335566443
+      },
+      "C_lin": {
+        "n_families": 141,
+        "n_worlds": 282,
+        "acc": 0.5035460992907801,
+        "ci95": [
+          0.45390070921985815,
+          0.5531914893617021
+        ],
+        "signflip_p_one_sided": 0.5089491050894911
+      },
+      "C_bil": {
+        "n_families": 141,
+        "n_worlds": 282,
+        "acc": 0.49645390070921985,
+        "ci95": [
+          0.46099290780141844,
+          0.5319148936170213
+        ],
+        "signflip_p_one_sided": 0.5042495750424958
+      }
+    },
+    "identical_key_subset": {
+      "PC2": {
+        "n_families": 26,
+        "n_worlds": 52,
+        "acc": 0.7115384615384616,
+        "ci95": [
+          0.5961538461538461,
+          0.8269230769230769
+        ],
+        "signflip_p_one_sided": 0.00019998000199980003
+      },
+      "key_only": {
+        "n_families": 26,
+        "n_worlds": 52,
+        "acc": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "signflip_p_one_sided": 1.0
+      },
+      "C_lin": {
+        "n_families": 26,
+        "n_worlds": 52,
+        "acc": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "signflip_p_one_sided": 1.0
+      },
+      "C_bil": {
+        "n_families": 26,
+        "n_worlds": 52,
+        "acc": 0.5,
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "signflip_p_one_sided": 1.0
+      }
+    }
+  },
+  "E3_branch_comparison": {
+    "chosen_cswap_identical": {
+      "n_families": 26,
+      "n_worlds": 52,
+      "acc": 0.7115384615384616,
+      "ci95": [
+        0.5961538461538461,
+        0.8269230769230769
+      ],
+      "signflip_p_one_sided": 0.00019998000199980003
+    },
+    "unchosen_late": {
+      "n_families": 141,
+      "n_worlds": 282,
+      "acc": 0.5212765957446809,
+      "ci95": [
+        0.48226950354609927,
+        0.5567375886524822
+      ],
+      "signflip_p_one_sided": 0.17818218178182182
+    },
+    "chosen_minus_unchosen_per_family": {
+      "n_families": 25,
+      "mean_diff": 0.25999999046325684,
+      "ci95": [
+        0.11999999731779099,
+        0.4000000059604645
+      ],
+      "signflip_p_two_sided": 0.0020997900209979003
+    },
+    "populations": {
+      "late_pairs_contrib_families": 141,
+      "cswap_pairs_contrib_families": 141,
+      "cswap_identical_key_pairs": 26,
+      "note": "different admissible subsets: a cswap pair needs base_L and cswap_L admissible; a late pair needs base_L and dswap_L admissible; the chosen keys are identical only when the chosen arrivals precede the chosen swapped lines (not enforced by the generator)"
+    }
+  },
+  "cpu_hours": 0.016050347222222223
+}

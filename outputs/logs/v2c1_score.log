@@ -1,0 +1,29 @@
+{
+ "criteria": {
+  "C1": true,
+  "C2": true,
+  "C3a": true,
+  "C3b": true,
+  "C4": true,
+  "C5": true
+ },
+ "depth2_base_cf": {
+  "n": 60,
+  "n_families": 30,
+  "n_ties": 0,
+  "acc_primary": 1.0,
+  "acc_strict": 1.0,
+  "acc_lenient": 1.0,
+  "ci95_family_bootstrap": [
+   1.0,
+   1.0
+  ]
+ },
+ "format": {
+  "p_mass_AB_ge_0.5_rate": 0.9507575757575758,
+  "top1_in_AB_rate": 0.9507575757575758,
+  "top1_tokens_not_AB": {
+   "To": 65
+  }
+ }
+}

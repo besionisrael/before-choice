@@ -1,0 +1,13 @@
+independent {'new_rule_rejection': 0.0246, 'new_mc_se': 0.0021906546966603386, 'new_ci95': [0.020306316794545736, 0.028893683205454265], 'old_paired_rule_rejection': 0.0228, 'old_mc_se': 0.00211093154791907}
+anticorrelated {'new_rule_rejection': 0.0224, 'new_mc_se': 0.002092760855903034, 'new_ci95': [0.018298188722430053, 0.026501811277569946], 'old_paired_rule_rejection': 1.0, 'old_mc_se': 1.414213562373095e-08}
+identical {'new_rule_rejection': 0.0, 'new_mc_se': 1.414213562373095e-08, 'new_ci95': [0, 2.7718585822512662e-08], 'old_paired_rule_rejection': 0.0, 'old_mc_se': 1.414213562373095e-08}
+anticorrelated_family {'new_rule_rejection': 0.0222, 'new_mc_se': 0.002083610328252382, 'new_ci95': [0.018116123756625333, 0.02628387624337467], 'old_paired_rule_rejection': 1.0, 'old_mc_se': 1.414213562373095e-08}
+{'rho_within_pair': 0.0, 'delta_single': 0.025, 'paired_equiv_if_rho0': 0.275625, 'power': 0.39}
+{'rho_within_pair': 0.0, 'delta_single': 0.05, 'paired_equiv_if_rho0': 0.30250000000000005, 'power': 0.929}
+{'rho_within_pair': 0.0, 'delta_single': 0.075, 'paired_equiv_if_rho0': 0.33062499999999995, 'power': 0.9995}
+{'rho_within_pair': 0.0, 'delta_single': 0.1, 'paired_equiv_if_rho0': 0.36, 'power': 1.0}
+{'rho_within_pair': 0.5, 'delta_single': 0.025, 'paired_equiv_if_rho0': 0.275625, 'power': 0.328}
+{'rho_within_pair': 0.5, 'delta_single': 0.05, 'paired_equiv_if_rho0': 0.30250000000000005, 'power': 0.833}
+{'rho_within_pair': 0.5, 'delta_single': 0.075, 'paired_equiv_if_rho0': 0.33062499999999995, 'power': 0.9945}
+{'rho_within_pair': 0.5, 'delta_single': 0.1, 'paired_equiv_if_rho0': 0.36, 'power': 1.0}
+EXIT=0

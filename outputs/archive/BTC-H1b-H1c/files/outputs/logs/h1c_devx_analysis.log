@@ -1,0 +1,113 @@
+{
+ "status": "EXPLORATORY",
+ "n": {
+  "TRAIN": 2551,
+  "SELECT": 364,
+  "EVAL": 711
+ },
+ "layer_selection": {
+  "32": {
+   "PC1_SELECT": 0.5851648449897766
+  },
+  "40": {
+   "PC1_SELECT": 0.9093406796455383
+  },
+  "48": {
+   "PC1_SELECT": 0.906593382358551
+  }
+ },
+ "selected_layer": 40,
+ "PC1": {
+  "TRAIN": 1.0,
+  "SELECT": 0.9093406796455383,
+  "EVAL": 0.8860759735107422,
+  "EVAL_ci": {
+   "n_families": 174,
+   "n_worlds": 711,
+   "acc": 0.8860759493670886,
+   "ci95": [
+    0.8554879127239985,
+    0.9150155225270674
+   ]
+  },
+  "SELECT_ci": {
+   "n_families": 88,
+   "n_worlds": 364,
+   "acc": 0.9093406593406593,
+   "ci95": [
+    0.8753539114672024,
+    0.9408774659888506
+   ]
+  }
+ },
+ "uncertainty_EVAL": {
+  "PC2_all": {
+   "n_families": 174,
+   "n_worlds": 711,
+   "acc": 0.7580872011251758,
+   "ci95": [
+    0.7199434229137199,
+    0.7946563479716192
+   ]
+  },
+  "P_unchosen_all": {
+   "n_families": 174,
+   "n_worlds": 711,
+   "acc": 0.6047819971870605,
+   "ci95": [
+    0.575037095002803,
+    0.634408984536319
+   ]
+  },
+  "P_unchosen_late_worlds": {
+   "n_families": 158,
+   "n_worlds": 299,
+   "acc": 0.5183946488294314,
+   "ci95": [
+    0.47986237076002175,
+    0.5566666666666666
+   ]
+  },
+  "admissible": {
+   "EVAL_worlds": 711,
+   "EVAL_families": 174
+  }
+ },
+ "PC2_chosen_continuation_EVAL": {
+  "n_families": 174,
+  "acc": 0.755938708782196,
+  "signflip_p_one_sided": 9.999000099990002e-05
+ },
+ "P_unchosen_EVAL": {
+  "single_all": 0.604781985282898,
+  "robust_late": {
+   "n_families": 141,
+   "single_acc_late": 0.521276593208313,
+   "signflip_p_one_sided": 0.17818218178182182
+  },
+  "robust_early": {
+   "n_families": 118,
+   "single_acc_late": 0.7033898234367371,
+   "signflip_p_one_sided": 9.999000099990002e-05
+  },
+  "paired_late_descriptive": [
+   0.12765957415103912,
+   141
+  ]
+ },
+ "stop_criteria": {
+  "thresholds": {
+   "SC1_PC1_min": 0.8,
+   "SC2_select_eval_max_gap": 0.1,
+   "SC3_PC2_signflip_alpha": 0.025
+  },
+  "results": {
+   "SC1": true,
+   "SC2": true,
+   "SC3": true
+  },
+  "decision": "INSTRUMENT ADEQUATE: re-examine a frozen confirmatory protocol"
+ },
+ "cpu_hours": 0.042682291666666664
+}
+EXIT=0

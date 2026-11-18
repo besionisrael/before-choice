@@ -1,0 +1,240 @@
+{
+  "grids": {
+    "P": 408,
+    "A": 1632,
+    "B1": 24,
+    "B5": 24,
+    "B3": 16
+  },
+  "primary_selection": {
+    "config": [
+      "P",
+      "u2",
+      32,
+      8,
+      0.1
+    ],
+    "mean_metric": 0.030303030303030304,
+    "E": 5
+  },
+  "anchor_selection": {
+    "c1": {
+      "config": [
+        "A",
+        "c1",
+        32,
+        32,
+        0.01
+      ],
+      "mean_metric": 0.24834307992202728,
+      "E": 10
+    },
+    "c3": {
+      "config": [
+        "A",
+        "c3",
+        40,
+        32,
+        0.01
+      ],
+      "mean_metric": 0.31272727272727274,
+      "E": 11
+    },
+    "u1": {
+      "config": [
+        "A",
+        "u1",
+        56,
+        32,
+        0.0001
+      ],
+      "mean_metric": 0.2436647173489279,
+      "E": 8
+    },
+    "u3": {
+      "config": [
+        "A",
+        "u3",
+        52,
+        32,
+        0.1
+      ],
+      "mean_metric": 0.27454545454545454,
+      "E": 14
+    }
+  },
+  "B1_selection": {
+    "config": [
+      "B1",
+      "u2",
+      "mean_emb",
+      8,
+      0.1
+    ],
+    "mean_metric": 0.0,
+    "E": 6
+  },
+  "B5_selection": {
+    "config": [
+      "B5",
+      "u2",
+      "none",
+      8,
+      0.1
+    ],
+    "mean_metric": 0.0,
+    "E": 6
+  },
+  "B3_selection": {
+    "config": [
+      "B3",
+      "u2",
+      "text",
+      0,
+      0.1
+    ],
+    "mean_metric": 0.15584415584415584,
+    "E": 0
+  },
+  "B3o_selection": {
+    "u1": {
+      "config": [
+        "B3o",
+        "u1",
+        "text",
+        0,
+        0.1
+      ],
+      "mean_metric": 1.0,
+      "E": 0
+    },
+    "u2": {
+      "config": [
+        "B3o",
+        "u2",
+        "text",
+        0,
+        0.1
+      ],
+      "mean_metric": 0.32748538011695905,
+      "E": 0
+    },
+    "u3": {
+      "config": [
+        "B3o",
+        "u3",
+        "text",
+        0,
+        0.1
+      ],
+      "mean_metric": 0.22181818181818183,
+      "E": 0
+    }
+  },
+  "order_E": {
+    "u1": 5,
+    "u3": 6
+  },
+  "completed_all_selection_grids": true,
+  "B2_info": {
+    "0": {
+      "fraction_targets_unchanged": 0.20948275923728943
+    },
+    "1": {
+      "fraction_targets_unchanged": 0.19770115613937378
+    },
+    "2": {
+      "fraction_targets_unchanged": 0.1681034415960312
+    }
+  },
+  "final_refits": {
+    "predictors": {
+      "primary_u2": {
+        "path": "final\\primary_u2.pt",
+        "sha256": "170c76569cb98a6b8b4b8d4a27e635ad4921fb5e26722d9531a99ac6847ff65a",
+        "E": 5
+      },
+      "anchor_c1": {
+        "path": "final\\anchor_c1.pt",
+        "sha256": "82710a6eb4ac50091cbecc207b455f3722dccbccc0757c7982d09c37bb50438d",
+        "E": 10
+      },
+      "anchor_c3": {
+        "path": "final\\anchor_c3.pt",
+        "sha256": "098b44f6ad49c2a04c1245f648d3ed0e745a9fcf566a426477df9b1a1051d753",
+        "E": 11
+      },
+      "anchor_u1": {
+        "path": "final\\anchor_u1.pt",
+        "sha256": "64c39f2595d80e1b378e75ebd2156c48f8f8a1951ca7a4e2cf2c81896f9c57ba",
+        "E": 8
+      },
+      "anchor_u3": {
+        "path": "final\\anchor_u3.pt",
+        "sha256": "339464972f6047a167d817cefaaffa9cafe5669b04dc1ac8a8657b9ee7c86f42",
+        "E": 14
+      },
+      "order_u1": {
+        "path": "final\\order_u1.pt",
+        "sha256": "aa8c64a75b2a102271bc449043e0af1d8dfe00638a59e58eb3f88f8b9af7bb9a",
+        "E": 5
+      },
+      "order_u3": {
+        "path": "final\\order_u3.pt",
+        "sha256": "2771fdf19e6c5118640cc232922696d251643fbd2e3d8aa18684afe0c0505600",
+        "E": 6
+      },
+      "B1": {
+        "path": "final\\B1.pt",
+        "sha256": "6b6adf791ce1ea7aae08ef6f31c91f602e9bb7becacfc242eee4082747ee03d9",
+        "E": 6
+      },
+      "B5": {
+        "path": "final\\B5.pt",
+        "sha256": "01e84e689c1499752cfac9ff901678cb703247f9438d6c4b683165e1c6d321b7",
+        "E": 6
+      },
+      "B2_perm0": {
+        "path": "final\\B2_perm0.pt",
+        "sha256": "8a8944c7398b71bbc57b5c10eb174e5ed74affe4cc4bd84fe2f8fe0bfdbe3e6d",
+        "E": 5
+      },
+      "B2_perm1": {
+        "path": "final\\B2_perm1.pt",
+        "sha256": "0e3c1ad46dea7c10396e10c6e0aa235ec0df9fc203e72fc0f0fdaee8c1d5e525",
+        "E": 5
+      },
+      "B2_perm2": {
+        "path": "final\\B2_perm2.pt",
+        "sha256": "0cd613164e1ee59b59a78207c383bb79ec41ab9ca92776672c82ebbc7bdf0590",
+        "E": 5
+      },
+      "B3": {
+        "path": "final\\B3.pt",
+        "sha256": "2216c55c0d69defdc6189326d4e0c1a32d83721c8346586dab0a137971d00ffe"
+      },
+      "B3o_u1": {
+        "path": "final\\B3o_u1.pt",
+        "sha256": "7dedd469374e36bd9900f58b49243e43bf22ad55de0424235374ce86ca259f15"
+      },
+      "B3o_u2": {
+        "path": "final\\B3o_u2.pt",
+        "sha256": "9fa7d3a0ef71cd8cef4c63a5a1d8fcd299620a04c6742030df0df8bb60223486"
+      },
+      "B3o_u3": {
+        "path": "final\\B3o_u3.pt",
+        "sha256": "441c0d116eac044afe51774fa58a778976dbce5347678bd17e1fd75853dd1a70"
+      }
+    },
+    "standardisation": {
+      "T_mu_sd_from": "DEV-train candidate labels",
+      "z_mu_sd_from": "DEV-train worlds"
+    },
+    "n_predictors": 16,
+    "convention": "16 final predictors = 13 (primary u2; B6 anchors c1,c3,u1,u3; order heads u1,u3; B1; B5; B3; B3-order u1,u2,u3) + 3 B2 predictors (one per permutation, each a 3-seed average). Each bilinear predictor stores its 3 seed fits; the L2 order test uses primary_u2 as its u2 head.",
+    "n_bilinear_refits": 27,
+    "n_b2_fits_on_all_dev": 9,
+    "n_logit_refits": 4
+  },
+  "cpu_hours_used": 1.4749262152777778
+}

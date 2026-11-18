@@ -1,0 +1,420 @@
+{
+  "run_id": "BTC-D3-TEST",
+  "pool": "LOCKED-TEST",
+  "stage": "D3-TEST-CAPTURE",
+  "inputs_sha256": "8fbc920d44295a5d54749c7bf9913fa27c882b78c049cd38880895dbbd43bd4f",
+  "digest": "4601e2f22adcd06694040ae61eb43b44cc22c8031acffa35aff80ea0dc56c3ee",
+  "n_labels": 5800,
+  "preflight": {
+    "frozen_code": {
+      "src/d3_capture_core.py": true,
+      "src/v2_common.py": true,
+      "src/v2_local.py": true,
+      "src/sealed.py": true
+    },
+    "pool_seal_intact": true,
+    "inputs_hash_is_frozen": true,
+    "no_prior_capture": true,
+    "no_analytical_access_ever": true
+  },
+  "remote_manifest_sha256": "59204d7a33a60d63f5cd14266be5fd0932af9761868f8a6cfeadd54474eefd3c",
+  "verify": {
+    "hashes_and_shapes_ok": true,
+    "n_worlds": 4800
+  },
+  "world_ids_complete": true,
+  "bytes_downloaded": 3432742686,
+  "env": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.23.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 63.354609152
+  },
+  "fidelity": {
+    "max_abs_diff": {
+      "post_norm": 0.19520950317382812,
+      "pre_norm": 0.19520950317382812
+    },
+    "tau": 0.125,
+    "limit": 0.25,
+    "n_divergences_logged": 32,
+    "divergences": [
+      {
+        "world_id": "F30003-swap_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30003-swap_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30016-decoy_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30016-decoy_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.15535736083984375,
+        "tolerance": 0.4357147216796875,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30040-upath_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": true,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30040-upath_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1900186538696289,
+        "tolerance": 0.5050373077392578,
+        "near_tie_top1": true,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30042-cpath_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30042-cpath_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30047-alias_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.14220333099365234,
+        "tolerance": 0.4094066619873047,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30047-alias_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.14220333099365234,
+        "tolerance": 0.4094066619873047,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30066-cpath_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30066-cpath_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30113-upath_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": true,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30113-upath_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": true,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30115-upath_base",
+        "reconstruction": "post_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30115-upath_base",
+        "reconstruction": "pre_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30115-xswap_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.18315505981445312,
+        "tolerance": 0.49131011962890625,
+        "near_tie_top1": true,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30115-xswap_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.18315505981445312,
+        "tolerance": 0.49131011962890625,
+        "near_tie_top1": true,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30119-swap_base",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1501007080078125,
+        "tolerance": 0.425201416015625,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30119-swap_base",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1501007080078125,
+        "tolerance": 0.425201416015625,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30124-decoy_base",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30124-decoy_base",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30184-upath_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30184-upath_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1728076934814453,
+        "tolerance": 0.4706153869628906,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30208-decoy_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.182403564453125,
+        "tolerance": 0.48980712890625,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30208-decoy_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 2021,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.182403564453125,
+        "tolerance": 0.48980712890625,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30235-decoy_cf",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1521739959716797,
+        "tolerance": 0.4293479919433594,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30235-decoy_cf",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.1521739959716797,
+        "tolerance": 0.4293479919433594,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F30250-cpath_base",
+        "reconstruction": "post_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": true,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30250-cpath_base",
+        "reconstruction": "pre_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236799,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": true,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30286-shuffle_base",
+        "reconstruction": "post_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      },
+      {
+        "world_id": "F30286-shuffle_base",
+        "reconstruction": "pre_norm",
+        "orig_top1": 236776,
+        "recon_top1": 236776,
+        "orig_margin_top1_vs_recon_top1": 0.0,
+        "max_abs_diff": 0.13035297393798828,
+        "tolerance": 0.38570594787597656,
+        "near_tie_top1": false,
+        "ab_tie_original": true
+      }
+    ]
+  },
+  "timing": {
+    "load_s": 244.74825286865234,
+    "capture_s": 632.626631975174,
+    "remote_total_s": 877.380856513977,
+    "call_to_return_s": 904.7245578765869,
+    "return_to_visible_s": 10.91725492477417,
+    "download_s": 125.7882730960846,
+    "local_wall_s": 1047.007774591446
+  },
+  "resources": {
+    "gpu": "A100-80GB",
+    "cpu": [
+      4.0,
+      4.0
+    ],
+    "memory_mib": [
+      16384,
+      98304
+    ],
+    "timeout_s": 1500,
+    "guard_s": 1420
+  },
+  "cost_note": "record actual cost from `modal billing report --show-resources` immediately after the run"
+}

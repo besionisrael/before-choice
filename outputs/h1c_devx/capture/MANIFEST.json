@@ -1,0 +1,293 @@
+{
+ "shards": [
+  {
+   "name": "xshard_000",
+   "n": 500,
+   "files": {
+    "xshard_000_acts.npy": "b957c0b4a909ab2801bfd8b61d24587d8fd1e2d00d79a7daac1c2a208cfac1ed",
+    "xshard_000_index.jsonl": "ab389d625593d52ee37404eba011270b378ebaf3e40f296e67a1aede35d43676"
+   }
+  },
+  {
+   "name": "xshard_001",
+   "n": 500,
+   "files": {
+    "xshard_001_acts.npy": "e8a66459ce9403a9b01fd60eb3fc5b4bef29bc9764bee52d2271eeca782b1162",
+    "xshard_001_index.jsonl": "e64a73be32a895234c4b2cce3fb5953f3def817c39db8940b9a28ce14be2338a"
+   }
+  },
+  {
+   "name": "xshard_002",
+   "n": 500,
+   "files": {
+    "xshard_002_acts.npy": "76aa3f3a4037c86edaab020f7c00306b96cca0197dda05964f709a17791d8594",
+    "xshard_002_index.jsonl": "e2ea4ef4a7e449e228799c1db9d2d69a7f9ee36f8c965e3d279ce24ed274bf2a"
+   }
+  },
+  {
+   "name": "xshard_003",
+   "n": 500,
+   "files": {
+    "xshard_003_acts.npy": "60255cc6d13affe8c293d695fd7a16afd25ae7c003831c17febaf3604c05145b",
+    "xshard_003_index.jsonl": "7f14f34363e79dfe76a521ed248adfb1eb39ca8f5c6fd0c12fff46f3a1cdb61f"
+   }
+  },
+  {
+   "name": "xshard_004",
+   "n": 500,
+   "files": {
+    "xshard_004_acts.npy": "97c5b636008ab85212b05a36a0a8eacf26eb8f044f9e6a769267b6b18e314377",
+    "xshard_004_index.jsonl": "32413ed21beb36666b6a9fc4477897913dd608bde65787aed2d38f7a30d52f6f"
+   }
+  },
+  {
+   "name": "xshard_005",
+   "n": 500,
+   "files": {
+    "xshard_005_acts.npy": "55c34582e3ca29d8f26448717fe3831b36e3893b1755fa9e8e9ea1dcd3861b94",
+    "xshard_005_index.jsonl": "bd084e0e8d8d6c7c69c4c5f499afd84fdc667b6597b53650e2d67386c0608f70"
+   }
+  }
+ ],
+ "n_worlds": 3000,
+ "layers": [
+  32,
+  40,
+  48
+ ],
+ "P": 13,
+ "replay_bitwise_identical": 20,
+ "fidelity_summary": {
+  "max_abs_diff": {
+   "post_norm": 0.19520950317382812,
+   "pre_norm": 0.19520950317382812
+  },
+  "tau": 0.125,
+  "limit": 0.25,
+  "n_divergences_logged": 22,
+  "divergences": [
+   {
+    "world_id": "F51006-base_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1728076934814453,
+    "tolerance": 0.4706153869628906,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51006-base_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1728076934814453,
+    "tolerance": 0.4706153869628906,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51020-dswap_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14107131958007812,
+    "tolerance": 0.40714263916015625,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51020-dswap_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.14107131958007812,
+    "tolerance": 0.40714263916015625,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51114-base_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.15535736083984375,
+    "tolerance": 0.4357147216796875,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51114-base_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.15535736083984375,
+    "tolerance": 0.4357147216796875,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51190-dswap_L",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.13035297393798828,
+    "tolerance": 0.38570594787597656,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51190-dswap_L",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.13035297393798828,
+    "tolerance": 0.38570594787597656,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51200-base_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51200-base_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51212-dswap_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51212-dswap_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1900186538696289,
+    "tolerance": 0.5050373077392578,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51229-dswap_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1415119171142578,
+    "tolerance": 0.4080238342285156,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51229-dswap_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1415119171142578,
+    "tolerance": 0.4080238342285156,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51253-dswap_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.15535736083984375,
+    "tolerance": 0.4357147216796875,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51253-dswap_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.15535736083984375,
+    "tolerance": 0.4357147216796875,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51254-base_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.15535736083984375,
+    "tolerance": 0.4357147216796875,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51254-base_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.15535736083984375,
+    "tolerance": 0.4357147216796875,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51359-dswap_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1728076934814453,
+    "tolerance": 0.4706153869628906,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51359-dswap_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1728076934814453,
+    "tolerance": 0.4706153869628906,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51364-dswap_E",
+    "reconstruction": "post_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1728076934814453,
+    "tolerance": 0.4706153869628906,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   },
+   {
+    "world_id": "F51364-dswap_E",
+    "reconstruction": "pre_norm",
+    "orig_top1": 2021,
+    "recon_top1": 2021,
+    "max_abs_diff": 0.1728076934814453,
+    "tolerance": 0.4706153869628906,
+    "near_tie_top1": false,
+    "ab_tie_original": true
+   }
+  ]
+ },
+ "layout": "acts[i] = P x L x d uint16(bf16); slots per d3x_positions.SLOT_NAMES; layers 0..60 HF hidden_states, 61 raw block-60 pre-norm; masked slots are zero",
+ "wall_s": 465.979873418808
+}

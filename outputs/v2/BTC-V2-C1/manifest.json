@@ -1,0 +1,103 @@
+{
+  "run_id": "BTC-V2-C1",
+  "stage": "C",
+  "pool": "COMPETENCE",
+  "model_key": "gemma4_31b",
+  "model": {
+    "repo": "google/gemma-4-31B-it",
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "stack": "gemma4",
+    "template_kwargs": {
+      "enable_thinking": false
+    },
+    "tail": "<|turn>model\n<|channel>thought\n<channel|>",
+    "A_id": 236776,
+    "B_id": 236799,
+    "n_hidden_states": 61,
+    "est_cost_rank": 3
+  },
+  "pool_sha256": "b1df46cd67e87e938a9ace023f4c46dccac154968b160467113e9cecf4e245d6",
+  "inputs_sha256": "dc6c7115bcb2b15e21af952ca623562ded6708b5212d9f0df75a20d836fea0da",
+  "prompt_digest": "cf3c6e264b1fbc76a12051935b4e0d00e2fda7fe841e7ee77c25bfbe3f74dc14",
+  "gpu": "A100-80GB",
+  "cpu": [
+    4.0,
+    4.0
+  ],
+  "memory_mib": [
+    16384,
+    98304
+  ],
+  "timeout_s": 1240,
+  "guard_s": 1160,
+  "objective_usd": 1.5,
+  "worst_case_usd": 1.2874,
+  "timing": {
+    "remote_start_epoch": 1794599239.9997773,
+    "tokenizer_s": 7.752633094787598,
+    "load_s": 161.65082621574402,
+    "forwards_s": 170.0539209842682,
+    "n_forwards": 1340,
+    "remote_end_epoch": 1794599579.4573133,
+    "local_call_to_remote_start_s": 12.789099216461182,
+    "remote_end_to_local_receive_s": -0.13906359672546387,
+    "local_wall_s": 352.1216332912445
+  },
+  "env": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.23.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 63.286347776,
+    "dtype": "bfloat16",
+    "test_mode": false,
+    "model": "google/gemma-4-31B-it",
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475"
+  },
+  "behavior_sha256": "c4f87aa0674eb7fcdd5f2626e5376aba822b147341bc224c1b71a13274b38060",
+  "cost_note": "record actual cost from `modal billing report --show-resources` immediately after the run",
+  "modal_app_id": "ap-Fl6k865yhqxoWcvFmdD6Bs",
+  "precheck": {
+    "pool_hashes": "ok",
+    "prompt_digest": "ok",
+    "tail_pre_answer_bos": "1320/1320",
+    "token_counts_ref": "1320/1320",
+    "resources": {
+      "gpu": "A100-80GB",
+      "cpu": [
+        4,
+        4
+      ],
+      "memory_mib": [
+        16384,
+        98304
+      ],
+      "timeout_s": 1240,
+      "guard_s": 1160
+    },
+    "worst_case_usd": 1.287,
+    "selection": "gemma4_31b"
+  },
+  "cost_actual": {
+    "source": "modal billing report --show-resources (read 2026-11-13 ~19:55 UTC; may lag)",
+    "A100-80GB": 0.24167,
+    "CPU": 0.01829,
+    "Memory": 0.01237,
+    "Network Egress": 0.01181,
+    "total_usd": 0.28414,
+    "image_build": "cached gemma image reused",
+    "worst_case_usd": 1.287,
+    "overrun": false
+  },
+  "decision": {
+    "C1": true,
+    "C2": true,
+    "C3a": true,
+    "C3b": true,
+    "C4": true,
+    "C5": true,
+    "COMPETENCE": "PASS",
+    "D1prime_FEASIBLE": true,
+    "note": "C3a/C3b met with 1255/1320 vs threshold 1254 (margin of one world); all 65 non-conformant worlds are decoy variants"
+  }
+}

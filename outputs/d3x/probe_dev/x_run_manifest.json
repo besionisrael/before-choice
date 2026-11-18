@@ -1,0 +1,78 @@
+{
+  "run_id": "BTC-H1b-X3X4",
+  "pool": "PROBE-DEV (training-rule subset)",
+  "inputs_sha256": "a3c814363726493477b785397c5118035bd35b449cecc046d4fd1cc62ba47fa1",
+  "positions_sha256": "2663054996281ca566bd48820ad77fe3702ac9c118fa162db6a3b5d0d9d44760",
+  "digest": "c8fe2ca8163695c2e43f30a0826c64cf14af3d184c57cceb87dcaa438d7c1507",
+  "verify": {
+    "hashes_and_shapes_ok": true,
+    "n_worlds": 3480
+  },
+  "bytes_downloaded": 7411744277,
+  "env": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.23.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 63.14395648
+  },
+  "fidelity": {
+    "max_abs_diff": {
+      "post_norm": 0.19520950317382812,
+      "pre_norm": 0.20506000518798828
+    },
+    "tau": 0.125,
+    "limit": 0.25,
+    "n_divergences_logged": 2,
+    "divergences": [
+      {
+        "world_id": "F20168-base",
+        "reconstruction": "post_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236799,
+        "max_abs_diff": 0.18315505981445312,
+        "tolerance": 0.49131011962890625,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      },
+      {
+        "world_id": "F20168-base",
+        "reconstruction": "pre_norm",
+        "orig_top1": 2021,
+        "recon_top1": 236799,
+        "max_abs_diff": 0.18315505981445312,
+        "tolerance": 0.49131011962890625,
+        "near_tie_top1": true,
+        "ab_tie_original": false
+      }
+    ]
+  },
+  "timing": {
+    "load_s": 285.6310064792633,
+    "capture_s": 588.1375346183777,
+    "remote_total_s": 876.7908430099487,
+    "call_to_return_s": 893.0029962062836,
+    "return_to_visible_s": 16.087425708770752,
+    "download_s": 155.34571743011475,
+    "local_wall_s": 1073.1548697948456
+  },
+  "resources": {
+    "gpu": "A100-80GB",
+    "cpu": [
+      4.0,
+      4.0
+    ],
+    "memory_mib": [
+      16384,
+      98304
+    ],
+    "timeout_s": 1500,
+    "guard_s": 1420
+  },
+  "cost_note": "record actual cost from `modal billing report --show-resources` immediately after the run",
+  "replication_vs_D3_DEV_R1": {
+    "n_worlds": 3480,
+    "bitwise_equal": 3480,
+    "max_abs_diff": 0.0
+  }
+}

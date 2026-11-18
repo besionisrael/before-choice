@@ -1,0 +1,14 @@
+{
+  "dataset_version": "v1",
+  "seed": 20261113,
+  "families_per_depth": 10,
+  "n_worlds": 300,
+  "n_families": 30,
+  "sha256": {
+    "all": "f9073bdfdd64ff323bd0e4ab27d411245f36e3528344cef2ff265ba22e377907",
+    "train": "1b46f44c86b95ca72c2eef11d964668197e634784fcf54e81245126f19d43cf1",
+    "val": "a172856b69ec7b1def4ec0c06db3c52a2563e4fd5d54c891f4eb9e11f5f420b1",
+    "test": "34ab38411b64bed8ce5c7490468a17e17ee10052ed9587fb4d49b20dc213e8c3",
+    "model_inputs": "0fa40be3c2cd3ea856537fbd2efdf14650b98b775290f11f39eaa1c3e2a85011"
+  }
+}

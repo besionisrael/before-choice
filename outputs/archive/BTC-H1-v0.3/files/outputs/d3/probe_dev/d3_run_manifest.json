@@ -1,0 +1,79 @@
+{
+  "run_id": "BTC-D3-DEV-R1",
+  "pool": "PROBE-DEV",
+  "inputs_sha256": "a3c814363726493477b785397c5118035bd35b449cecc046d4fd1cc62ba47fa1",
+  "digest": "caf7b8d654a2a60044c5ae67940af9f02d0bb937e13ef47274ce27afceea53f1",
+  "n_labels": 5800,
+  "remote_manifest_sha256": "306573de935f2092b49a60171b6831443a52f4f9132649949e0e5c1aef3d4d8d",
+  "verify": {
+    "hashes_and_shapes_ok": true,
+    "n_worlds": 4800
+  },
+  "bytes_downloaded": 3432740755,
+  "env": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.23.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 63.354207232
+  },
+  "timing": {
+    "load_s": 100.20130205154419,
+    "capture_s": 590.3438470363617,
+    "remote_total_s": 690.5536773204803,
+    "call_to_return_s": 700.6852877140045,
+    "return_to_visible_s": 11.075836420059204,
+    "download_s": 126.55015897750854,
+    "local_wall_s": 861.2657918930054
+  },
+  "resources": {
+    "gpu": "A100-80GB",
+    "cpu": [
+      4.0,
+      4.0
+    ],
+    "memory_mib": [
+      16384,
+      98304
+    ],
+    "timeout_s": 1500,
+    "guard_s": 1420
+  },
+  "cost_note": "record actual cost from `modal billing report --show-resources` immediately after the run",
+  "modal_app_id": "ap-wPTKSUy2kXQTtegmMVWRma",
+  "cost_actual": {
+    "source": "modal billing report --show-resources (read ~23:15 UTC; may lag)",
+    "A100-80GB": 0.50972,
+    "CPU": 0.03859,
+    "Memory": 0.0261,
+    "Network Egress": 0.00469,
+    "total_usd": 0.57909,
+    "worst_case_usd": 1.69,
+    "objective_usd": 2.0,
+    "overrun": false
+  },
+  "local_postcheck": {
+    "verify": {
+      "hashes_and_shapes_ok": true,
+      "n_worlds": 4800
+    },
+    "nonfinite": 0,
+    "max_abs_diff": {
+      "post_norm": 0.19520950317382812,
+      "pre_norm": 0.20506000518798828
+    },
+    "quantiles_median_p99": {
+      "post_norm": [
+        0.1304,
+        0.1952
+      ],
+      "pre_norm": [
+        0.1304,
+        0.1952
+      ]
+    },
+    "divergences": 28,
+    "top1_in_AB": 4329,
+    "ab_ties": 11
+  }
+}

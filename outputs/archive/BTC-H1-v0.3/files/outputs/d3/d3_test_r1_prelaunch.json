@@ -1,0 +1,42 @@
+{
+  "utc": "2026-11-14T13:35:01+00:00",
+  "fix_sha256": "d793662422f32d2c6245b98882b1b93503c451e5c031873859c8188c5285e436",
+  "fix_is_d7936624": true,
+  "sealed_access_unchanged": true,
+  "frozen_core": {
+    "src/d3_capture_core.py": true,
+    "src/v2_common.py": true,
+    "src/v2_local.py": true,
+    "src/sealed.py": true
+  },
+  "d3_capture_core_sha256": "00a3fa225ed36f668d7473cd3ddc89cdfedf4c821d36b42c8e24a2c21f13e65c",
+  "model": {
+    "repo": "google/gemma-4-31B-it",
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "pin_ok": true
+  },
+  "mount_import": {
+    "copy_outside_project_imports": true,
+    "ROOT_is_None": true,
+    "app": "btc-d3-test-gemma4",
+    "posix_root_path_parents": 2,
+    "guard_handles_2_parents": true
+  },
+  "seal": {
+    "pool_intact": true,
+    "access_log_sha256": "bcd1c64f7d35e0a9965f905bb3c4bc743f60eeb28c28269554368ea4e7717673",
+    "access_log_unchanged_since_attempt_1": true,
+    "access_log_entries": [
+      {
+        "utc": "2026-11-14T06:00:20+00:00",
+        "file": "model_inputs.jsonl",
+        "purpose": "D3-TEST-CAPTURE: BTC-D3-TEST forward passes (prompts only)",
+        "approval": "BTC-D3-TEST-CAPTURE (owner decision D\u00c9CISION SCIENTIFIQUE \u2014 BTC-D3-TEST, 2026-11-14)"
+      }
+    ],
+    "no_read_outside_capture_scope": true,
+    "act_dir_empty_unsealed": true
+  },
+  "attempt_1_log_sha256_unchanged": true,
+  "all_pass": true
+}

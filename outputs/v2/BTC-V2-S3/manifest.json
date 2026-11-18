@@ -1,0 +1,89 @@
+{
+  "run_id": "BTC-V2-S3",
+  "stage": "S",
+  "pool": "SCREEN",
+  "model_key": "gemma4_31b",
+  "model": {
+    "repo": "google/gemma-4-31B-it",
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+    "stack": "gemma4",
+    "template_kwargs": {
+      "enable_thinking": false
+    },
+    "tail": "<|turn>model\n<|channel>thought\n<channel|>",
+    "A_id": 236776,
+    "B_id": 236799,
+    "n_hidden_states": 61,
+    "est_cost_rank": 3
+  },
+  "pool_sha256": "cd3499d67f3be6fe03ee936f0c607134b5e14ae7b201ed26441b5c995eda34cd",
+  "inputs_sha256": "42cc0517246c101e676d517066001e359fe83d301149970b8e940f6602b5dc20",
+  "prompt_digest": "6e52d9dc17bf1fd7934ab7a686d6050d2819219e0829e1e66bb3e6257bb4de1b",
+  "gpu": "A100-80GB",
+  "cpu": [
+    4.0,
+    4.0
+  ],
+  "memory_mib": [
+    16384,
+    98304
+  ],
+  "timeout_s": 780,
+  "guard_s": 720,
+  "objective_usd": 1.0,
+  "worst_case_usd": 0.846,
+  "timing": {
+    "remote_start_epoch": 1794598308.3060226,
+    "tokenizer_s": 8.801085233688354,
+    "load_s": 179.47360157966614,
+    "forwards_s": 32.69260334968567,
+    "n_forwards": 260,
+    "remote_end_epoch": 1794598529.273412,
+    "local_call_to_remote_start_s": 471.9584770202637,
+    "remote_end_to_local_receive_s": -0.1880497932434082,
+    "local_wall_s": 692.7463285923004
+  },
+  "env": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.23.0",
+    "cuda": "12.4",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "max_mem_gb": 63.095958528,
+    "dtype": "bfloat16",
+    "test_mode": false,
+    "model": "google/gemma-4-31B-it",
+    "revision": "842da3794eaa0b77d5f08bae87a17459d91ff475"
+  },
+  "behavior_sha256": "1c09522632845d6dd01ea19a60ff313405d6005f7d7969883b8070511823d686",
+  "cost_note": "record actual cost from `modal billing report --show-resources` immediately after the run",
+  "modal_app_id": "ap-yjwZVM5mErrWE8YuBbn29W",
+  "template_check": {
+    "chat_template_sha256": "ae53464bf3be25802b3a5b37def7fd89667067d7577049b3b2d74c4d8de4c6d4",
+    "bos": "single <bos>",
+    "thought_channel": "empty (<|channel>thought\n<channel|>)",
+    "pre_answer_token": "<channel|>",
+    "A_id": 236776,
+    "B_id": 236799,
+    "tail_ok_screen": "240/240",
+    "token_counts_match_ref": "240/240",
+    "note": "template renders the same empty channel with or without enable_thinking=False"
+  },
+  "cost_actual": {
+    "source": "modal billing report --show-resources (read 2026-11-13 ~19:37 UTC; may lag)",
+    "A100-80GB": 0.13333,
+    "CPU": 0.01363,
+    "Memory": 0.0069,
+    "Network Egress": 0.01519,
+    "total_usd": 0.16904,
+    "image_build": "new gemma4 image built (83 s), billed separately",
+    "worst_case_usd": 0.846,
+    "overrun": false
+  },
+  "screen_decision": {
+    "S1": true,
+    "S2": true,
+    "S3": true,
+    "S4": true,
+    "SCREEN_PASS": true
+  }
+}
